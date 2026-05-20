@@ -1,0 +1,4622 @@
+[
+  {
+    "slide_num": 1,
+    "shapes": [
+      {
+        "shape_id": 91,
+        "name": "Google Shape;91;p1",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.1,
+        "top_in": 7.08,
+        "w_in": 2.07,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "month.day.year",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 92,
+        "name": "Google Shape;92;p1",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.87,
+        "top_in": 7.07,
+        "w_in": 0.29,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "1",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 93,
+        "name": "Google Shape;93;p1",
+        "type": "LINE (9)",
+        "left_in": 12.87,
+        "top_in": 7.12,
+        "w_in": 0.0,
+        "h_in": 0.25,
+        "has_text": false
+      },
+      {
+        "shape_id": 94,
+        "name": "Google Shape;94;p1",
+        "type": "TEXT_BOX (17)",
+        "left_in": 4.34,
+        "top_in": 2.66,
+        "w_in": 4.6,
+        "h_in": 0.57,
+        "has_text": true,
+        "text": "NASDAQ: SMCI",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 95,
+        "name": "Google Shape;95;p1",
+        "type": "TEXT_BOX (17)",
+        "left_in": 1.26,
+        "top_in": 6.13,
+        "w_in": 10.82,
+        "h_in": 0.48,
+        "has_text": true,
+        "text": "Johnson Chen (johnsonchen2026@gmail.com), Jacob Liu (jliufc18@gmail.com)",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 96,
+        "name": "Google Shape;96;p1",
+        "type": "TEXT_BOX (17)",
+        "left_in": 3.9,
+        "top_in": 3.75,
+        "w_in": 5.53,
+        "h_in": 2.16,
+        "has_text": true,
+        "text": "Current Price: $30.54\nTarget: $47.00 (54% upside) \nConsensus: Buy To Hold",
+        "n_paragraphs": 3
+      },
+      {
+        "shape_id": 97,
+        "name": "Google Shape;97;p1",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  1",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 99,
+        "name": "Google Shape;99;p1",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 10.53,
+        "top_in": 0.07,
+        "w_in": 2.72,
+        "h_in": 0.8,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 1026,
+        "name": "Picture 2",
+        "type": "PICTURE (13)",
+        "left_in": 4.67,
+        "top_in": 0.33,
+        "w_in": 3.99,
+        "h_in": 2.11,
+        "has_text": false
+      },
+      {
+        "shape_id": 12,
+        "name": "Google Shape;95;p1",
+        "type": "TEXT_BOX (17)",
+        "left_in": 2.39,
+        "top_in": 6.48,
+        "w_in": 8.5,
+        "h_in": 0.48,
+        "has_text": true,
+        "text": "Rochester Adams High School, Troy High School (Michigan)",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 7,
+        "name": "Picture 6",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 2,
+    "shapes": [
+      {
+        "shape_id": 104,
+        "name": "Google Shape;104;p2",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.93,
+        "top_in": 1.18,
+        "w_in": 0.58,
+        "h_in": 0.6,
+        "has_text": true,
+        "text": "1",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 105,
+        "name": "Google Shape;105;p2",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.93,
+        "top_in": 2.01,
+        "w_in": 0.58,
+        "h_in": 0.6,
+        "has_text": true,
+        "text": "2",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 106,
+        "name": "Google Shape;106;p2",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.93,
+        "top_in": 2.85,
+        "w_in": 0.58,
+        "h_in": 0.6,
+        "has_text": true,
+        "text": "3",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 107,
+        "name": "Google Shape;107;p2",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.93,
+        "top_in": 3.72,
+        "w_in": 0.58,
+        "h_in": 0.6,
+        "has_text": true,
+        "text": "4",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 108,
+        "name": "Google Shape;108;p2",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.93,
+        "top_in": 4.57,
+        "w_in": 0.58,
+        "h_in": 0.6,
+        "has_text": true,
+        "text": "5",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 109,
+        "name": "Google Shape;109;p2",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.93,
+        "top_in": 6.26,
+        "w_in": 0.58,
+        "h_in": 0.6,
+        "has_text": true,
+        "text": "7",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 110,
+        "name": "Google Shape;110;p2",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.93,
+        "top_in": 5.42,
+        "w_in": 0.58,
+        "h_in": 0.6,
+        "has_text": true,
+        "text": "6",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 111,
+        "name": "Google Shape;111;p2",
+        "type": "TEXT_BOX (17)",
+        "left_in": 1.78,
+        "top_in": 1.19,
+        "w_in": 6.96,
+        "h_in": 0.54,
+        "has_text": true,
+        "text": "Target Overview",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 112,
+        "name": "Google Shape;112;p2",
+        "type": "TEXT_BOX (17)",
+        "left_in": 1.78,
+        "top_in": 2.06,
+        "w_in": 6.96,
+        "h_in": 0.54,
+        "has_text": true,
+        "text": "Industry Overview",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 113,
+        "name": "Google Shape;113;p2",
+        "type": "TEXT_BOX (17)",
+        "left_in": 1.78,
+        "top_in": 3.68,
+        "w_in": 6.96,
+        "h_in": 0.76,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 114,
+        "name": "Google Shape;114;p2",
+        "type": "TEXT_BOX (17)",
+        "left_in": 1.78,
+        "top_in": 2.83,
+        "w_in": 6.96,
+        "h_in": 0.54,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 115,
+        "name": "Google Shape;115;p2",
+        "type": "TEXT_BOX (17)",
+        "left_in": 1.78,
+        "top_in": 4.51,
+        "w_in": 6.96,
+        "h_in": 0.76,
+        "has_text": true,
+        "text": "ESG/Overview Consideration",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 116,
+        "name": "Google Shape;116;p2",
+        "type": "TEXT_BOX (17)",
+        "left_in": 1.78,
+        "top_in": 5.43,
+        "w_in": 6.96,
+        "h_in": 0.54,
+        "has_text": true,
+        "text": "Risks & Mitigants",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 117,
+        "name": "Google Shape;117;p2",
+        "type": "TEXT_BOX (17)",
+        "left_in": 1.78,
+        "top_in": 6.28,
+        "w_in": 6.96,
+        "h_in": 0.76,
+        "has_text": true,
+        "text": "Final Recommendation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 118,
+        "name": "Google Shape;118;p2",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.85,
+        "top_in": 7.07,
+        "w_in": 0.32,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "2",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 119,
+        "name": "Google Shape;119;p2",
+        "type": "LINE (9)",
+        "left_in": 12.85,
+        "top_in": 7.12,
+        "w_in": 0.0,
+        "h_in": 0.25,
+        "has_text": false
+      },
+      {
+        "shape_id": 120,
+        "name": "Google Shape;120;p2",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  2",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 121,
+        "name": "Google Shape;121;p2",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 122,
+        "name": "Google Shape;122;p2",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.25,
+        "top_in": 0.08,
+        "w_in": 3.28,
+        "h_in": 0.71,
+        "has_text": true,
+        "text": "Agenda",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 2052,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 24,
+        "name": "Picture 23",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 3,
+    "shapes": [
+      {
+        "shape_id": 127,
+        "name": "Google Shape;127;g2b6e027a1db_8_19",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.85,
+        "top_in": 7.07,
+        "w_in": 0.32,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "3",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 128,
+        "name": "Google Shape;128;g2b6e027a1db_8_19",
+        "type": "LINE (9)",
+        "left_in": 12.85,
+        "top_in": 7.12,
+        "w_in": 0.0,
+        "h_in": 0.25,
+        "has_text": false
+      },
+      {
+        "shape_id": 129,
+        "name": "Google Shape;129;g2b6e027a1db_8_19",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  3",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 130,
+        "name": "Google Shape;130;g2b6e027a1db_8_19",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -0.04,
+        "top_in": 4.27,
+        "w_in": 13.42,
+        "h_in": 0.07,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 131,
+        "name": "Google Shape;131;g2b6e027a1db_8_19",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -0.04,
+        "top_in": 3.16,
+        "w_in": 13.42,
+        "h_in": 1.12,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 132,
+        "name": "Google Shape;132;g2b6e027a1db_8_19",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.79,
+        "top_in": 3.28,
+        "w_in": 9.79,
+        "h_in": 0.82,
+        "has_text": true,
+        "text": " Target & Industry Overviews",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 8,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 9,
+        "name": "Picture 8",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 4,
+    "shapes": [
+      {
+        "shape_id": 137,
+        "name": "Google Shape;137;p3",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 138,
+        "name": "Google Shape;138;p3",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 139,
+        "name": "Google Shape;139;p3",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 140,
+        "name": "Google Shape;140;p3",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 141,
+        "name": "Google Shape;141;p3",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 142,
+        "name": "Google Shape;142;p3",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.21,
+        "top_in": 0.37,
+        "w_in": 9.5,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "Company Overview  ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 143,
+        "name": "Google Shape;143;p3",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.13,
+        "top_in": 1.68,
+        "w_in": 4.11,
+        "h_in": 1.56,
+        "has_text": true,
+        "text": "Super Micro Computer (NASDAQ: SMCI) designs, manufactures, and sells high-performance server and storage solutions for AI/ML, cloud, enterprise, and edge workloads\nFounded in 1993 by Charles Liang (current CEO/Chairman) in San Jose, CA; vertically integrated with in-house motherboard design, chassis manufacturing, and system assembly\nFastest-growing server OEM globally, riding unprecedented AI infrastructure demand to $40B+ in projected FY2026 revenue\n\"Building Block Solutions\" modular architecture enables rapid customization at scale with 6-12 week time-to-market vs. 6-12 months for Dell/HPE\nIndustry leader in Direct Liquid Cooling (DLC) rack-scale solutions, the fastest-growing product line as GPU power densities make air cooling inadequate",
+        "n_paragraphs": 5
+      },
+      {
+        "shape_id": 144,
+        "name": "Google Shape;144;p3",
+        "type": "TEXT_BOX (17)",
+        "left_in": 7.68,
+        "top_in": 3.9,
+        "w_in": 2.57,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 145,
+        "name": "Google Shape;145;p3",
+        "type": "TEXT_BOX (17)",
+        "left_in": 8.64,
+        "top_in": 1.68,
+        "w_in": 4.11,
+        "h_in": 2.65,
+        "has_text": true,
+        "text": "Server & Storage Systems: ~80% of revenue\nSubsystems & Accessories: ~12%\nServices & Other: ~8%\nGeography: ~50% US, ~33% APAC, ~13% Europe, ~4% RoW\nCustomer mix: ~55-65% Hyperscale/Cloud, ~25-30% Enterprise, ~5-10% Government\nCritical: One customer = ~63% of Q2 FY2026 revenue, indicating extreme concentration risk",
+        "n_paragraphs": 6
+      },
+      {
+        "shape_id": 146,
+        "name": "Google Shape;146;p3",
+        "type": "TEXT_BOX (17)",
+        "left_in": 4.33,
+        "top_in": 1.68,
+        "w_in": 4.11,
+        "h_in": 4.71,
+        "has_text": true,
+        "text": "Current EV: ~$19.1B | Market Cap: ~$18.3B\nQ2 FY2026: Record $12.7B quarterly revenue (+123% YoY); FY2026 guidance raised to $40B+\n$13B+ Blackwell Ultra backlog provides 3+ quarters of forward revenue visibility\nGross margin concern: Collapsed from 18.0% (FY2023) to 6.3% (Q2 FY2026), approaching ODM-level profitability\nGovernance overhang: EY auditor resigned Oct 2024; BDO issued adverse opinion on internal controls; DOJ/SEC investigations ongoing\nFCF turned negative (-$950M in Q1 FY2026) due to $6B+ inventory buildup to support backlog",
+        "n_paragraphs": 6
+      },
+      {
+        "shape_id": 148,
+        "name": "Google Shape;148;p3",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 149,
+        "name": "Google Shape;149;p3",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 150,
+        "name": "Google Shape;150;p3",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  4",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 151,
+        "name": "Google Shape;151;p3",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.3,
+        "top_in": 1.09,
+        "w_in": 3.9,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "Background",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 152,
+        "name": "Google Shape;152;p3",
+        "type": "TEXT_BOX (17)",
+        "left_in": 4.57,
+        "top_in": 1.09,
+        "w_in": 3.9,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "Company Health",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 153,
+        "name": "Google Shape;153;p3",
+        "type": "TEXT_BOX (17)",
+        "left_in": 8.85,
+        "top_in": 1.09,
+        "w_in": 3.9,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "Revenue Streams",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 19,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 21506,
+        "name": "Picture 2",
+        "type": "PICTURE (13)",
+        "left_in": 9.31,
+        "top_in": 4.82,
+        "w_in": 2.98,
+        "h_in": 1.9,
+        "has_text": false
+      },
+      {
+        "shape_id": 21,
+        "name": "Picture 20",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 5,
+    "shapes": [
+      {
+        "shape_id": 158,
+        "name": "Google Shape;158;p5",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.25,
+        "top_in": 0.38,
+        "w_in": 9.5,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "Industry Overview  ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 160,
+        "name": "Google Shape;160;p5",
+        "type": "TEXT_BOX (17)",
+        "left_in": 1.13,
+        "top_in": 1.57,
+        "w_in": 5.39,
+        "h_in": 5.2,
+        "has_text": true,
+        "text": "Global AI server TAM projected to grow from ~$125B (2024) to $400B+ (2028) at ~34% CAGR, driven by LLM training, enterprise AI deployment, and sovereign AI initiatives\nLiquid cooling solutions are the fastest-growing sub-segment: ~$5B (2024) to ~$25B (2028) at ~50% CAGR as power densities exceed 100kW/rack\nNVIDIA GPU roadmap (H100 to H200 to B200 to GB200 NVL72) drives sustained upgrade demand; each generation increases rack power from ~40kW to ~120kW\nAI server market set to grow 55% in 2025 alone to ~$252B (Bloomberg Intelligence); hyperscaler capex budgets continuing to expand\nGPT-5 class models require 10x+ the compute of GPT-4; AI inference workloads projected to exceed training by 2027",
+        "n_paragraphs": 5
+      },
+      {
+        "shape_id": 161,
+        "name": "Google Shape;161;p5",
+        "type": "TEXT_BOX (17)",
+        "left_in": 6.78,
+        "top_in": 1.56,
+        "w_in": 5.39,
+        "h_in": 3.18,
+        "has_text": true,
+        "text": "Generative AI training compute scaling 10x+ per generation\nEnterprise AI inference deployment at scale (exceeds training by 2027)\nData center power/cooling constraints (>100kW/rack = liquid cooling required)\nSovereign AI: Governments investing in domestic AI compute infrastructure\nEdge AI expansion for latency-sensitive inference applications",
+        "n_paragraphs": 5
+      },
+      {
+        "shape_id": 164,
+        "name": "Google Shape;164;p5",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 165,
+        "name": "Google Shape;165;p5",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 166,
+        "name": "Google Shape;166;p5",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 167,
+        "name": "Google Shape;167;p5",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 168,
+        "name": "Google Shape;168;p5",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 169,
+        "name": "Google Shape;169;p5",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 170,
+        "name": "Google Shape;170;p5",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 171,
+        "name": "Google Shape;171;p5",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  5",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 172,
+        "name": "Google Shape;172;p5",
+        "type": "TEXT_BOX (17)",
+        "left_in": 1.08,
+        "top_in": 1.06,
+        "w_in": 5.43,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "AI Infrastructure Market",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 173,
+        "name": "Google Shape;173;p5",
+        "type": "TEXT_BOX (17)",
+        "left_in": 6.8,
+        "top_in": 1.06,
+        "w_in": 5.43,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "Key Growth Catalysts",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 18,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 19,
+        "name": "Table 0",
+        "type": "TABLE (19)",
+        "left_in": 6.84,
+        "top_in": 4.62,
+        "w_in": 5.39,
+        "h_in": 1.93,
+        "has_text": false,
+        "table": {
+          "rows": 5,
+          "cols": 4,
+          "cells": [
+            [
+              "Segment",
+              "2024E",
+              "2028P",
+              "CAGR"
+            ],
+            [
+              "AI Servers",
+              "~$125B",
+              "~$400B",
+              "~34%"
+            ],
+            [
+              "Liquid Cooling",
+              "~$5B",
+              "~$25B",
+              "~50%"
+            ],
+            [
+              "HPC",
+              "~$45B",
+              "~$75B",
+              "~14%"
+            ],
+            [
+              "Total DC Infra",
+              "~$350B",
+              "~$600B",
+              "~15%"
+            ]
+          ]
+        }
+      },
+      {
+        "shape_id": 20,
+        "name": "Picture 19",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 6,
+    "shapes": [
+      {
+        "shape_id": 178,
+        "name": "Google Shape;178;p6",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.25,
+        "top_in": 0.38,
+        "w_in": 9.5,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "Industry Overview ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 179,
+        "name": "Google Shape;179;p6",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.28,
+        "top_in": 1.09,
+        "w_in": 12.72,
+        "h_in": 0.44,
+        "has_text": true,
+        "text": "Competitive Edge in Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 180,
+        "name": "Google Shape;180;p6",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 181,
+        "name": "Google Shape;181;p6",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 182,
+        "name": "Google Shape;182;p6",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 183,
+        "name": "Google Shape;183;p6",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 184,
+        "name": "Google Shape;184;p6",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 185,
+        "name": "Google Shape;185;p6",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 186,
+        "name": "Google Shape;186;p6",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 187,
+        "name": "Google Shape;187;p6",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  6",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 16,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 20,
+        "name": "Shape 2",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.07,
+        "top_in": 1.68,
+        "w_in": 9.2,
+        "h_in": 0.0,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 21,
+        "name": "Table 0",
+        "type": "TABLE (19)",
+        "left_in": 2.07,
+        "top_in": 1.78,
+        "w_in": 9.2,
+        "h_in": 2.4,
+        "has_text": false,
+        "table": {
+          "rows": 8,
+          "cols": 5,
+          "cells": [
+            [
+              "Factor",
+              "SMCI",
+              "Dell",
+              "HPE",
+              "ODMs"
+            ],
+            [
+              "Time-to-Market",
+              "6-12 weeks",
+              "6-12 months",
+              "6-12 months",
+              "3-6 months"
+            ],
+            [
+              "Customization",
+              "Very High",
+              "Medium",
+              "Medium",
+              "High"
+            ],
+            [
+              "Liquid Cooling",
+              "Leader",
+              "Developing",
+              "Developing",
+              "Limited"
+            ],
+            [
+              "Gross Margin",
+              "6-11%",
+              "20-21%",
+              "30-32%",
+              "4-6%"
+            ],
+            [
+              "AI Server Focus",
+              "Primary",
+              "~15% of rev",
+              "~20% of rev",
+              "Contract-based"
+            ],
+            [
+              "Mkt Share (AI)",
+              "~15-20%",
+              "#1",
+              "#3-4",
+              "Varies"
+            ],
+            [
+              "Services/SW",
+              "Limited",
+              "Extensive",
+              "Extensive",
+              "None"
+            ]
+          ]
+        }
+      },
+      {
+        "shape_id": 22,
+        "name": "Text 11",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.07,
+        "top_in": 4.38,
+        "w_in": 9.2,
+        "h_in": 0.28,
+        "has_text": true,
+        "text": "Key Competitive Dynamics:",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 23,
+        "name": "Text 12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.07,
+        "top_in": 4.68,
+        "w_in": 9.2,
+        "h_in": 1.55,
+        "has_text": true,
+        "text": "Speed is the core differentiator: When NVIDIA launches a new GPU, SMCI has validated designs within weeks vs. 6-12 months for Dell/HPE. In a market where every quarter of delay = lost AI training revenue, this speed premium is substantial\nDell ($104B TTM rev) has a massive enterprise sales force and full-stack solutions; HPE ($34B) has strong gov't relationships and GreenLake as-a-service. Both are investing aggressively in liquid cooling.\nODMs (Quanta, Wistron, Foxconn) build custom hyperscaler designs at 4-6% margins with no brand/IP; in-house designs (Google TPU, Amazon Trainium) are a long-term structural threat to all OEMs\nSMCI holds ~25-30% share in liquid cooling specifically (market leader) but margins (6-11%) are well below Dell (20-21%) and HPE (30-32%), reflecting a volume/speed model vs. premium pricing",
+        "n_paragraphs": 4
+      },
+      {
+        "shape_id": 24,
+        "name": "Picture 23",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 7,
+    "shapes": [
+      {
+        "shape_id": 196,
+        "name": "Google Shape;196;g2b6e027a1db_8_49",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.85,
+        "top_in": 7.07,
+        "w_in": 0.32,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "7",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 197,
+        "name": "Google Shape;197;g2b6e027a1db_8_49",
+        "type": "LINE (9)",
+        "left_in": 12.85,
+        "top_in": 7.12,
+        "w_in": 0.0,
+        "h_in": 0.25,
+        "has_text": false
+      },
+      {
+        "shape_id": 198,
+        "name": "Google Shape;198;g2b6e027a1db_8_49",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  7",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 199,
+        "name": "Google Shape;199;g2b6e027a1db_8_49",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -0.04,
+        "top_in": 4.27,
+        "w_in": 13.42,
+        "h_in": 0.07,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 200,
+        "name": "Google Shape;200;g2b6e027a1db_8_49",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -0.04,
+        "top_in": 3.16,
+        "w_in": 13.42,
+        "h_in": 1.12,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 201,
+        "name": "Google Shape;201;g2b6e027a1db_8_49",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.79,
+        "top_in": 3.28,
+        "w_in": 9.79,
+        "h_in": 0.82,
+        "has_text": true,
+        "text": "II.  Thesis Points",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 8,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 9,
+        "name": "Picture 8",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 8,
+    "shapes": [
+      {
+        "shape_id": 206,
+        "name": "Google Shape;206;p7",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.25,
+        "top_in": 0.38,
+        "w_in": 10.86,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "Thesis 1: AI INFRASTRUCTURE PICK & SHOVEL PLAY ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 207,
+        "name": "Google Shape;207;p7",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.89,
+        "top_in": 0.99,
+        "w_in": 5.57,
+        "h_in": 0.38,
+        "has_text": true,
+        "text": "Strong AI Growth Sentiment & Positioning",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 209,
+        "name": "Google Shape;209;p7",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.81,
+        "top_in": 1.34,
+        "w_in": 5.57,
+        "h_in": 5.2,
+        "has_text": true,
+        "text": "SMCI is the purest-play public equity on the AI infrastructure buildout: FY2026 revenue guided to $40B+ (from $22B in FY2025), a feat no other server OEM can match\n$13B+ Blackwell Ultra backlog provides 3+ quarters of revenue visibility; GB200 NVL72 rack-scale deployments carry ~$3M+ ASPs per system\nAI server TAM growing at ~34% CAGR through 2028 to $400B+; SMCI holds ~15-20% market share in GPU servers with clear leadership in liquid cooling (~25-30%)\nNVIDIA partnership depth: Early access to Blackwell/GB200 platforms; first OEM to ship GB200 NVL72 rack-scale systems, demonstrating engineering trust\nCatalyst: NVIDIA Blackwell Ultra production ramp in H1 CY2026 validates demand sustainability and converts backlog to recognized revenue",
+        "n_paragraphs": 5
+      },
+      {
+        "shape_id": 211,
+        "name": "Google Shape;211;p7",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 212,
+        "name": "Google Shape;212;p7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 213,
+        "name": "Google Shape;213;p7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 214,
+        "name": "Google Shape;214;p7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 215,
+        "name": "Google Shape;215;p7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 216,
+        "name": "Google Shape;216;p7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 217,
+        "name": "Google Shape;217;p7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 218,
+        "name": "Google Shape;218;p7",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  8",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 223,
+        "name": "Google Shape;223;p7",
+        "type": "TEXT_BOX (17)",
+        "left_in": 6.85,
+        "top_in": 0.98,
+        "w_in": 5.52,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "DLC Structure Market ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 21,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 22,
+        "name": "Google Shape;222;p7",
+        "type": "TEXT_BOX (17)",
+        "left_in": 6.84,
+        "top_in": 1.34,
+        "w_in": 5.47,
+        "h_in": 5.74,
+        "has_text": true,
+        "text": "Direct Liquid Cooling (DLC) is transitioning from optional to mandatory as GPU power densities exceed 100kW/rack; SMCI is the acknowledged market leader with broadest product line\nDLC attachment rates expected to increase from ~20% today to ~60-70% by 2028, expanding SMCI's addressable market within the broader AI server ecosystem\nGB200 NVL72 requires liquid cooling by design (100% attach rate on NVIDIA's flagship platform); liquid-cooled systems create deeper switching costs (piping, manifolds, CDU infrastructure)\nSMCI's DLC patents and thermal engineering expertise provide 12-18 month technology lead over Dell/HPE; rack-scale solutions carry higher ASPs than air-cooled equivalents\nRisk: Dell and HPE investing heavily in DLC capabilities; technology gap could narrow within 18-24 months as competition intensifies",
+        "n_paragraphs": 5
+      },
+      {
+        "shape_id": 23,
+        "name": "Picture 22",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 9,
+    "shapes": [
+      {
+        "shape_id": 229,
+        "name": "Google Shape;229;p10",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.25,
+        "top_in": 0.38,
+        "w_in": 10.53,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "Thesis 2: Margins and Reversal ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 231,
+        "name": "Google Shape;231;p10",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.85,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 232,
+        "name": "Google Shape;232;p10",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 233,
+        "name": "Google Shape;233;p10",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 234,
+        "name": "Google Shape;234;p10",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 235,
+        "name": "Google Shape;235;p10",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  9",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 236,
+        "name": "Google Shape;236;p10",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 237,
+        "name": "Google Shape;237;p10",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 238,
+        "name": "Google Shape;238;p10",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 239,
+        "name": "Google Shape;239;p10",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.5,
+        "top_in": 1.05,
+        "w_in": 6.18,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "Margin Reversal",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 20,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 36,
+        "name": "Table 0",
+        "type": "TABLE (19)",
+        "left_in": 0.51,
+        "top_in": 1.6,
+        "w_in": 6.17,
+        "h_in": 2.27,
+        "has_text": false,
+        "table": {
+          "rows": 7,
+          "cols": 3,
+          "cells": [
+            [
+              "Period",
+              "Gross Margin",
+              "Commentary"
+            ],
+            [
+              "FY2020",
+              "15.7%",
+              "Pre-AI baseline"
+            ],
+            [
+              "FY2023",
+              "18.0%",
+              "PEAK - AI premium pricing"
+            ],
+            [
+              "FY2024",
+              "13.8%",
+              "Compression begins - volume/price trade-off"
+            ],
+            [
+              "FY2025",
+              "11.1%",
+              "Significant deterioration"
+            ],
+            [
+              "Q1 FY2026",
+              "9.5%",
+              "Continued decline"
+            ],
+            [
+              "Q2 FY2026",
+              "6.3%",
+              "Near ODM-level margins"
+            ]
+          ]
+        }
+      },
+      {
+        "shape_id": 37,
+        "name": "Google Shape;230;p10",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.45,
+        "top_in": 3.89,
+        "w_in": 6.21,
+        "h_in": 2.88,
+        "has_text": true,
+        "text": "Margin compression driven by: (1) competitive hyperscale pricing, (2) product mix shift to lower-margin complete rack solutions, (3) component cost pass-through dynamics\nKey test: Q3 FY2026 gross margin. Below 7% = margin recovery thesis weakens significantly; above 8% = bullish inflection signal\nOur view: Margins likely stabilize at 8-10% over 12-18 months but will NOT return to 15-18% pre-AI era. Business model has structurally shifted toward high-volume, lower-margin.",
+        "n_paragraphs": 3
+      },
+      {
+        "shape_id": 39,
+        "name": "Picture 38",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      },
+      {
+        "shape_id": 1028,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 7.63,
+        "top_in": 4.77,
+        "w_in": 3.49,
+        "h_in": 2.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 1030,
+        "name": "Picture 6",
+        "type": "PICTURE (13)",
+        "left_in": 7.63,
+        "top_in": 3.09,
+        "w_in": 3.34,
+        "h_in": 1.41,
+        "has_text": false
+      },
+      {
+        "shape_id": 1032,
+        "name": "Picture 8",
+        "type": "PICTURE (13)",
+        "left_in": 7.63,
+        "top_in": 1.06,
+        "w_in": 3.34,
+        "h_in": 1.76,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 10,
+    "shapes": [
+      {
+        "shape_id": 251,
+        "name": "Google Shape;251;p11",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.25,
+        "top_in": 0.38,
+        "w_in": 11.79,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "THESIS 3: GOVERNANCE CREATES DISCOUNT (BEAR) ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 252,
+        "name": "Google Shape;252;p11",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.3,
+        "top_in": 1.01,
+        "w_in": 12.72,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "Individual Factor Chart Ratings",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 256,
+        "name": "Google Shape;256;p11",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 257,
+        "name": "Google Shape;257;p11",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 258,
+        "name": "Google Shape;258;p11",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 259,
+        "name": "Google Shape;259;p11",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 260,
+        "name": "Google Shape;260;p11",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  10",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 261,
+        "name": "Google Shape;261;p11",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 262,
+        "name": "Google Shape;262;p11",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 263,
+        "name": "Google Shape;263;p11",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 17,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 18,
+        "name": "Picture 17",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      },
+      {
+        "shape_id": 19,
+        "name": "Table 0",
+        "type": "TABLE (19)",
+        "left_in": 0.3,
+        "top_in": 1.48,
+        "w_in": 12.72,
+        "h_in": 2.33,
+        "has_text": false,
+        "table": {
+          "rows": 7,
+          "cols": 3,
+          "cells": [
+            [
+              "Factor",
+              "Assessment",
+              "Rating"
+            ],
+            [
+              "Auditor Stability",
+              "EY resigned Oct 2024; BDO appointed Nov 2024",
+              "RED FLAG"
+            ],
+            [
+              "Internal Controls",
+              "Material weakness; adverse opinion from BDO",
+              "RED FLAG"
+            ],
+            [
+              "SEC/DOJ Investigation",
+              "Ongoing document subpoenas",
+              "RED FLAG"
+            ],
+            [
+              "Board Independence",
+              "Majority independent post-Special Committee reforms",
+              "Improved"
+            ],
+            [
+              "CEO Control",
+              "Charles Liang: Founder/CEO/Chairman since 1993; ~10-12% ownership",
+              "Mixed"
+            ],
+            [
+              "Related Party Txns",
+              "$17.5M SEC settlement in 2020 for prior accounting issues",
+              "Elevated"
+            ]
+          ]
+        }
+      },
+      {
+        "shape_id": 20,
+        "name": "Text 11",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.3,
+        "top_in": 4.02,
+        "w_in": 12.72,
+        "h_in": 2.0,
+        "has_text": true,
+        "text": "The EY auditor resignation citing 'integrity' concerns is unprecedented for a company of this size; BDO's adverse opinion on internal controls as of June 30, 2024 remains the most serious qualitative risk to the investment thesis\nDOJ investigation remains open with no timeline for resolution; prior 2020 SEC settlement creates pattern risk and regulators may pursue more aggressively (potential $50M-$500M penalties based on precedents)\nMitigant: Special Committee found 'no evidence of misconduct'; BDO validated financial statements with no restatements required; board reconstituted with majority independent directors\nCatalyst (positive): DOJ closing investigation without charges + clean internal controls opinion from BDO = significant de-risking and potential 30%+ re-rating\nCatalyst (negative): Enforcement action, executive departures, or further accounting restatements could trigger 50%+ downside as institutional holders exit positions",
+        "n_paragraphs": 5
+      }
+    ]
+  },
+  {
+    "slide_num": 11,
+    "shapes": [
+      {
+        "shape_id": 295,
+        "name": "Google Shape;295;g2b6e027a1db_8_58",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.85,
+        "top_in": 7.07,
+        "w_in": 0.32,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "11",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 296,
+        "name": "Google Shape;296;g2b6e027a1db_8_58",
+        "type": "LINE (9)",
+        "left_in": 12.85,
+        "top_in": 7.12,
+        "w_in": 0.0,
+        "h_in": 0.25,
+        "has_text": false
+      },
+      {
+        "shape_id": 297,
+        "name": "Google Shape;297;g2b6e027a1db_8_58",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  11",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 298,
+        "name": "Google Shape;298;g2b6e027a1db_8_58",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -0.04,
+        "top_in": 4.27,
+        "w_in": 13.42,
+        "h_in": 0.07,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 299,
+        "name": "Google Shape;299;g2b6e027a1db_8_58",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -0.04,
+        "top_in": 3.16,
+        "w_in": 13.42,
+        "h_in": 1.12,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 300,
+        "name": "Google Shape;300;g2b6e027a1db_8_58",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.79,
+        "top_in": 3.28,
+        "w_in": 9.79,
+        "h_in": 0.82,
+        "has_text": true,
+        "text": "III.\t Valuation ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 8,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 9,
+        "name": "Picture 8",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 12,
+    "shapes": [
+      {
+        "shape_id": 305,
+        "name": "Google Shape;305;g1f01911d161_1_391",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.25,
+        "top_in": 0.48,
+        "w_in": 11.29,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "FINANCIAL PROJECTIONS (FY2024A - FY2029E) ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 306,
+        "name": "Google Shape;306;g1f01911d161_1_391",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 307,
+        "name": "Google Shape;307;g1f01911d161_1_391",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 308,
+        "name": "Google Shape;308;g1f01911d161_1_391",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 309,
+        "name": "Google Shape;309;g1f01911d161_1_391",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 310,
+        "name": "Google Shape;310;g1f01911d161_1_391",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  12",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 311,
+        "name": "Google Shape;311;g1f01911d161_1_391",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 312,
+        "name": "Google Shape;312;g1f01911d161_1_391",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 313,
+        "name": "Google Shape;313;g1f01911d161_1_391",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 15,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 16,
+        "name": "Table 0",
+        "type": "TABLE (19)",
+        "left_in": 0.3,
+        "top_in": 1.35,
+        "w_in": 10.85,
+        "h_in": 3.49,
+        "has_text": false,
+        "table": {
+          "rows": 10,
+          "cols": 7,
+          "cells": [
+            [
+              "Line Item",
+              "FY2024A",
+              "FY2025A",
+              "FY2026E",
+              "FY2027E",
+              "FY2028E",
+              "FY2029E"
+            ],
+            [
+              "Revenue ($M)",
+              "$14,989",
+              "$21,970",
+              "$40,000",
+              "$52,000",
+              "$60,000",
+              "$66,000"
+            ],
+            [
+              "YoY Growth",
+              "110%",
+              "47%",
+              "82%",
+              "30%",
+              "15%",
+              "10%"
+            ],
+            [
+              "Gross Margin",
+              "13.8%",
+              "11.1%",
+              "8.0%",
+              "9.5%",
+              "10.5%",
+              "11.0%"
+            ],
+            [
+              "Operating Income ($M)",
+              "$1,211",
+              "$1,248",
+              "$1,800",
+              "$3,224",
+              "$4,380",
+              "$5,148"
+            ],
+            [
+              "Op Margin",
+              "8.1%",
+              "5.7%",
+              "4.5%",
+              "6.2%",
+              "7.3%",
+              "7.8%"
+            ],
+            [
+              "Net Income ($M)",
+              "$1,153",
+              "$1,049",
+              "$1,271",
+              "$2,480",
+              "$3,468",
+              "$4,139"
+            ],
+            [
+              "Diluted EPS",
+              "$1.92",
+              "$1.75",
+              "$2.02",
+              "$3.87",
+              "$5.33",
+              "$6.26"
+            ],
+            [
+              "EBITDA ($M)",
+              "$1,187",
+              "$1,430",
+              "$2,200",
+              "$3,744",
+              "$4,980",
+              "$5,808"
+            ],
+            [
+              "EBITDA Margin",
+              "7.9%",
+              "6.5%",
+              "5.5%",
+              "7.2%",
+              "8.3%",
+              "8.8%"
+            ]
+          ]
+        }
+      },
+      {
+        "shape_id": 17,
+        "name": "Text 12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.25,
+        "top_in": 5.74,
+        "w_in": 10.9,
+        "h_in": 1.11,
+        "has_text": true,
+        "text": "Revenue: FY2026 per mgmt guidance; FY2027-29 reflects AI capex cycle deceleration (30% to 15% to 10%) as base effect increases\nGross Margin: Troughs at ~8% in FY2026 then recovers via DLC mix shift to 40%+ of rev, pricing normalization, and next-gen product margin improvement\nOpEx Leverage: R&D + SG&A decline from 3.5% to 3.2% of rev due to scale; drives operating margin from 4.5% to 7.8% over forecast period\nFCF: Turns positive FY2027 as inventory normalizes from $6B+ to 40-45 days COGS; scales to ~5% FCF margin by FY2029; CapEx 1.2-1.5% of rev (Malaysia/Taiwan expansion)",
+        "n_paragraphs": 4
+      },
+      {
+        "shape_id": 18,
+        "name": "Text 11",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.25,
+        "top_in": 5.25,
+        "w_in": 9.2,
+        "h_in": 0.25,
+        "has_text": true,
+        "text": "Key Assumptions:",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 19,
+        "name": "Picture 18",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 13,
+    "shapes": [
+      {
+        "shape_id": 323,
+        "name": "Google Shape;323;p9",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.25,
+        "top_in": 0.38,
+        "w_in": 9.5,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "VALUATION ANALYSIS ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 325,
+        "name": "Google Shape;325;p9",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 326,
+        "name": "Google Shape;326;p9",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 327,
+        "name": "Google Shape;327;p9",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 328,
+        "name": "Google Shape;328;p9",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 329,
+        "name": "Google Shape;329;p9",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 330,
+        "name": "Google Shape;330;p9",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 331,
+        "name": "Google Shape;331;p9",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 332,
+        "name": "Google Shape;332;p9",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  13",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 18,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 25,
+        "name": "Picture 24",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      },
+      {
+        "shape_id": 15,
+        "name": "Google Shape;416;g3c9abbef817_0_12",
+        "type": "PICTURE (13)",
+        "left_in": 0.54,
+        "top_in": 1.0,
+        "w_in": 12.24,
+        "h_in": 5.5,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 14,
+    "shapes": [
+      {
+        "shape_id": 323,
+        "name": "Google Shape;323;p9",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.25,
+        "top_in": 0.44,
+        "w_in": 10.56,
+        "h_in": 0.34,
+        "has_text": true,
+        "text": "DCF SENSITIVITY ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 325,
+        "name": "Google Shape;325;p9",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 326,
+        "name": "Google Shape;326;p9",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 327,
+        "name": "Google Shape;327;p9",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 328,
+        "name": "Google Shape;328;p9",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 329,
+        "name": "Google Shape;329;p9",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 330,
+        "name": "Google Shape;330;p9",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 331,
+        "name": "Google Shape;331;p9",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 332,
+        "name": "Google Shape;332;p9",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  14",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 18,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 15,
+        "name": "Picture 14",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      },
+      {
+        "shape_id": 16,
+        "name": "Google Shape;433;p9",
+        "type": "PICTURE (13)",
+        "left_in": 0.65,
+        "top_in": 0.88,
+        "w_in": 7.25,
+        "h_in": 6.05,
+        "has_text": false
+      },
+      {
+        "shape_id": 20,
+        "name": "Google Shape;435;p9",
+        "type": "PICTURE (13)",
+        "left_in": 8.07,
+        "top_in": 2.37,
+        "w_in": 5.09,
+        "h_in": 1.53,
+        "has_text": false
+      },
+      {
+        "shape_id": 21,
+        "name": "Google Shape;434;p9",
+        "type": "PICTURE (13)",
+        "left_in": 8.07,
+        "top_in": 4.51,
+        "w_in": 5.09,
+        "h_in": 1.44,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 15,
+    "shapes": [
+      {
+        "shape_id": 342,
+        "name": "Google Shape;342;g2b6e027a1db_8_67",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.85,
+        "top_in": 7.07,
+        "w_in": 0.32,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "15",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 343,
+        "name": "Google Shape;343;g2b6e027a1db_8_67",
+        "type": "LINE (9)",
+        "left_in": 12.85,
+        "top_in": 7.12,
+        "w_in": 0.0,
+        "h_in": 0.25,
+        "has_text": false
+      },
+      {
+        "shape_id": 344,
+        "name": "Google Shape;344;g2b6e027a1db_8_67",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  15",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 345,
+        "name": "Google Shape;345;g2b6e027a1db_8_67",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -0.04,
+        "top_in": 4.27,
+        "w_in": 13.42,
+        "h_in": 0.07,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 346,
+        "name": "Google Shape;346;g2b6e027a1db_8_67",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -0.04,
+        "top_in": 3.16,
+        "w_in": 13.42,
+        "h_in": 1.12,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 347,
+        "name": "Google Shape;347;g2b6e027a1db_8_67",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.79,
+        "top_in": 3.28,
+        "w_in": 9.79,
+        "h_in": 0.82,
+        "has_text": true,
+        "text": "IV.\tESG/Overview Considerations ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 8,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 9,
+        "name": "Picture 8",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 16,
+    "shapes": [
+      {
+        "shape_id": 270,
+        "name": "Google Shape;270;g2b6e027a1db_6_0",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.25,
+        "top_in": 0.38,
+        "w_in": 10.53,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "ESG CONSIDERATIONS ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 271,
+        "name": "Google Shape;271;g2b6e027a1db_6_0",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.85,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 272,
+        "name": "Google Shape;272;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 273,
+        "name": "Google Shape;273;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 274,
+        "name": "Google Shape;274;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 275,
+        "name": "Google Shape;275;g2b6e027a1db_6_0",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  16",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 276,
+        "name": "Google Shape;276;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 277,
+        "name": "Google Shape;277;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 280,
+        "name": "Google Shape;280;g2b6e027a1db_6_0",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.37,
+        "top_in": 1.05,
+        "w_in": 12.4,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "ESG Risk Assessment",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 290,
+        "name": "Google Shape;290;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -1.6,
+        "top_in": 0.01,
+        "w_in": 1.39,
+        "h_in": 1.14,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 23,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 24,
+        "name": "Picture 23",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      },
+      {
+        "shape_id": 38,
+        "name": "Table 0",
+        "type": "TABLE (19)",
+        "left_in": 0.37,
+        "top_in": 1.52,
+        "w_in": 6.18,
+        "h_in": 1.11,
+        "has_text": false,
+        "table": {
+          "rows": 5,
+          "cols": 4,
+          "cells": [
+            [
+              "Category",
+              "Rating",
+              "Trend",
+              "Assessment"
+            ],
+            [
+              "Environment",
+              "Positive",
+              "Improving",
+              "DLC = 40% power savings"
+            ],
+            [
+              "Social",
+              "Neutral",
+              "Stable",
+              "6,000+ employees; STEM impact"
+            ],
+            [
+              "Governance",
+              "Negative",
+              "Improving",
+              "EY exit, DOJ/SEC open"
+            ],
+            [
+              "Overall ESG",
+              "42/100",
+              "Mixed",
+              "Below Avg (CSRHub)"
+            ]
+          ]
+        }
+      },
+      {
+        "shape_id": 40,
+        "name": "Text 5",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.37,
+        "top_in": 2.95,
+        "w_in": 4.3,
+        "h_in": 0.28,
+        "has_text": true,
+        "text": "Governance (Primary Risk)",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 41,
+        "name": "Text 6",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.37,
+        "top_in": 3.36,
+        "w_in": 6.18,
+        "h_in": 1.7,
+        "has_text": true,
+        "text": "EY auditor resigned Oct 2024 citing integrity concerns; unprecedented for company of SMCI's size\nBDO issued adverse opinion on internal controls (IC) as of June 30, 2024; remediation underway\nDOJ/SEC investigations remain open; $17.5M SEC settlement in 2020 creates pattern risk\nSpecial Committee found no misconduct; board reconstituted with majority independent directors\nCatalyst: Clean BDO IC opinion on FY2026 10-K + DOJ closure = significant de-risking event",
+        "n_paragraphs": 5
+      },
+      {
+        "shape_id": 44,
+        "name": "Shape 7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.37,
+        "top_in": 5.21,
+        "w_in": 6.18,
+        "h_in": 1.11,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 45,
+        "name": "TextBox 44",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.33,
+        "top_in": 5.22,
+        "w_in": 6.26,
+        "h_in": 1.04,
+        "has_text": true,
+        "text": "Board Independence: 67% refreshed post-2024  |  CEO Ownership: ~10-12% (aligned)\nCapital Allocation: No dividends/buybacks; reinvesting in Malaysia/Taiwan capacity + $6B+ inventory buildup",
+        "n_paragraphs": 2
+      },
+      {
+        "shape_id": 4,
+        "name": "Picture 3",
+        "type": "PICTURE (13)",
+        "left_in": 6.93,
+        "top_in": 1.5,
+        "w_in": 5.75,
+        "h_in": 5.26,
+        "has_text": false
+      },
+      {
+        "shape_id": 25,
+        "name": "Google Shape;278;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.1,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      }
+    ]
+  },
+  {
+    "slide_num": 17,
+    "shapes": [
+      {
+        "shape_id": 270,
+        "name": "Google Shape;270;g2b6e027a1db_6_0",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.25,
+        "top_in": 0.38,
+        "w_in": 10.53,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "AI: OPPORTUNITY & RISK ANALYSIS ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 271,
+        "name": "Google Shape;271;g2b6e027a1db_6_0",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.85,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 272,
+        "name": "Google Shape;272;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 273,
+        "name": "Google Shape;273;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 274,
+        "name": "Google Shape;274;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 275,
+        "name": "Google Shape;275;g2b6e027a1db_6_0",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  17",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 276,
+        "name": "Google Shape;276;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 277,
+        "name": "Google Shape;277;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 278,
+        "name": "Google Shape;278;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 279,
+        "name": "Google Shape;279;g2b6e027a1db_6_0",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.34,
+        "top_in": 1.44,
+        "w_in": 6.21,
+        "h_in": 3.31,
+        "has_text": true,
+        "text": "SMCI is arguably the most direct public equity beneficiary of AI development: every LLM trained and every inference served requires server hardware that SMCI manufactures\nAI compute scaling follows a 10x+ rule per model generation (GPT-3 to GPT-4 to GPT-5); this exponential demand directly drives SMCI's $40B+ FY2026 revenue trajectory\nNVIDIA's GPU roadmap (H100 \u2192 B200 \u2192 GB200 \u2192 Rubin) creates recurring upgrade cycles; each generation requires new server platforms = repeat design wins for SMCI\nLiquid cooling becomes mandatory as AI model scale increases rack power from 40kW to 120kW+; SMCI's DLC leadership (25-30% share) scales directly with AI complexity\nEnterprise AI adoption is in early innings: only ~5% of enterprises have deployed production AI infrastructure, implying 10-20x expansion of addressable market through 2030",
+        "n_paragraphs": 5
+      },
+      {
+        "shape_id": 280,
+        "name": "Google Shape;280;g2b6e027a1db_6_0",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.37,
+        "top_in": 1.05,
+        "w_in": 6.18,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "AI As Opportunity ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 281,
+        "name": "Google Shape;281;g2b6e027a1db_6_0",
+        "type": "TEXT_BOX (17)",
+        "left_in": 6.78,
+        "top_in": 1.57,
+        "w_in": 6.21,
+        "h_in": 2.51,
+        "has_text": true,
+        "text": "Custom silicon threat: Google (TPUs), Amazon (Trainium), Microsoft (Maia) designing in-house AI chips that bypass OEMs; if 30%+ of AI compute shifts to custom silicon, SMCI's TAM contracts materially\nAI efficiency breakthroughs: Model distillation, mixture-of-experts, and sparse architectures could reduce compute per unit of AI capability, slowing hardware demand\nCommoditization risk: Software-defined DC architectures could reduce hardware differentiation; SMCI's speed advantage may erode as workloads standardize\nGeopolitical: US export controls on AI chips to China (~22% APAC rev) could intensify; sovereign AI may partially offset",
+        "n_paragraphs": 4
+      },
+      {
+        "shape_id": 282,
+        "name": "Google Shape;282;g2b6e027a1db_6_0",
+        "type": "TEXT_BOX (17)",
+        "left_in": 6.78,
+        "top_in": 1.05,
+        "w_in": 6.21,
+        "h_in": 0.4,
+        "has_text": true,
+        "text": "AI AS Risk",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 290,
+        "name": "Google Shape;290;g2b6e027a1db_6_0",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -1.6,
+        "top_in": 0.01,
+        "w_in": 1.39,
+        "h_in": 1.14,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 23,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 24,
+        "name": "Picture 23",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      },
+      {
+        "shape_id": 25,
+        "name": "Table 0",
+        "type": "TABLE (19)",
+        "left_in": 0.37,
+        "top_in": 4.88,
+        "w_in": 6.18,
+        "h_in": 1.61,
+        "has_text": false,
+        "table": {
+          "rows": 6,
+          "cols": 4,
+          "cells": [
+            [
+              "AI Growth Driver",
+              "Current",
+              "By 2028",
+              "Impact on SMCI"
+            ],
+            [
+              "AI Server TAM",
+              "~$150B",
+              "$400B+",
+              "28% CAGR = demand runway"
+            ],
+            [
+              "DLC Attach Rate",
+              "~20%",
+              "60-70%",
+              "100% on GB200 NVL72"
+            ],
+            [
+              "Enterprise AI Adoption",
+              "~5%",
+              "25-30%",
+              "New customer segments"
+            ],
+            [
+              "Hyperscaler Capex",
+              "$465B/yr",
+              "$700B+/yr",
+              "$13B+ SMCI backlog"
+            ],
+            [
+              "Inference vs Training",
+              "30/70",
+              "70/30",
+              "Volume shift favors OEMs"
+            ]
+          ]
+        }
+      },
+      {
+        "shape_id": 26,
+        "name": "Table 1",
+        "type": "TABLE (19)",
+        "left_in": 6.78,
+        "top_in": 4.88,
+        "w_in": 6.18,
+        "h_in": 1.61,
+        "has_text": false,
+        "table": {
+          "rows": 6,
+          "cols": 4,
+          "cells": [
+            [
+              "AI Risk Factor",
+              "Prob.",
+              "Impact",
+              "Timeline"
+            ],
+            [
+              "Custom silicon displaces OEMs",
+              "Med",
+              "HIGH",
+              "3-5 years"
+            ],
+            [
+              "AI efficiency reduces compute",
+              "Low-Med",
+              "Medium",
+              "2-4 years"
+            ],
+            [
+              "HW commoditization",
+              "Medium",
+              "Medium",
+              "3-5 years"
+            ],
+            [
+              "Export control expansion",
+              "Med-High",
+              "HIGH",
+              "0-12 months"
+            ],
+            [
+              "AI capex cycle downturn",
+              "Low",
+              "V. HIGH",
+              "12-24 months"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "slide_num": 18,
+    "shapes": [
+      {
+        "shape_id": 211,
+        "name": "Google Shape;211;p7",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 212,
+        "name": "Google Shape;212;p7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 213,
+        "name": "Google Shape;213;p7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 214,
+        "name": "Google Shape;214;p7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 215,
+        "name": "Google Shape;215;p7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.1,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 216,
+        "name": "Google Shape;216;p7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 217,
+        "name": "Google Shape;217;p7",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 218,
+        "name": "Google Shape;218;p7",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  18",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 21,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 16,
+        "name": "Table 0",
+        "type": "TABLE (19)",
+        "left_in": 0.3,
+        "top_in": 1.07,
+        "w_in": 12.72,
+        "h_in": 2.77,
+        "has_text": false,
+        "table": {
+          "rows": 6,
+          "cols": 4,
+          "cells": [
+            [
+              "Force",
+              "Rating",
+              "Trend",
+              "Key Driver"
+            ],
+            [
+              "Customer Power",
+              "4/5 Unfavorable",
+              "Worsening",
+              "1 customer = 63% of rev; hyperscalers have enormous leverage"
+            ],
+            [
+              "Competitive Rivalry",
+              "3/5 Moderate",
+              "Intensifying",
+              "Dell/HPE investing aggressively in AI + liquid cooling"
+            ],
+            [
+              "Supplier Power",
+              "4/5 Unfavorable",
+              "Stable",
+              "NVIDIA ~80%+ share in DC GPUs; allocation = revenue"
+            ],
+            [
+              "Substitutes",
+              "2/5 Favorable",
+              "Stable",
+              "No substitute for on-prem AI training at scale"
+            ],
+            [
+              "Barriers to Entry",
+              "3/5 Moderate",
+              "Stable",
+              "12-18mo validation cycles + thermal expertise required"
+            ]
+          ]
+        }
+      },
+      {
+        "shape_id": 17,
+        "name": "Table 1",
+        "type": "TABLE (19)",
+        "left_in": 0.3,
+        "top_in": 3.99,
+        "w_in": 12.72,
+        "h_in": 2.59,
+        "has_text": false,
+        "table": {
+          "rows": 5,
+          "cols": 4,
+          "cells": [
+            [
+              "Moat Source",
+              "Strength",
+              "Durability",
+              "Assessment"
+            ],
+            [
+              "Intangible Assets",
+              "Moderate",
+              "2-3 years",
+              "Patents, NVIDIA relationship, first to GB200 NVL72; narrowing as Dell/HPE invest"
+            ],
+            [
+              "Switching Costs",
+              "Moderate",
+              "1-2 yr/cycle",
+              "DLC infra is sticky (piping, manifolds, CDUs); customers maintained orders despite governance controversy"
+            ],
+            [
+              "Cost Advantages",
+              "Weak",
+              "Permanent",
+              "Vertical integration provides modest advantage; but GM (6-11%) below Dell (20%) and HPE (31%)"
+            ],
+            [
+              "Efficient Scale",
+              "Moderate",
+              "3-5 years",
+              "5,000+ racks/month capacity; market supports 3-5 players profitably"
+            ]
+          ]
+        }
+      },
+      {
+        "shape_id": 18,
+        "name": "Picture 17",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      },
+      {
+        "shape_id": 19,
+        "name": "Google Shape;206;p7",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.25,
+        "top_in": 0.49,
+        "w_in": 11.66,
+        "h_in": 0.29,
+        "has_text": true,
+        "text": "MOAT ANALYSIS & PORTER'S FIVE FORCES ",
+        "n_paragraphs": 1
+      }
+    ]
+  },
+  {
+    "slide_num": 19,
+    "shapes": [
+      {
+        "shape_id": 415,
+        "name": "Google Shape;415;g2b6e027a1db_8_76",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.85,
+        "top_in": 7.07,
+        "w_in": 0.32,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "19",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 416,
+        "name": "Google Shape;416;g2b6e027a1db_8_76",
+        "type": "LINE (9)",
+        "left_in": 12.85,
+        "top_in": 7.12,
+        "w_in": 0.0,
+        "h_in": 0.25,
+        "has_text": false
+      },
+      {
+        "shape_id": 417,
+        "name": "Google Shape;417;g2b6e027a1db_8_76",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  19",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 418,
+        "name": "Google Shape;418;g2b6e027a1db_8_76",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -0.04,
+        "top_in": 4.27,
+        "w_in": 13.42,
+        "h_in": 0.07,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 419,
+        "name": "Google Shape;419;g2b6e027a1db_8_76",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -0.04,
+        "top_in": 3.16,
+        "w_in": 13.42,
+        "h_in": 1.12,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 420,
+        "name": "Google Shape;420;g2b6e027a1db_8_76",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.79,
+        "top_in": 3.28,
+        "w_in": 9.79,
+        "h_in": 0.82,
+        "has_text": true,
+        "text": "V.\t Risks & Mitigants",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 8,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 9,
+        "name": "Picture 8",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 20,
+    "shapes": [
+      {
+        "shape_id": 425,
+        "name": "Google Shape;425;p12",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.33,
+        "top_in": 0.11,
+        "w_in": 9.0,
+        "h_in": 0.61,
+        "has_text": true,
+        "text": "Risks & Mitigants ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 426,
+        "name": "Google Shape;426;p12",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 427,
+        "name": "Google Shape;427;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.67,
+        "top_in": 0.94,
+        "w_in": 6.22,
+        "h_in": 0.23,
+        "has_text": true,
+        "text": "Mitigation:",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 428,
+        "name": "Google Shape;428;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.92,
+        "top_in": 9.1,
+        "w_in": 9.92,
+        "h_in": 0.25,
+        "has_text": true,
+        "text": "Forex Risk",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 429,
+        "name": "Google Shape;429;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.92,
+        "top_in": 9.46,
+        "w_in": 2.96,
+        "h_in": 1.02,
+        "has_text": true,
+        "text": "As a global shipping company, Danaos is exposed to currency risk that could affect its revenue and profit margins, especially if a large portion of its debt is denominated in a different currency than its earnings.",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 430,
+        "name": "Google Shape;430;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.67,
+        "top_in": 1.27,
+        "w_in": 6.21,
+        "h_in": 0.91,
+        "has_text": true,
+        "text": "DLC mix shift expected to improve margins to 8-10% by FY2027. OpEx leverage from scale drives operating margin expansion. Management guidance implies trough at Q2 FY2026; Q3 margin above 8% = bullish inflection signal.",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 431,
+        "name": "Google Shape;431;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.93,
+        "top_in": 9.46,
+        "w_in": 5.79,
+        "h_in": 1.02,
+        "has_text": true,
+        "text": "Danaos Corporation can mitigate currency risk by using natural hedging techniques, such as matching its currency flows, and by employing typical forex hedging instruments like forwards, futures, or options to manage its exposure to currency fluctuations",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 432,
+        "name": "Google Shape;432;p12",
+        "type": "LINE (9)",
+        "left_in": 6.24,
+        "top_in": 1.72,
+        "w_in": 0.43,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 434,
+        "name": "Google Shape;434;p12",
+        "type": "LINE (9)",
+        "left_in": 3.87,
+        "top_in": 9.94,
+        "w_in": 1.06,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 435,
+        "name": "Google Shape;435;p12",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 436,
+        "name": "Google Shape;436;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 437,
+        "name": "Google Shape;437;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 438,
+        "name": "Google Shape;438;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 439,
+        "name": "Google Shape;439;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 440,
+        "name": "Google Shape;440;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 441,
+        "name": "Google Shape;441;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Value Adds",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 442,
+        "name": "Google Shape;442;p12",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  20",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 443,
+        "name": "Google Shape;443;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 444,
+        "name": "Google Shape;444;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 445,
+        "name": "Google Shape;445;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 446,
+        "name": "Google Shape;446;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 447,
+        "name": "Google Shape;447;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.08,
+        "top_in": 1.1,
+        "w_in": 3.71,
+        "h_in": 0.91,
+        "has_text": true,
+        "text": "Gross Margin Structural\nCompression (18% to 6.3%)",
+        "n_paragraphs": 2
+      },
+      {
+        "shape_id": 448,
+        "name": "Google Shape;448;p12",
+        "type": "GROUP (6)",
+        "left_in": 3.98,
+        "top_in": 0.94,
+        "w_in": 2.25,
+        "h_in": 1.24,
+        "has_text": false
+      },
+      {
+        "shape_id": 450,
+        "name": "Google Shape;450;p12",
+        "type": "TEXT_BOX (17)",
+        "left_in": -1.7,
+        "top_in": 0.0,
+        "w_in": 1.39,
+        "h_in": 1.07,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 451,
+        "name": "Google Shape;451;p12",
+        "type": "LINE (9)",
+        "left_in": 3.93,
+        "top_in": 2.3,
+        "w_in": 9.09,
+        "h_in": 0.03,
+        "has_text": false
+      },
+      {
+        "shape_id": 452,
+        "name": "Google Shape;452;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.67,
+        "top_in": 2.45,
+        "w_in": 6.22,
+        "h_in": 0.23,
+        "has_text": true,
+        "text": "Mitigation:",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 453,
+        "name": "Google Shape;453;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.67,
+        "top_in": 2.77,
+        "w_in": 6.21,
+        "h_in": 0.91,
+        "has_text": true,
+        "text": "Special Committee found no evidence of misconduct. BDO validated financial statements with no restatements required. Board reconstituted with majority independent directors. Clean BDO IC opinion on FY2026 10-K = significant de-risking catalyst.",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 454,
+        "name": "Google Shape;454;p12",
+        "type": "LINE (9)",
+        "left_in": 6.24,
+        "top_in": 3.22,
+        "w_in": 0.43,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 456,
+        "name": "Google Shape;456;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.08,
+        "top_in": 2.61,
+        "w_in": 3.71,
+        "h_in": 0.91,
+        "has_text": true,
+        "text": "Governance & Accounting\nOverhang (EY/BDO/DOJ)",
+        "n_paragraphs": 2
+      },
+      {
+        "shape_id": 457,
+        "name": "Google Shape;457;p12",
+        "type": "GROUP (6)",
+        "left_in": 3.98,
+        "top_in": 2.45,
+        "w_in": 2.25,
+        "h_in": 1.24,
+        "has_text": false
+      },
+      {
+        "shape_id": 459,
+        "name": "Google Shape;459;p12",
+        "type": "LINE (9)",
+        "left_in": 3.93,
+        "top_in": 3.8,
+        "w_in": 9.09,
+        "h_in": 0.03,
+        "has_text": false
+      },
+      {
+        "shape_id": 460,
+        "name": "Google Shape;460;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.67,
+        "top_in": 3.98,
+        "w_in": 6.22,
+        "h_in": 0.23,
+        "has_text": true,
+        "text": "Mitigation:",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 461,
+        "name": "Google Shape;461;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.67,
+        "top_in": 4.31,
+        "w_in": 6.21,
+        "h_in": 0.91,
+        "has_text": true,
+        "text": "Enterprise AI adoption broadening customer base beyond hyperscalers. International expansion (Malaysia, Taiwan) diversifies geographic mix. $13B+ backlog from multiple hyperscalers provides some diversification within cloud segment.",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 462,
+        "name": "Google Shape;462;p12",
+        "type": "LINE (9)",
+        "left_in": 6.24,
+        "top_in": 4.76,
+        "w_in": 0.43,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 464,
+        "name": "Google Shape;464;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.08,
+        "top_in": 4.14,
+        "w_in": 3.71,
+        "h_in": 0.91,
+        "has_text": true,
+        "text": "Extreme Customer Concentration:\nOne Customer = 63% of Revenue",
+        "n_paragraphs": 2
+      },
+      {
+        "shape_id": 465,
+        "name": "Google Shape;465;p12",
+        "type": "GROUP (6)",
+        "left_in": 3.98,
+        "top_in": 3.98,
+        "w_in": 2.25,
+        "h_in": 1.24,
+        "has_text": false
+      },
+      {
+        "shape_id": 467,
+        "name": "Google Shape;467;p12",
+        "type": "LINE (9)",
+        "left_in": 3.93,
+        "top_in": 5.34,
+        "w_in": 9.09,
+        "h_in": 0.03,
+        "has_text": false
+      },
+      {
+        "shape_id": 468,
+        "name": "Google Shape;468;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.67,
+        "top_in": 5.55,
+        "w_in": 6.22,
+        "h_in": 0.23,
+        "has_text": true,
+        "text": "Mitigation:",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 469,
+        "name": "Google Shape;469;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.67,
+        "top_in": 5.87,
+        "w_in": 6.21,
+        "h_in": 0.91,
+        "has_text": true,
+        "text": "SMCI diversifying with AMD MI300X/MI400 platforms. Strong NVIDIA partnership depth (first to ship GB200 NVL72) suggests favorable allocation. Multi-vendor strategy reduces single-supplier risk over 12-18 month horizon.",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 470,
+        "name": "Google Shape;470;p12",
+        "type": "LINE (9)",
+        "left_in": 6.24,
+        "top_in": 6.32,
+        "w_in": 0.43,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 472,
+        "name": "Google Shape;472;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.08,
+        "top_in": 5.71,
+        "w_in": 3.71,
+        "h_in": 0.91,
+        "has_text": true,
+        "text": "NVIDIA Supplier Dependency:\n~80%+ DC GPU Supply Control",
+        "n_paragraphs": 2
+      },
+      {
+        "shape_id": 473,
+        "name": "Google Shape;473;p12",
+        "type": "GROUP (6)",
+        "left_in": 3.98,
+        "top_in": 5.55,
+        "w_in": 2.25,
+        "h_in": 1.24,
+        "has_text": false
+      },
+      {
+        "shape_id": 52,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 53,
+        "name": "Picture 52",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 21,
+    "shapes": [
+      {
+        "shape_id": 425,
+        "name": "Google Shape;425;p12",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.33,
+        "top_in": 0.11,
+        "w_in": 9.0,
+        "h_in": 0.61,
+        "has_text": true,
+        "text": "CATALYSTS & TIMELINE ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 426,
+        "name": "Google Shape;426;p12",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 428,
+        "name": "Google Shape;428;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.92,
+        "top_in": 9.1,
+        "w_in": 9.92,
+        "h_in": 0.25,
+        "has_text": true,
+        "text": "Forex Risk",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 429,
+        "name": "Google Shape;429;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.92,
+        "top_in": 9.46,
+        "w_in": 2.96,
+        "h_in": 1.02,
+        "has_text": true,
+        "text": "As a global shipping company, Danaos is exposed to currency risk that could affect its revenue and profit margins, especially if a large portion of its debt is denominated in a different currency than its earnings.",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 431,
+        "name": "Google Shape;431;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.93,
+        "top_in": 9.46,
+        "w_in": 5.79,
+        "h_in": 1.02,
+        "has_text": true,
+        "text": "Danaos Corporation can mitigate currency risk by using natural hedging techniques, such as matching its currency flows, and by employing typical forex hedging instruments like forwards, futures, or options to manage its exposure to currency fluctuations",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 434,
+        "name": "Google Shape;434;p12",
+        "type": "LINE (9)",
+        "left_in": 3.87,
+        "top_in": 9.94,
+        "w_in": 1.06,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 435,
+        "name": "Google Shape;435;p12",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 436,
+        "name": "Google Shape;436;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 437,
+        "name": "Google Shape;437;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 438,
+        "name": "Google Shape;438;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 439,
+        "name": "Google Shape;439;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.9,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "ESG",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 440,
+        "name": "Google Shape;440;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.56,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Risks",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 441,
+        "name": "Google Shape;441;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Value Adds",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 442,
+        "name": "Google Shape;442;p12",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  21",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 443,
+        "name": "Google Shape;443;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 1.25,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Company",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 444,
+        "name": "Google Shape;444;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 2.91,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Industry",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 445,
+        "name": "Google Shape;445;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 4.57,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Theses",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 446,
+        "name": "Google Shape;446;p12",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.24,
+        "top_in": 7.09,
+        "w_in": 1.39,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Valuation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 450,
+        "name": "Google Shape;450;p12",
+        "type": "TEXT_BOX (17)",
+        "left_in": -1.7,
+        "top_in": 0.0,
+        "w_in": 1.39,
+        "h_in": 1.07,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 52,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 3,
+        "name": "Picture 2",
+        "type": "PICTURE (13)",
+        "left_in": 0.46,
+        "top_in": 0.89,
+        "w_in": 12.42,
+        "h_in": 5.93,
+        "has_text": false
+      },
+      {
+        "shape_id": 26,
+        "name": "Picture 25",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      }
+    ]
+  },
+  {
+    "slide_num": 22,
+    "shapes": [
+      {
+        "shape_id": 479,
+        "name": "Google Shape;479;p13",
+        "type": "TEXT_BOX (17)",
+        "left_in": 0.23,
+        "top_in": 0.11,
+        "w_in": 9.0,
+        "h_in": 0.61,
+        "has_text": true,
+        "text": "Final Recommendation ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 480,
+        "name": "Google Shape;480;p13",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 481,
+        "name": "Google Shape;481;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.45,
+        "top_in": 1.01,
+        "w_in": 6.05,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Sensitivity Analysis",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 482,
+        "name": "Google Shape;482;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.83,
+        "top_in": 1.01,
+        "w_in": 6.05,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Investment Points",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 483,
+        "name": "Google Shape;483;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.83,
+        "top_in": 1.55,
+        "w_in": 0.64,
+        "h_in": 0.38,
+        "has_text": true,
+        "text": "1",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 484,
+        "name": "Google Shape;484;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.48,
+        "top_in": 1.55,
+        "w_in": 5.4,
+        "h_in": 0.38,
+        "has_text": true,
+        "text": "Purest AI Infrastructure Play",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 485,
+        "name": "Google Shape;485;p13",
+        "type": "TEXT_BOX (17)",
+        "left_in": 6.83,
+        "top_in": 2.0,
+        "w_in": 6.05,
+        "h_in": 0.81,
+        "has_text": true,
+        "text": "Fastest-growing server OEM globally; $40B+ FY2026 revenue with $13B+ Blackwell Ultra backlog. AI server TAM growing at 28% CAGR to $400B+ by 2028.",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 486,
+        "name": "Google Shape;486;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.83,
+        "top_in": 2.78,
+        "w_in": 0.64,
+        "h_in": 0.38,
+        "has_text": true,
+        "text": "2",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 487,
+        "name": "Google Shape;487;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.48,
+        "top_in": 2.78,
+        "w_in": 5.4,
+        "h_in": 0.38,
+        "has_text": true,
+        "text": "DLC Market Leadership",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 488,
+        "name": "Google Shape;488;p13",
+        "type": "TEXT_BOX (17)",
+        "left_in": 6.83,
+        "top_in": 3.24,
+        "w_in": 6.05,
+        "h_in": 0.81,
+        "has_text": true,
+        "text": "25-30% share in liquid cooling with 12-18mo tech lead. GB200 NVL72 requires 100% DLC attach, scaling SMCI's advantage with NVIDIA's roadmap.",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 489,
+        "name": "Google Shape;489;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.83,
+        "top_in": 4.02,
+        "w_in": 0.64,
+        "h_in": 0.38,
+        "has_text": true,
+        "text": "3",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 490,
+        "name": "Google Shape;490;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 7.48,
+        "top_in": 4.02,
+        "w_in": 5.4,
+        "h_in": 0.38,
+        "has_text": true,
+        "text": "Growth-Adjusted Undervaluation",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 491,
+        "name": "Google Shape;491;p13",
+        "type": "TEXT_BOX (17)",
+        "left_in": 6.83,
+        "top_in": 4.48,
+        "w_in": 6.05,
+        "h_in": 0.57,
+        "has_text": true,
+        "text": "PEG of 0.65 vs. peer average 1.2 implies ~70% growth-adjusted discount. Forward P/E ~13x at 80%+ revenue growth is compelling.",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 492,
+        "name": "Google Shape;492;p13",
+        "type": "LINE (9)",
+        "left_in": 0.3,
+        "top_in": 0.78,
+        "w_in": 12.72,
+        "h_in": 0.0,
+        "has_text": false
+      },
+      {
+        "shape_id": 493,
+        "name": "Google Shape;493;p13",
+        "type": "PLACEHOLDER (14)",
+        "left_in": 12.6,
+        "top_in": 7.07,
+        "w_in": 0.57,
+        "h_in": 0.35,
+        "has_text": true,
+        "text": "|  22",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 494,
+        "name": "Google Shape;494;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.45,
+        "top_in": 1.52,
+        "w_in": 6.05,
+        "h_in": 3.07,
+        "has_text": true,
+        "text": "BLENDED TARGET PRICE:\n(34%-113% Upside) $41-$65\n\n\n ",
+        "n_paragraphs": 5
+      },
+      {
+        "shape_id": 495,
+        "name": "Google Shape;495;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.45,
+        "top_in": 5.31,
+        "w_in": 6.05,
+        "h_in": 0.31,
+        "has_text": true,
+        "text": "Key Metrics",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 496,
+        "name": "Google Shape;496;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 9.85,
+        "top_in": 5.72,
+        "w_in": 3.03,
+        "h_in": 1.24,
+        "has_text": true,
+        "text": "Better Management: ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 497,
+        "name": "Google Shape;497;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 6.83,
+        "top_in": 5.72,
+        "w_in": 2.88,
+        "h_in": 1.24,
+        "has_text": true,
+        "text": "Lease Optimization: ",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 498,
+        "name": "Google Shape;498;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 8.88,
+        "top_in": 8.78,
+        "w_in": 3.03,
+        "h_in": 1.24,
+        "has_text": true,
+        "text": "Better Management: \n\nExpand asset revenue, streamline costs & integrate technology",
+        "n_paragraphs": 3
+      },
+      {
+        "shape_id": 499,
+        "name": "Google Shape;499;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 5.86,
+        "top_in": 8.78,
+        "w_in": 2.88,
+        "h_in": 1.24,
+        "has_text": true,
+        "text": "Lease Optimization: \n\nFaster leasing, market expansion, risk reduction & stabilize finances",
+        "n_paragraphs": 3
+      },
+      {
+        "shape_id": 500,
+        "name": "Google Shape;500;p13",
+        "type": "GROUP (6)",
+        "left_in": 6.83,
+        "top_in": 5.31,
+        "w_in": 6.05,
+        "h_in": 1.66,
+        "has_text": false
+      },
+      {
+        "shape_id": 505,
+        "name": "Google Shape;505;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": -1.79,
+        "top_in": 1.13,
+        "w_in": 1.39,
+        "h_in": 1.51,
+        "has_text": true,
+        "text": "",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 506,
+        "name": "Google Shape;506;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 3.62,
+        "top_in": 5.72,
+        "w_in": 2.88,
+        "h_in": 1.24,
+        "has_text": true,
+        "text": "54% Upside",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 507,
+        "name": "Google Shape;507;p13",
+        "type": "AUTO_SHAPE (1)",
+        "left_in": 0.44,
+        "top_in": 5.72,
+        "w_in": 3.03,
+        "h_in": 1.24,
+        "has_text": true,
+        "text": "Target: $47",
+        "n_paragraphs": 1
+      },
+      {
+        "shape_id": 31,
+        "name": "Picture 4",
+        "type": "PICTURE (13)",
+        "left_in": 10.97,
+        "top_in": 0.07,
+        "w_in": 2.2,
+        "h_in": 0.6,
+        "has_text": false
+      },
+      {
+        "shape_id": 32,
+        "name": "Picture 31",
+        "type": "PICTURE (13)",
+        "left_in": 11.11,
+        "top_in": 6.98,
+        "w_in": 1.56,
+        "h_in": 0.51,
+        "has_text": false
+      },
+      {
+        "shape_id": 4,
+        "name": "Picture 3",
+        "type": "PICTURE (13)",
+        "left_in": 0.45,
+        "top_in": 4.72,
+        "w_in": 6.05,
+        "h_in": 0.45,
+        "has_text": false
+      },
+      {
+        "shape_id": 34,
+        "name": "Picture 2",
+        "type": "PICTURE (13)",
+        "left_in": 2.08,
+        "top_in": 2.91,
+        "w_in": 2.79,
+        "h_in": 1.47,
+        "has_text": false
+      }
+    ]
+  }
+]
