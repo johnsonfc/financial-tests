@@ -1,0 +1,319 @@
+# Worked example: the Danaos (NYSE: DAC) LBO pitch rebuilt with the kit.
+# Copy this file, change the brand block and the slides, then run:
+#   python build_deck.py examples/danaos.yaml -o out/danaos.pptx
+#
+# Inline markup inside any text:  **bold**   __bold + underline__
+
+title: Danaos LBO Pitch
+author: Michael Attisha, Ryan Zimmerman, Jack Gibbs, David Chen, Abhi Chundru
+
+brand:
+  font: Garamond                 # use "EB Garamond" if the deck will be opened in Google Slides
+  target_name: Danaos
+  target_logo: assets/danaos_logo.png
+  sponsor_name: Warburg Pincus
+  sponsor_logo: assets/sponsor_wordmark.png
+
+# Labels for the section tracker at the bottom of content slides.
+# A content slide lights up the tab named in its `section:`.
+sections: [Company, Industry, Theses, Value Adds, Valuation, Risks]
+
+slides:
+  - type: cover
+    ticker: "NYSE: DAC"
+    kpis: ["Current Price: $74.31", "MOIC: 2.60x", "IRR: 28.2%"]
+    byline: Michael Attisha, Ryan Zimmerman, Jack Gibbs, David Chen, Abhi Chundru
+
+  - type: agenda                  # items default to the divider titles below
+    items: [Target Overview, Industry Overview, Theses, Value Add & Downside Protection,
+            Valuation, Risks & Mitigants, Appendix]
+
+  - type: divider
+    title: Target & Industry Overviews
+
+  - type: content
+    title: Target Overview
+    section: Company
+    columns:
+      - blocks:
+          - header: Background
+          - bullets:
+              - Danaos (NYSE: DAC) is a Greek maritime company that owns and leases vessels to shipping operators
+              - John Coustas, current CEO, inherited the company from his father Dimitri
+              - Largest independent charter company for container ships (Liners)
+              - Diverse and well-maintained fleet focused on efficient, eco-friendly container vessels
+      - blocks:
+          - header: Company Health
+          - bullets:
+              - Current EV near **15-year low**
+              - "Exceptional financial health: Total Debt/EBITDA of **0.62**"
+              - Contracted EBITDA over the next five years exceeds current EV
+          - chart:
+              type: pie
+              title: Revenue % Exposure by Country
+              categories: [China, Japan, Germany, India, UK, France, South Korea, Italy]
+              series: [{name: Revenue exposure, values: [10.5, 8.9, 7.6, 6.4, 6.0, 5.2, 4.4, 4.3]}]
+              number_format: "0.0"
+              legend: true
+      - blocks:
+          - header: Revenue Streams
+          - bullets:
+              - Generates revenue through contracts with container ship companies
+              - Current average charter term is ~**2 years**; leases are locked in at near-COVID rates
+              - Long-term lease structure insulates Danaos from volatile spot shipping rates
+              - Diversified, modern fleet supports sustained revenue growth
+
+  - type: content
+    title: Industry Overview
+    section: Industry
+    columns:
+      - blocks:
+          - header: Industry Dynamics
+          - bullets:
+              - Liner companies (Maersk, MSC, ZIM) handle point-to-point logistics
+              - Liners lease nearly half of their ships from charterers like Danaos
+              - Chartering gives liners operational and capital-structure flexibility
+          - header: Industry Drivers
+          - bullets:
+              - E-commerce growth is reshaping shipping logistics
+              - Globalization in developing and emerging markets lifts shipping demand
+              - Projected CAGR of the shipping market is **7.4%** through **2031**
+      - blocks:
+          - header: Industry Whims
+          - bullets:
+              - Occasionally exposed to supply and demand shocks
+              - Environmental rules will reduce future cargo-ship supply
+              - Geopolitical conflict in the Middle East adds route risk
+          - chart:
+              type: bar
+              title: Global Shipping Container Market ($bn)
+              categories: ["2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028"]
+              series: [{name: Market size, values: [6.41, 7.18, 8.04, 9.01, 10.09, 11.30, 12.65, 14.17, 15.87]}]
+              number_format: "0.0"
+              value_axis: false
+              source: Grand View Research via Statista (2020–2028 projected)
+
+  - type: content
+    title: Industry Overview
+    section: Industry
+    notes: Both exhibits from Bloomberg
+    top:
+      - header: Current Global Environment
+    columns:
+      - blocks:
+          - image: assets/shipping_routes_map.png
+            alt: World map of container shipping route density
+            height: 3.3
+          - caption: Current Shipping Routes
+      - blocks:
+          - image: assets/container_idleness_bloomberg.png
+            alt: Bloomberg chart of idle container ship capacity, 2020 to 2023
+            height: 3.3
+          - caption: Idleness of Container Ships
+
+  - type: divider
+    title: Thesis Points
+
+  - type: content
+    title: "Thesis 1: Discounted Entry Price (Buying the Dip)"
+    section: Theses
+    columns:
+      - blocks:
+          - header: Previous Capital ROI
+          - bullets:
+              - Danaos' previous capital expenditures yielded a 6–10% ROI
+              - The Eagle Bulk stake outperformed after its merger with Star Bulk
+          - header: Undervalued on Multiples
+          - bullets:
+              - Trades at a **57% discount to NAV**
+              - "P/TBV of **0.45**"
+              - EV/EBITDA of **2.04** vs. an industry median of **5.26**
+      - blocks:
+          - header: Low Debt
+          - bullets:
+              - Long-term debt of $447M sits below projected 2023 EBIT of $540M
+              - Paid down **$889M in 2022**; Debt/EBITDA of 0.50 vs. 3.55 industry median
+          - logos: [assets/zim.png, assets/dorian_lpg.png, assets/costamare.png, assets/sfl.png]
+            cols: 2
+
+  - type: content
+    title: "Thesis 2: Market Pricing Reversion"
+    section: Theses
+    columns:
+      - width: 1.15
+        blocks:
+          - header: High Market Pessimism
+          - bullets:
+              - Consensus expects charter rates to fall well below Covid peaks
+              - Rates rose sharply while overall ship supply shrank
+              - Expanded shipping demand suggests the pessimism is overblown
+          - header: Long-Term Leases
+          - bullets:
+              - Long-term contracts secure most revenue and blunt rate drops
+              - Retiring older vessels will tighten supply of smaller charter ships
+      - blocks:
+          - header: 1-Year Timecharter Rates, Jan-17 to Jan-23
+          - image: assets/charter_rates.png
+            alt: Line chart of 1-year timecharter rates by vessel size, January 2017 to January 2023
+            border: true
+          - callouts:
+              - {lead: "59% increase", text: "in 8,500 TEU charter rate"}
+              - {lead: "79% increase", text: "in 6,500 TEU charter rate"}
+              - {lead: "83% increase", text: "in 4,500 TEU charter rate"}
+              - {lead: "103% increase", text: "in 3,500 TEU charter rate"}
+
+  - type: divider
+    title: Value Add & Downside Protection
+
+  - type: content
+    title: "Value Add: Increasing Operational Efficiency"
+    section: Value Adds
+    columns:
+      - blocks:
+          - header: Lease Optimization
+          - bullets:
+              - "__Problem:__ 7 ships are not leased out, racking up maintenance costs with no revenue"
+              - "__Solution:__ Faster leasing lifts revenue while putting idle ships to use"
+              - "__Expansion:__ New geographies and customer segments reduce route concentration"
+      - blocks:
+          - header: Management Efficiency
+          - bullets:
+              - "__Asset Management:__ Grow fees from managing vessels for other owners"
+              - "__Cost Management:__ Streamline maintenance, repair and logistics"
+              - "__Technology:__ Analytics for fleet management and predictive maintenance"
+
+  - type: divider
+    title: Valuation
+
+  - type: content
+    title: Financing
+    section: Valuation
+    columns:
+      - width: 1.9
+        blocks:
+          - header: Sources of Funds ($M)
+          - table:
+              columns: [Source, EBIT turns, "$ investment", "% ownership", Rate]
+              col_widths: [3.0, 1.3, 1.5, 1.5, 1.6]
+              align: [l, r, r, r, r]
+              rows:
+                - [Term Loan A, 0.40x, "261.37", "", SOFR + 4%]
+                - [Term Loan B, 0.40x, "261.37", "", SOFR + 4%]
+                - [Senior Secured Note, 0.50x, "326.72", "", 10% fixed]
+                - [Senior Unsecured Note, 0.50x, "326.72", "", 12% fixed]
+                - [Management rollover, 0.34x, "220.00", 21.6%, ""]
+                - [Sponsor equity, 1.22x, "798.50", 78.4%, ""]
+                - {cells: [Total sources, "", "$2,194.69", 100.0%, ""], style: total}
+      - blocks:
+          - header: Capital Structure Mix
+          - chart:
+              type: doughnut
+              categories: [Term loans, Senior secured, Senior unsecured, Mgmt rollover, Sponsor equity]
+              series: [{name: Sources, values: [522.74, 326.72, 326.72, 220.00, 798.50]}]
+              number_format: "#,##0"
+              legend: true
+
+  - type: content
+    title: Returns
+    section: Valuation
+    columns:
+      - blocks:
+          - header: Bull Case
+          - table:
+              col_widths: [3, 1.4]
+              rows:
+                - [Exit EV / EBIT multiple, 3.26x]
+                - [2029 EBIT, "$431.95"]
+                - [Implied enterprise value, "$1,406.35"]
+                - [Gross debt, "$653.44"]
+                - [Cash, "$60.00"]
+                - [Implied equity value, "$812.91"]
+                - [Sponsor equity at exit, "$637.32"]
+                - [Sponsor entry equity, "$798.50"]
+                - {cells: [MOIC, 2.60x], style: highlight}
+                - {cells: [IRR, 28%], style: highlight}
+      - blocks:
+          - header: Bear Case
+          - table:
+              col_widths: [3, 1.4]
+              rows:
+                - [Exit EV / EBIT multiple, 3.26x]
+                - [2029 EBIT, "$341.43"]
+                - [Implied enterprise value, "$1,111.64"]
+                - [Gross debt, "$653.44"]
+                - [Cash, "$60.00"]
+                - [Implied equity value, "$518.20"]
+                - [Sponsor equity at exit, "$406.27"]
+                - [Sponsor entry equity, "$798.50"]
+                - {cells: [MOIC, 1.75x], style: highlight}
+                - {cells: [IRR, 16%], style: highlight}
+
+  - type: content
+    title: Sponsor Cash Flows (Bull Case, $M)
+    section: Valuation
+    blocks:
+      - chart:
+          type: stacked
+          categories: [2023P, 2024P, 2025P, 2026P, 2027P, 2028P, 2029P]
+          series:
+            - {name: Dividends, values: [0, 170.82, 168.07, 96.55, 339.88, 286.52, 282.52]}
+            - {name: Sale of ships, values: [0, 0, 32.20, 32.20, 32.20, 0, 0]}
+            - {name: Sponsor equity at exit, values: [0, 0, 0, 0, 0, 0, 637.32]}
+          number_format: "#,##0"
+          label_format: "#,##0;(#,##0);;"      # blank for zero segments
+          weight: 2
+      - table:
+          columns: ["", 2023P, 2024P, 2025P, 2026P, 2027P, 2028P, 2029P]
+          col_widths: [2.6, 1, 1, 1, 1, 1, 1, 1]
+          rows:
+            - {cells: [Sponsor equity, "(798.50)", "", "", "", "", "", "637.32"], style: indent}
+            - {cells: [Dividends, "", "170.82", "168.07", "96.55", "339.88", "286.52", "282.52"], style: indent}
+            - {cells: [Sale of ships, "", "", "32.20", "32.20", "32.20", "", ""], style: indent}
+            - {cells: [Cash inflows / (outflows), "(798.50)", "170.82", "200.27", "128.75", "372.08", "286.52", "919.84"], style: total}
+
+  - type: divider
+    title: Risks & Mitigants
+
+  - type: risks
+    title: Risks and Mitigants
+    section: Risks
+    rows:
+      - risk: Environmental regulation raises operating costs
+        level: High
+        mitigation: Route optimization and slow steaming cut fuel use and emissions without major new investment, keeping the fleet compliant.
+      - risk: Charter-rate swings hit overall returns
+        level: Medium
+        mitigation: The model carries bull and bear cases, plus a sale of old and idle ships that protects sponsor returns if rates sour.
+      - risk: Global demand shocks hit shipping volumes
+        level: Medium
+        mitigation: Long-term contracts, financial discipline and buying assets at cycle lows turn volatility into opportunity.
+      - risk: "Concentrated ownership: CEO holds 45%"
+        level: Low
+        mitigation: The equity rollover lets the CEO keep a stake, aligning management with the sponsor through the hold.
+
+  - type: content
+    title: Final Recommendation
+    columns:
+      - blocks:
+          - header: Sensitivity Analysis
+          - text: {content: "Entry & Exit EBIT Multiple: 3.26x", size: 26, bold: true, small_caps: true, align: c}
+          - table:
+              columns: ["Premium paid  \\  Term A / EBIT", 0.40x, 0.45x, 0.50x, 0.55x, 0.60x]
+              col_widths: [2.4, 1, 1, 1, 1, 1]
+              align: [l, c, c, c, c, c]
+              rows:
+                - ["20%", 55%, 42%, 46%, 47%, 56%]
+                - ["25%", 36%, 38%, 41%, 41%, 48%]
+                - ["30%", 33%, 34%, 37%, 36%, 42%]
+                - ["35%", 31%, 32%, 34%, 32%, 37%]
+                - ["40%", 28%, 29%, 31%, 29%, 33%]
+          - header: Key Metrics
+          - metrics: ["MOIC: 2.60x", "IRR: 28.2%"]
+      - blocks:
+          - header: Investment Theses
+          - numbered:
+              - {title: Discounted Entry Price, text: "Strong ROI and market leadership; trades at a deep discount with low debt, leaving room for strategic leverage."}
+              - {title: Market Pricing Reversion, text: "Long-term contracts and fleet renewal let Danaos weather the correction from COVID peaks."}
+              - {title: Resilient Contracts, text: "Robust contracts secure revenue, backed by liner companies' strong balance sheets."}
+          - header: Value Adds
+          - metrics: [Lease Optimization, Management Efficiency]
