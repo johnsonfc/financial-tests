@@ -113,6 +113,7 @@ For a single full-width column, use `blocks:` directly instead of `columns:`.
     value_axis: false                  # hide the axis when every bar is labeled
     legend: true                       # default: on for pies and multi-series
     source: Statista                   # small caption under the chart
+    alt: Market grows from $6.4bn to $8.0bn   # optional; default reads the data out
 ```
 
 **Tables.** Row `style` is one of `total`, `highlight`, `indent`, `italic` or `header`:
@@ -157,6 +158,7 @@ The generated file also contains:
 - **Theme.** The brand colors and font are written into the theme. PowerPoint's color picker and new charts therefore start on-brand.
 - **Layouts.** There are four: `Cover`, `Divider`, `Content` and `Blank`. Titles are real title placeholders, so they show in Outline view and to screen readers.
 - **Master.** The logo and the sponsor wordmark sit on the master, so nobody can nudge them out of place on a single slide.
+- **Charts PowerPoint accepts.** Data labels only use the positions PowerPoint offers for each chart type. Doughnuts offer none, so they keep the default centre. Any other position makes PowerPoint refuse the file, or report "can't read" for a downloaded copy. Every chart also carries alt text for screen readers.
 
 ## Extending
 

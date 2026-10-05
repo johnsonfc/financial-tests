@@ -19,6 +19,7 @@ import math
 import os
 import re
 from dataclasses import replace
+from datetime import datetime, timezone
 
 from lxml import etree
 from PIL import Image
@@ -203,6 +204,9 @@ class DeckBuilder:
         self.prs = Presentation()
         self.prs.slide_width = I(GEO.slide_w)
         self.prs.slide_height = I(GEO.slide_h)
+        # The template still labels its size 4:3; without the label PowerPoint
+        # reads the 16:9 size above as is.
+        self.prs._element.sldSz.attrib.pop("type", None)
         self.divider_count = 0
         self.slide_no = 0
         self._patch_theme()
@@ -854,6 +858,33 @@ class DeckBuilder:
         "stacked": XL_CHART_TYPE.COLUMN_STACKED, "barh": XL_CHART_TYPE.BAR_CLUSTERED,
         "line": XL_CHART_TYPE.LINE, "pie": XL_CHART_TYPE.PIE, "doughnut": XL_CHART_TYPE.DOUGHNUT,
     }
+    # Data-label position per chart type. PowerPoint accepts only the positions
+    # its Format Data Labels pane offers for that type (none at all for a
+    # doughnut) and refuses a file that sets any other: "needs repair", or
+    # "can't read" when the file was downloaded. None keeps PowerPoint's
+    # default, which centres doughnut labels on the ring.
+    LABEL_POSITION = {
+        "bar": XL_LABEL_POSITION.OUTSIDE_END, "column": XL_LABEL_POSITION.OUTSIDE_END,
+        "barh": XL_LABEL_POSITION.OUTSIDE_END, "stacked": XL_LABEL_POSITION.CENTER,
+        "line": XL_LABEL_POSITION.ABOVE, "pie": XL_LABEL_POSITION.CENTER, "doughnut": None,
+    }
+    CHART_NAMES = {
+        "bar": "Column chart", "column": "Column chart", "stacked": "Stacked column chart",
+        "barh": "Bar chart", "line": "Line chart", "pie": "Pie chart", "doughnut": "Doughnut chart",
+    }
+
+    def _chart_alt(self, c, kind):
+        """Alt text that reads the chart's data out, for screen readers."""
+        head = self.CHART_NAMES[kind] + (f": {c['title']}" if c.get("title") else "")
+        parts = [head]
+        fmt = c.get("label_format", c.get("number_format", ""))
+        hide_zero = fmt.count(";") >= 2 and fmt.split(";")[2] == ""  # e.g. "0.0;-0.0;;"
+        for s in c["series"]:
+            pts = "; ".join(f"{k} {'n/a' if v is None else format(v, ',.10g')}"
+                            for k, v in zip(c["categories"], s["values"]) if not (hide_zero and v == 0))
+            if pts:
+                parts.append(f"{s['name']}: {pts}")
+        return ". ".join(parts) + "."
 
     def _chart_font(self, font_obj, size=None, bold=False, color=None):
         ts = TYPE["chart"]
@@ -925,24 +956,21 @@ class DeckBuilder:
         if c.get("data_labels", True):
             plot.has_data_labels = True
             dl = plot.data_labels
+            dl.show_value = True  # python-pptx's doughnut template ships labels switched off
             inside = pie or kind == "stacked"
+            pos = self.LABEL_POSITION[kind]
             self._chart_font(dl.font, size=11, color=PALETTE["title"])
             dl.number_format = c.get("label_format", c.get("number_format", "General"))
             dl.number_format_is_linked = False
-            if pie:
-                dl.position = XL_LABEL_POSITION.CENTER
-            elif kind == "line":
-                dl.position = XL_LABEL_POSITION.ABOVE
-            elif kind == "stacked":
-                dl.position = XL_LABEL_POSITION.CENTER
-            else:
-                dl.position = XL_LABEL_POSITION.OUTSIDE_END
+            if pos is not None:
+                dl.position = pos
             if inside:  # labels sit on the fill: pick white or gray per slice/segment
                 fmt = dl.number_format
                 if pie:
                     for i, pt in enumerate(plot.series[0].points):
                         self._chart_font(pt.data_label.font, size=11, color=ink_on(colors[i % len(colors)]))
-                        pt.data_label.position = XL_LABEL_POSITION.CENTER
+                        if pos is not None:
+                            pt.data_label.position = pos
                 else:
                     for i, sr in enumerate(plot.series):
                         col = c["series"][i].get("color", colors[i % len(colors)])
@@ -950,8 +978,14 @@ class DeckBuilder:
                         sdl.show_value = True
                         sdl.number_format = fmt
                         sdl.number_format_is_linked = False
-                        sdl.position = XL_LABEL_POSITION.CENTER
+                        sdl.position = pos
                         self._chart_font(sdl.font, size=11, color=ink_on(col))
+        # python-pptx writes the negative axis ids PowerPoint 2011 emitted;
+        # Office's validator allows 0..2147483647. Dropping the sign keeps
+        # every axId/crossAx pair linked.
+        for ax_id in ch._chartSpace.iter(qn("c:axId"), qn("c:crossAx")):
+            ax_id.set("val", str(abs(int(ax_id.get("val")))))
+        gf._element.nvGraphicFramePr.cNvPr.set("descr", c.get("alt") or self._chart_alt(c, kind))
         if c.get("source"):
             tb = self.textbox(slide, x, y + h - src_h, w, src_h, inset_tb=0.0)
             p = tb.text_frame.paragraphs[0]
@@ -1050,8 +1084,15 @@ class DeckBuilder:
             if kind not in dispatch:
                 raise ValueError(f"unknown slide type '{kind}'")
             dispatch[kind](s)
-        self.prs.core_properties.title = self.spec.get("title", self.brand.target_name)
-        self.prs.core_properties.author = self.spec.get("author", "")
+        cp = self.prs.core_properties
+        cp.title = self.spec.get("title", self.brand.target_name)
+        cp.author = self.spec.get("author", "")
+        # python-pptx's template names its own author and a 2013 date; File >
+        # Info on a forwarded deck should show this deck's.
+        cp.last_modified_by = cp.author
+        cp.comments = ""
+        cp.revision = 1
+        cp.created = cp.modified = datetime.now(timezone.utc).replace(tzinfo=None, microsecond=0)
         os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
         self.prs.save(out_path)
         return self.warnings
