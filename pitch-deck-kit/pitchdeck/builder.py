@@ -26,7 +26,8 @@ from PIL import Image
 from pptx import Presentation
 from pptx.chart.data import CategoryChartData
 from pptx.dml.color import RGBColor
-from pptx.enum.chart import XL_CHART_TYPE, XL_LABEL_POSITION, XL_LEGEND_POSITION, XL_MARKER_STYLE
+from pptx.enum.chart import (XL_CHART_TYPE, XL_LABEL_POSITION, XL_LEGEND_POSITION, XL_MARKER_STYLE,
+                             XL_TICK_LABEL_POSITION)
 from pptx.enum.shapes import MSO_CONNECTOR, MSO_SHAPE
 from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
 from pptx.opc.constants import RELATIONSHIP_TYPE as RT
@@ -948,6 +949,8 @@ class DeckBuilder:
             va.visible = c.get("value_axis", True)
             ca.format.line.color.rgb = rgb(PALETTE["grid"])
             ca.has_major_gridlines = False
+            if any(v is not None and v < 0 for s in c["series"] for v in s["values"]):
+                ca.tick_label_position = XL_TICK_LABEL_POSITION.LOW  # keep labels clear of negative bars
             for ax in (va, ca):
                 self._chart_font(ax.tick_labels.font, size=11)
             if c.get("value_format"):

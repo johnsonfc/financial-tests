@@ -272,6 +272,27 @@ def all_tables(slide: dict):
     return [b["table"] for b in blocks if "table" in b]
 
 
+def text_items(slide: dict):
+    """Every bullet, KPI, metric, category and table cell on a slide, with where it sits."""
+    blocks = [b for key in ("top", "blocks") for b in slide.get(key) or []]
+    for col in slide.get("columns") or []:
+        blocks += col.get("blocks", []) if isinstance(col, dict) else col
+    for item in slide.get("kpis") or []:
+        yield "kpi", item
+    for b in blocks:
+        for key in ("bullets", "metrics"):
+            for item in b.get(key) or []:
+                yield key, item
+        if "chart" in b:
+            for item in b["chart"].get("categories") or []:
+                yield "chart category", item
+        if "table" in b:
+            for row in b["table"].get("rows") or []:
+                for item in (row["cells"] if isinstance(row, dict) and "cells" in row else
+                             [row] if isinstance(row, dict) else row):
+                    yield "table cell", item
+
+
 def check_deck(spec_path: Path, ref_path: Path, totals: dict, verdict: str | None, R: Report):
     if not spec_path.exists():
         R.fail(f"{spec_path.name}: missing")
@@ -296,6 +317,9 @@ def check_deck(spec_path: Path, ref_path: Path, totals: dict, verdict: str | Non
             R.fail(f"slide {i}: section index {sec}; the reference has {rsec}")
         if skeleton(s) != skeleton(r):
             R.warn(f"slide {i} '{s.get('title')}': blocks {skeleton(s)} vs reference {skeleton(r)}")
+        for where, item in text_items(s):
+            if isinstance(item, dict):
+                R.fail(f"slide {i}: {where} item {item} parsed as a mapping; quote strings containing ': '")
         if st in ("content", "risks", "cover") and not s.get("notes"):
             R.fail(f"slide {i} '{s.get('title')}': no speaker notes naming its sources")
         for t in all_tables(s):
