@@ -1,0 +1,835 @@
+# FTAI Aviation (NASDAQ: FTAI): bull/bear debate and company evaluation, built with the kit.
+#   cd pitch-deck-kit && python build_deck.py examples/ftai.yaml -o ../FTAI_Pitch_Deck.pptx
+#
+# Data as of the Oct 2, 2026 close ($167.03). Every figure comes from
+# FTAI_Company_Evaluation.md (evaluation; sources in its Appendix B) or
+# FTAI_Bull_Bear_Theses.md (theses). Speaker notes name the source for each slide.
+# Inline markup:  **bold**   __bold + underline__
+
+title: FTAI Aviation - Bull/Bear Debate and Evaluation
+author: Equity Research
+
+brand:
+  font: Garamond                 # use "EB Garamond" if the deck will be opened in Google Slides
+  target_name: FTAI Aviation     # no logo file: the builder sets the name as a wordmark
+  sponsor_name: Equity Research
+
+sections: [Debate, Company, Industry, Growth Legs, Valuation, Risks]
+
+slides:
+  - type: cover
+    ticker: "NASDAQ: FTAI"
+    kpis: ["Price: $167.03 (Oct 2, 2026)", "Verdict: Pass", "24-Month Value: $181 (+8%)"]
+    byline: Bull-Bear Debate and Company Evaluation
+    date: Data as of the October 2, 2026 close
+    notes: >-
+      Verdict: pass. The price already assumes management's 2027 plan arrives on time and then grows
+      ~1.9% a year forever (10% WACC). The 24-month probability-weighted value is ~$181 (+8%, ~4%/yr),
+      below a ~10% cost of equity. Sources: FTAI_Company_Evaluation.md and FTAI_Bull_Bear_Theses.md.
+
+  - type: agenda                 # items default to the divider titles below
+
+  # ------------------------------------------------------------------ I. Debate
+  - type: divider
+    title: "The Debate: Bear vs. Bull"
+
+  - type: content
+    title: Consensus Baseline & Scorecard
+    section: Debate
+    notes: >-
+      Consensus: MarketBeat (9/23/26) rating split and mean target; short interest from MarketBeat
+      (single source). Price-implied growth from the reverse DCF (10% WACC, 76% steady-state cash
+      conversion, $20.6B diluted EV). Scores: each thesis is scored 1-5 on Edge, Materiality,
+      Testability and Evidence. The chart shows each side's average per dimension. The bear side
+      averages 13.7/20 and the bull side 12.1/20, which is within the symmetry band.
+    columns:
+      - width: 1.12
+        blocks:
+          - header: Consensus Baseline
+          - bullets:
+              - "__Business:__ CFM56 engine-module refurbishment (**87%** of TTM revenue), leasing moving into managed funds (SCI), new data-center gensets"
+              - "__Narrative:__ aftermarket compounder taking share, plus an asset-light pivot and a power leg"
+              - "__Street:__ **9 Buy / 2 Hold**; mean target **$315.67**; post-Q2 targets $300-375"
+              - "__Positioning:__ short interest **10.4%** (from 6.1%); stock **48%** below its Feb high"
+              - "__Price implies:__ the **$2.3B** 2027 plan on time, then **+1.9%/yr** forever"
+              - "__Live debate:__ is the margin slide (35% to 28.5%) mix or price, and is Power durable?"
+      - blocks:
+          - header: Average Thesis Score by Dimension (1-5)
+          - chart:
+              type: bar
+              categories: [Edge, Materiality, Testability, Evidence]
+              series:
+                - {name: "Bear (13.7 / 20)", values: [3.4, 2.4, 4.6, 3.3]}
+                - {name: "Bull (12.1 / 20)", values: [2.7, 2.0, 4.3, 3.1]}
+              number_format: "0.0"
+              value_axis: false
+              legend: true
+          - callouts:
+              - {lead: "Edge to the bear:", text: "its core facts are already reported"}
+              - {lead: "Deciding variable:", text: "AP EBITDA margin, next two prints"}
+
+  - type: content
+    title: "Bear Case: 10 Theses, Ranked"
+    section: Debate
+    notes: >-
+      Argued as a short-seller who has done the work. Score = Edge + Materiality + Testability +
+      Evidence (each 1-5). Ties are broken by Evidence, then Materiality. Consensus to ours shows the
+      Street or price view of each thesis's single variable against ours. Full blocks with evidence
+      tags, catalysts and dated falsifiers are in FTAI_Bull_Bear_Theses.md.
+    blocks:
+      - header: "Argued as a short-seller would  |  Scored on Edge, Materiality, Testability, Evidence (max 20)"
+      - table:
+          columns: ["#", ID, Lens, Thesis, "Consensus → Ours", Score]
+          col_widths: [0.45, 0.55, 1.75, 6.35, 2.75, 0.75]
+          align: [c, c, l, l, l, c]
+          size: 13
+          rows:
+            - ["1", S4, Macro / policy, "EO 14420 rules could curb Jereh-packaged Power gensets at US data centers", "P(impaired) ~0% → ~25%", "16"]
+            - ["2", S2, Profit engine, "AP margin slides to 27% or less in 2027; new volume earns only 22-24%", "29.8% → 27% or less", "15"]
+            - ["3", S1, Expectations gap, "A finite CFM56 harvest is worth ~6.5x 2027 EBITDA, not 9.6x", "16.8x → ~6.5x", "15"]
+            - ["4", S6, Capital allocation, "2026 Adj. FCF misses: H2 must deliver $623M, 2.4x the first half", "$878M → $750M or less", "14"]
+            - ["5", S8, "Revenue: volume", "Leasing/SCI EBITDA of $375M or less in 2027; Q2'26 runs at ~$353M", "$450M → $375M or less", "14"]
+            - ["6", S7, Governance, "Affiliate (SCI) maintenance sales pass 25% of AP revenue", "Untracked → 25%+", "14"]
+            - ["7", S9, Macro, "CFM56 retirements jump to 3.5%+ in 2028 as LEAP fixes land", "1.5-2% → 3.5%+", "13"]
+            - ["8", S3, Optionality, "Power earns $300M or less in 2027: nothing shipped, one customer", "$450M → $300M", "13"]
+            - ["9", S10, Moat trajectory, "PMA stalls at 3 of 5 parts, capping the parts-cost edge", "5 of 5 → 4 or fewer", "12"]
+            - ["10", S5, Industry structure, "Share stalls at 18% or less as rivals copy the module format", "~20% → 18% or less", "11"]
+        height: 3.8
+      - callouts:
+          - {lead: "Strongest:", text: "S4 is new: an Aug 26, 2026 executive order meets a Chinese partner"}
+          - {lead: "Best evidenced:", text: "S2, since the margin slide and 22-24% incremental margins are reported"}
+
+  - type: content
+    title: "Bull Case: 10 Theses, Ranked"
+    section: Debate
+    notes: >-
+      Argued as a long PM deciding how much to own. L4 is labeled Consensus (Edge 1) because the Street
+      already expects a re-rating; it ranks third on Materiality. Full blocks are in
+      FTAI_Bull_Bear_Theses.md.
+    blocks:
+      - header: "Argued as a long PM would  |  Same scoring; L4 shares the Street's view, so it is labeled Consensus"
+      - table:
+          columns: ["#", ID, Lens, Thesis, "Consensus → Ours", Score]
+          col_widths: [0.45, 0.55, 1.75, 6.35, 2.75, 0.75]
+          align: [c, c, l, l, l, c]
+          size: 13
+          rows:
+            - ["1", L3, Industry structure, "CFM56 retirements stay at 2% or less through 2028; GE has cut its view 3 times", "Rising → 2% or less", "14"]
+            - ["2", L1, "Revenue: volume", "Share rises from 14% to 22%+ by end-2027 on 3,000 modules of capacity", "~20% → 22%+", "13"]
+            - ["3", L4, Expectations gap, "Consensus view: delivering the $2.3B 2027 plan re-rates FTAI to 12x (~$217)", "9.6x → 12x", "13"]
+            - ["4", L8, Moat trajectory, "SCI II raises $2B+, widening a captive ~600-engine pool", "Wind-down → $2B+", "13"]
+            - ["5", L2, Optionality, "Power earns $600M+ in 2027 as follow-on orders arrive", "$450M → $600M+", "13"]
+            - ["6", L7, Profit engine, "PMA and normalizing workscopes lift AP margin back to 31%+ by 2028", "~30% → 31%+", "12"]
+            - ["7", L5, Market structure, "Index selling is spent; 10.4% short interest sets up a squeeze", "10.4% → 7% or less", "12"]
+            - ["8", L6, Capital allocation, "The $500M buyback retires 3%+ of shares at a 48% drawdown", "Flat → -3% shares", "11"]
+            - ["9", L10, Governance, "Accounting overhang fades: odds of a restatement or SEC action 5% or less", "Elevated → 5% or less", "10"]
+            - ["10", L9, Macro, "The fuel shock drives 5+ new multi-year airline capacity deals", "Unmodeled → 5+ deals", "10"]
+        height: 3.8
+      - callouts:
+          - {lead: "Strongest:", text: "L3, because GE keeps lowering its CFM56 retirement assumption"}
+          - {lead: "Hard data:", text: "share rose from 10% to 14% in two quarters (L1)"}
+
+  - type: content
+    title: Top Theses, Catalysts & Falsifiers
+    section: Debate
+    notes: >-
+      Top three per side by score; these carry forward to the evaluation framework (MY_THESIS) and then
+      the red-team pass. Value-if-right uses 9.6x 2027 EBITDA and 104M diluted shares.
+      Dependency note: S3 and S4 are one bet against Power. S2, S5 and S10 share one driver
+      (competitive and OEM pressure). L1, L7 and L9 rest on airlines accepting used/PMA-based modules.
+      L4 is the valuation of L1 and L2 being delivered.
+    blocks:
+      - header: Three Strongest per Side, Each With a Dated Test
+      - table:
+          columns: [ID, Thesis, "Catalyst & timing", "Falsifier (dated)", "Value if right"]
+          col_widths: [0.55, 3.45, 2.65, 4.35, 1.45]
+          align: [c, l, l, l, r]
+          rows:
+            - {cells: ["", "Bear", "", "", ""], style: header}
+            - [S4, "EO 14420 curbs Jereh-packaged gensets", "DOE rules due 12/24/26", "DOE exempts behind-the-meter or US-built units by 3/31/27", "-$18 to -$41/sh"]
+            - [S2, "AP margin of 27% or less in 2027", "Q3'26 (10/28/26) and Q4'26 prints", "AP margin 30%+ in both Q3'26 and Q4'26 (by 2/28/27)", "-$12/sh"]
+            - [S1, "Finite CFM56 harvest: ~6.5x 2027 EBITDA", "GE 2027-28 outlooks; 2028 guide", "$1B+ of 2028+ Power orders or a LEAP plan by 12/31/28", "-40%"]
+            - {cells: ["", "Bull", "", "", ""], style: header}
+            - [L3, "CFM56 retirements 2% or less to 2028", "GE outlooks, Jan 2027 and Jan 2028", "GE guides 2028 retirements of 3%+ (~1/2028)", "+$21 to +$41/sh"]
+            - [L1, "Share from 14% to 22%+ by end-2027", "Q3'26 module count; 2027 guide", "Share below 17% at Q2'27 (reported ~8/2027)", "+$12/sh"]
+            - [L4, "Plan delivered, re-rate to 12x (~$217)", "2027 guidance (Feb 2027)", "2027 segment EBITDA guide below $2.1B", "+30%"]
+        height: 2.9
+      - header: Dependency Check
+      - bullets:
+          - "S3 and S4 are **one bet against Power**; L4 is just the value of L1 and L2 being delivered"
+          - "S2, S5 and S10 share one driver: **competitive and OEM pressure** on FTAI's pricing"
+
+  - type: content
+    title: "Debate Map: Where the Two Cases Collide"
+    section: Debate
+    notes: >-
+      Each variable appears in at least one bull and one bear thesis. 'Price implies' comes from the
+      reverse DCF or plan arithmetic (2027 share: $4.7B plan AP revenue over a $22-25B market).
+      Q3'26 consensus EPS is $1.54 (Earnings Whispers, single source).
+    blocks:
+      - header: Five Variables Decide the Debate
+      - table:
+          columns: [Variable, Bull view, Bear view, Consensus, Price implies, "Resolves (when)"]
+          col_widths: [2.15, 2.15, 2.3, 1.85, 1.55, 2.7]
+          align: [l, l, l, l, l, l]
+          size: 12.5
+          rows:
+            - ["AP EBITDA margin", "31%+ by 2028 (L7)", "27% or less in 2027 (S2)", "29.8% (2027 plan)", "~30%, sustained", "Q3'26 (10/28/26) and Q4'26"]
+            - ["2027 Power EBITDA", "$600M+ (L2)", "$300M; policy hit (S3, S4)", "$450M floor", "~$450M", "DOE 12/24/26; Mod-1 3/31/27"]
+            - ["FTAI market share", "22%+ by 2027 (L1)", "18% or less (S5)", "~20% (plan)", "~20%", "Q2'27 print (~8/2027)"]
+            - ["CFM56 retirement rate", "2% or less to 2028 (L3)", "3.5%+ in 2028 (S9)", "1.5-2% (GE)", "GE's path", "GE outlooks, Jan '27 and '28"]
+            - ["EV / 2027 EBITDA", "12x on delivery (L4)", "~6.5x harvest (S1)", "16.8x (Street)", "9.6x", "2027 guide (Feb 2027)"]
+        height: 2.0
+      - header: Where the Case Stands
+      - bullets:
+          - "The bear side is modestly stronger (**13.7 vs. 12.1** of 20) because its core facts are already reported"
+          - "The decider is **AP EBITDA margin** over the next two prints: it separates mix from price"
+          - "Flip to bull: AP margin **30%+** in Q3 and Q4'26 with **300+** modules a quarter, plus benign DOE rules"
+      - callouts:
+          - {lead: "Next test:", text: "Q3'26 results on 10/28/26 (consensus EPS $1.54)"}
+          - {lead: "Policy test:", text: "DOE rules under EO 14420, due 12/24/26"}
+
+  # ------------------------------------------------------------------ II. Company
+  - type: divider
+    title: Company Overview
+
+  - type: content
+    title: Company Overview
+    section: Company
+    notes: >-
+      Segment data: FTAI quarterly releases, Q3'25-Q2'26. Corporate & Other includes FTAI Power
+      start-up costs. Facilities and capacity: Q1'26 and Q2'26 earnings calls. 2027 plan: Q2'26 call.
+    columns:
+      - blocks:
+          - header: Background
+          - bullets:
+              - "FTAI Aviation (NASDAQ: FTAI), Cayman-domiciled; CEO **Joe Adams**"
+              - Refurbishes and exchanges **CFM56** engine modules for 737NG and A320ceo fleets
+              - "Module sites: **Montreal, Miami, Rome, Lisbon**; capacity raised to **3,000** a year"
+              - Leasing book moving into managed third-party funds (**SCI**)
+              - "**FTAI Power** (2026): CFM56 cores become 25 MW data-center gensets"
+      - blocks:
+          - header: TTM Segment EBITDA ($M)
+          - chart:
+              type: doughnut
+              categories: [Aerospace Products, Aviation Leasing]
+              series: [{name: TTM segment EBITDA, values: [848, 489]}]
+              number_format: "#,##0"
+              legend: true
+              source: FTAI releases, Q3'25-Q2'26
+            height: 3.7
+          - bullets:
+              - "Corporate & Other: **-$145M** (incl. Power start-up)"
+      - blocks:
+          - header: Business Lines
+          - bullets:
+              - "__Aerospace Products:__ modules, whole engines, PMA and used parts; **$2.70B** TTM revenue"
+              - "__Leasing / SCI:__ on-balance-sheet leasing plus fees and co-invest returns"
+              - "__FTAI Power:__ gensets via J&F, a JV with China's Jereh; **$1.465B** first order"
+              - "__2027 plan:__ **$2.3B** segment EBITDA (AP $1.4B, Leasing $450M, Power $450M)"
+
+  - type: content
+    title: Financial Snapshot
+    section: Company
+    notes: >-
+      Market data: TradingView / stockinvest.us (10/2/26). Balance sheet: Q2'26 10-Q (6/30/26). EV uses
+      104.1M diluted shares (Q2'26 net income / diluted EPS), $3.50B notes, ~$0.07B preferred (2.6M shares
+      at an assumed $25) and $0.34B cash. FY23 AP EBITDA (~$160M) is rounded from secondary sources.
+      2026E total = $1,525M segment guide less the H1'26 corporate run-rate; 2027 total = $2.3B plan less
+      ~$150M corporate (estimate). GAAP FCF was -$954M on an aggregator's mid-2025 TTM; the company's
+      "Adjusted FCF" definition differs.
+    columns:
+      - width: 1.0
+        blocks:
+          - header: Key Metrics (10/2/26)
+          - table:
+              col_widths: [2.4, 2.1]
+              size: 13
+              rows:
+                - [Share price; 52-week range, "$167.03; $149.50-$323.51"]
+                - [Market cap / EV (diluted), "$17.1B / $20.6B"]
+                - [Net debt / TTM Adj. EBITDA, "$3.16B / 2.65x"]
+                - [TTM revenue (H1'26 growth), "$3.11B (+51%)"]
+                - [TTM Adj. EBITDA, "$1.19B"]
+                - [Operating margin, "20.4% Q2'26 (31.1% yr ago)"]
+                - [2026 Adj. FCF guide, "$878M (cut from $915M)"]
+                - [SBC, "0.9% of 2025 revenue"]
+                - [Diluted shares, "100.4M (2023) to 103.9M (2025)"]
+                - [Dividend / buyback, "$0.50/qtr; $500M authorized"]
+                - {cells: [EV / 2027 plan EBITDA, "9.6x"], style: highlight}
+                - {cells: [P/E on 2027 plan EPS (~$13.50), "12.3x"], style: highlight}
+            height: 4.15
+          - callouts:
+              - {lead: "TTM Adj. EBITDA", text: "+38% in FY25 to $1.19B"}
+              - {lead: "Two FCF views:", text: "company-adjusted vs. GAAP diverge"}
+      - width: 1.15
+        blocks:
+          - header: Adjusted EBITDA ($M)
+          - chart:
+              type: bar
+              categories: [FY23, FY24, FY25, 2026E, 2027 Plan]
+              series:
+                - {name: Total Adj. EBITDA, values: [597, 862, 1191, 1332, 2150]}
+                - {name: Aerospace Products, values: [160, 381, 671, 1050, 1400]}
+              number_format: "#,##0"
+              value_axis: false
+              legend: true
+              source: FTAI releases and guidance; 2026E and 2027 total are estimates net of corporate costs
+
+  - type: content
+    title: "Revenue Engine: Volume Up, Margin Down"
+    section: Company
+    notes: >-
+      Modules: FY23 release (178 modules to 30 customers), Q4'25 call (757 in 2025), Q2'26 release
+      (1,200 target, raised from 1,050). Margins: AP Adj. EBITDA / AP revenue (FY25 671.3/1,936.2; Q4'25
+      35% per call; Q1'26 29.9%; Q2'26 28.5%). Incremental margin = YoY change in AP EBITDA / change in AP
+      revenue (Q1'26 91.6/379.2 = 24%; Q2'26 84.8/383.4 = 22%). Per module: Q2'26 $875M / 296 modules and
+      $249.7M / 296; a year earlier $164.9M / 184 = $896K.
+    columns:
+      - blocks:
+          - header: CFM56 Modules Produced
+          - chart:
+              type: bar
+              categories: ["2023", "2025", "2026 Target"]
+              series: [{name: Modules, values: [178, 757, 1200]}]
+              number_format: "#,##0"
+              value_axis: false
+              source: FTAI releases and calls; capacity is now 3,000 a year
+          - callouts:
+              - {lead: "Share 10% to 14%", text: "in two quarters"}
+              - {lead: "$2.96M revenue", text: "per module (Q2'26)"}
+      - blocks:
+          - header: Aerospace Products EBITDA Margin (%)
+          - chart:
+              type: line
+              categories: [FY2025, "Q4'25", "Q1'26", "Q2'26"]
+              series: [{name: AP EBITDA margin, values: [34.7, 35.0, 29.9, 28.5]}]
+              number_format: "0.0"
+              source: FTAI releases and calls
+          - callouts:
+              - {lead: "22-24% incremental", text: "margin on new volume"}
+              - {lead: "$844K EBITDA", text: "per module, down 6% YoY"}
+
+  - type: content
+    title: "Customer & Product: Why Airlines Buy"
+    section: Company
+    notes: >-
+      Turnaround times and PMA savings: FTAI market-sizing materials via In Practise (undated, single
+      source). Spare-engine rent: Willis Lease Q1'26 lease-rate factor of 1.04% a month. MRE revenue:
+      Q2'26 release ($182.8M of $875M AP revenue). Customer count: FY23 release. GMF: release of 9/23/26.
+      StandardAero engine-services revenue: FY2025 release. CFM materials agreement: Barchart (single
+      source).
+    columns:
+      - blocks:
+          - header: The Job
+          - bullets:
+              - Restore a CFM56 engine at the lowest **combined cost** of parts and downtime
+              - Tear down used engines; rebuild modules with **used and PMA parts**
+              - Sell or exchange modules and whole engines
+          - header: What Customers Use Instead
+          - bullets:
+              - "OEM or licensed shop visit (StandardAero: **$5.35B** engine services)"
+              - In-house airline shops; green-time engine leases
+              - "Doing nothing: **parking** the aircraft"
+      - width: 1.25
+        blocks:
+          - header: Module Swap vs. Conventional Shop Visit
+          - table:
+              columns: ["", FTAI module swap, OEM shop visit]
+              col_widths: [1.9, 1.9, 1.8]
+              align: [l, l, l]
+              size: 13
+              rows:
+                - [Turnaround, "5-25 days", "120-180 days"]
+                - [Parts used, "Used + PMA", "New OEM"]
+                - [PMA savings, "~$2M a visit", "None"]
+                - [Spare-engine rent, "~3-6 months saved", "Paid throughout"]
+            height: 1.75
+          - callouts:
+              - {lead: "~1.04% a month:", text: "spare-engine rent avoided"}
+              - {lead: "3 of 5 PMA parts", text: "approved by Oct 2025"}
+          - header: Value Chain Position
+          - bullets:
+              - "Between **CFM** (new parts, LLP pricing, licenses; now an FTAI supplier) and **large airlines** that trade volume for price"
+      - blocks:
+          - header: Who Pays & Decides
+          - bullets:
+              - Airlines (big deals rising), MROs and lessors
+              - "SCI funds: **21%** of AP revenue (affiliate)"
+              - "Last disclosed: 178 modules to 30 customers (2023)"
+              - Tech-ops and finance decide; lessors set used/PMA rules
+          - header: Switching Costs
+          - bullets:
+              - ~Zero for spot buyers; each shop visit is a new decision
+              - "Higher under MRE contracts and GMF's **5-year** capacity deal"
+
+  - type: content
+    title: Capital Allocation & Governance
+    section: Company
+    notes: >-
+      Dividends: quarterly releases. Buyback: authorization through Sept 2029 (Simply Wall St, single
+      source). Series C: redemption notice of 5/15/26. Notes: Q2'26 10-Q. CEO pay: 2026 proxy (2024
+      compensation). Insider trades: Form 4 coverage (Investing.com, MarketBeat, QuiverQuant). Muddy
+      Waters (1/15/25) and Snowcap (1/29/25) allegations; Audit Committee review 8-K (2/20/25); auditor
+      change 8-K (6/17/25); class action per law-firm notices (single source).
+    columns:
+      - blocks:
+          - header: Capital Allocation
+          - bullets:
+              - "Dividend raised four times in a year: **$0.30 to $0.50**/qtr (~$205M/yr)"
+              - "**$500M** buyback through Sept 2029 (2.9% of market cap)"
+              - "8.25% Series C preferred (**$105M**) redeemed June 2026"
+              - "**$3.50B** of notes due 2028-33 ($1.0B in 2028); **2.65x** net debt / EBITDA"
+              - "SBC only 0.9% of revenue, yet diluted shares **+3.4%** (2023-25)"
+          - chart:
+              type: bar
+              title: Quarterly Dividend per Share ($)
+              categories: ["Q2'25", "Q3'25", "Q4'25", "Q1'26", "Q2'26"]
+              series: [{name: Dividend per share, values: [0.30, 0.35, 0.40, 0.45, 0.50]}]
+              number_format: "$0.00"
+              value_axis: false
+              source: FTAI quarterly releases
+      - blocks:
+          - header: Governance & Accounting
+          - bullets:
+              - "CEO pay **$26.7M** in 2024 ($23.7M in stock); PSU metrics not retrievable"
+              - "2025 short reports: Audit Committee found claims **unsupported**; no restatement"
+              - "Clean control opinions (EY FY24, KPMG FY25); EY replaced, no disagreements"
+              - "Open: SDNY class action; affiliate SCI revenue; a **Chinese JV partner**"
+          - header: Open-Market Insider Trades
+          - table:
+              columns: [Date, Insider, Trade, Value]
+              col_widths: [1.0, 2.0, 2.4, 0.9]
+              align: [l, l, l, r]
+              rows:
+                - [May 2026, Director M. Tuchman, "Sold ~254K shares at ~$241", "~$61.5M"]
+                - [Nov 2025, CEO J. Adams, "Bought 2,000 shares at ~$156", "$0.3M"]
+                - [Nov 2025, CFO E. Nam, "Bought 652 shares at ~$153", "$0.1M"]
+                - [Jul 2026, President D. Moreno, "Bought 2,475 shares at $201", "$0.5M"]
+            height: 1.6
+
+  # ------------------------------------------------------------------ III. Industry
+  - type: divider
+    title: Industry & Competition
+
+  - type: content
+    title: "CFM56 Aftermarket: Plateau, Then Run-Off"
+    section: Industry
+    notes: >-
+      Installed base: StandardAero S-1 (~23,000 CFM56 engines). Shop visits and retirements: GE Aerospace
+      Q4'25 call (1/22/26), Q2'26 call (7/16/26) and remarks at the Morgan Stanley Laguna conference
+      (Sept 2026), via Aviation Week. Chart bars are midpoints of GE's stated ranges (3-4%, 2-3%, ~2%,
+      1.5-2%). LEAP-1B durability kit: Leeham (7/16/26). Market size: FTAI decks (CFM56 + V2500 spend).
+      Fuel and profits: IATA, June 2026. Rates: FOMC 9/16/26; 10-year per Damodaran (9/1/26).
+    columns:
+      - width: 1.1
+        blocks:
+          - header: Market Dynamics
+          - bullets:
+              - "~**23,000** CFM56 engines in service; ~30% yet to see a first shop visit"
+              - "GE: shop visits peaked in **2025**, ~**2,300-2,400** a year through 2027, then decline"
+              - "CFM56 + V2500 spend ~**$22-25B** a year; FTAI share **14%**"
+              - "LEAP-1B durability kit (~**2x** time on wing) in full production from **2027**"
+          - header: Macro Overlay
+          - bullets:
+              - "Jet fuel ~**$152/bbl**; IATA halved 2026 airline profit to **$23B** (2.0% margin)"
+              - "Fed hiked to **3.75-4.00%** (9/16/26); 10-year ~4.75-4.8%"
+      - blocks:
+          - header: "GE's 2026 CFM56 Retirement Assumption (%)"
+          - chart:
+              type: bar
+              categories: [2025 view, Jan 2026, Mid-2026, Sep 2026]
+              series: [{name: Retirement assumption, values: [3.5, 2.5, 2.0, 1.75]}]
+              number_format: "0.0#"
+              value_axis: false
+              source: GE Aerospace commentary via Aviation Week (2026); midpoints of stated ranges
+          - callouts:
+              - {lead: "Bull read (L3):", text: "the tail keeps lengthening"}
+              - {lead: "Bear read (S9):", text: "LEAP fixes reverse it from 2027"}
+
+  - type: content
+    title: Competitive Landscape & Moat
+    section: Industry
+    notes: >-
+      Peers' FY2025 results: StandardAero release (2/25/26), Willis Lease release (3/10/26), AerSale
+      release (3/5/26). FTAI AP: FY2025 segment data (671.3 / 1,936.2). Willis Lease is left out of the
+      margin chart because a lessor's EBITDA excludes depreciation, its main cost. Willis Lease Module
+      Shop: release of 2/11/26; CFM partnership: Willis Lease Q4'25 call. The moat verdict uses Helmer's
+      7 Powers.
+    columns:
+      - width: 1.2
+        blocks:
+          - header: Who Else Restores CFM56 Engines (FY2025)
+          - table:
+              columns: [Company, Model, Revenue, Adj. EBITDA, Threat]
+              col_widths: [1.6, 1.85, 0.85, 1.05, 1.85]
+              align: [l, l, r, r, l]
+              rows:
+                - [StandardAero, Licensed MRO, "$6.06B", "$808M", CFM56/LEAP capacity]
+                - [Willis Lease, Lessor + MRO, "$0.73B", "$459M", Module Shop + CFM]
+                - [AerSale, Used parts (USM), "$0.34B", "$46M", Widebody focus]
+                - [GE / CFM (OEM), New parts + licenses, n/a, n/a, Now supplies FTAI]
+                - {cells: [FTAI (AP segment), Module swap + PMA, "$1.94B", "$671M", "-"], style: highlight}
+            height: 1.95
+          - header: "2025 Adj. EBITDA Margin (%): FTAI vs. Restoration Peers"
+          - chart:
+              type: bar
+              categories: [FTAI Aerospace Products, StandardAero, AerSale]
+              series: [{name: Adj. EBITDA margin, values: [34.7, 13.3, 13.7]}]
+              number_format: "0.0"
+              value_axis: false
+              source: FY2025 releases; Willis Lease excluded (lessor economics)
+      - blocks:
+          - header: "Helmer's Powers: No Proven Moat"
+          - table:
+              columns: [Power, Evidence, Trend]
+              col_widths: [1.6, 2.9, 0.9]
+              align: [l, l, l]
+              rows:
+                - [Counter-positioning, OEM can't copy without cannibalizing, Thinning]
+                - [Scale economies, "Largest module pool; 5-25 day swaps", Stable]
+                - [Cornered resource, "Chromalloy PMA JV; ~600 SCI engines", Partial]
+                - [Switching costs, "Spot buys; MRE contracts stickier", Weak]
+                - [Other powers, "Network, brand, process: not evidenced", "-"]
+            height: 1.95
+          - header: Evidence Tests
+          - bullets:
+              - "Excess ROIC is only **~2 years** old; untested in a downturn"
+              - "No price increase stuck: margins **-6pp** as share rose 10% to 14%"
+              - "Threats: Willis Lease **Module Shop**, StandardAero, CFM supply control"
+
+  # ------------------------------------------------------------------ IV. Growth legs
+  - type: divider
+    title: "Growth Legs: FTAI Power & SCI"
+
+  - type: content
+    title: "FTAI Power: Mod-1 Gensets for Data Centers"
+    section: Growth Legs
+    notes: >-
+      Order: J&F Power Systems release (7/22/26). Unit size and 2027 plan: Barclays conference (5/6/26)
+      and Q4'25 call. 2027 Power EBITDA: Q2'26 call ($450M, "intentionally conservative") and the order
+      release ($450-750M). EO 14420: Baker McKenzie and Vinson & Elkins summaries (2026); DOE rules due
+      12/24/26. Jereh: OFAC settlement of 12/12/18 ($2.77M). Bull (L2) and bear (S3) values are from the
+      thesis file.
+    columns:
+      - width: 1.1
+        blocks:
+          - header: The Opportunity
+          - bullets:
+              - "Turns surplus CFM56 cores into **25 MW** gas-turbine gensets"
+              - "J&F Power Systems (JV with **Jereh Group**, Yantai, China) packages and sells them"
+              - "First order **$1.465B** (US hyperscaler); 5-year master agreement; deliveries to Nov 2027"
+              - "**100** units (~2.5 GW) planned for 2027; first delivery targeted for end-2026"
+          - header: Policy Risk (S4)
+          - bullets:
+              - "EO 14420 (8/26/26): DOE may block turbines with a foreign-adversary nexus; rules due **12/24/26**"
+              - "Jereh settled Iran-sanctions charges with OFAC in 2018"
+      - blocks:
+          - header: 2027 Power EBITDA Scenarios ($M)
+          - chart:
+              type: bar
+              categories: [Bear (S3), Plan, Bull (L2), Release high]
+              series: [{name: 2027 Power EBITDA, values: [300, 450, 600, 750]}]
+              number_format: "#,##0"
+              value_axis: false
+              source: Q2'26 call, order release, thesis file
+          - metrics: ["Order: $1.465B", "Units: 100"]
+
+  - type: content
+    title: "SCI: Leasing Goes Asset-Light"
+    section: Growth Legs
+    notes: >-
+      SCI I: FTAI release (hard cap upsized to $2.0B); ~$6B / ~300 aircraft / ~600 engines per the Barclays
+      and Laguna conferences. SCI II: launch (Aviation Finance, 8/20/26) and $2.0B warehouse facility
+      (FTAI release, 8/26). Co-invest: 15% per the Q2'26 call. ABS: MRE 2026-1 pricing (5/22/26). Leasing
+      mix: Q2'26 call (approximate split of $88.2M). Guide cut: Q2'26 release.
+    columns:
+      - width: 1.1
+        blocks:
+          - header: How SCI Works
+          - bullets:
+              - "Third-party funds buy mid-life aircraft; FTAI manages, co-invests (**15%** in SCI II) and maintains the engines"
+              - "SCI I: **$2.0B** equity, ~**$6B** deployed, ~300 aircraft, ~600 engines"
+              - "SCI II (Aug 2026): **$2.0B** 13-bank warehouse; goal of **$20B** under management"
+              - "First securitization: **$612M** on 48 aircraft (May 2026)"
+          - header: The Catch
+          - bullets:
+              - "2026 Leasing EBITDA guide cut from **$575M to $475M**"
+              - "Maintenance sold to SCI = **21%** of AP revenue, priced by FTAI as manager"
+      - blocks:
+          - header: "Q2'26 Leasing EBITDA Mix ($88.2M)"
+          - chart:
+              type: doughnut
+              categories: [Balance-sheet leasing + gains, SCI fees + co-invest, Insurance recoveries]
+              series: [{name: "Q2'26 Leasing EBITDA ($M)", values: [48, 35, 5]}]
+              number_format: "#,##0"
+              legend: true
+              source: "Q2'26 earnings call (approximate)"
+          - callouts:
+              - {lead: "~$353M run-rate", text: "vs. a $450M 2027 target (S8)"}
+              - {lead: "Bull (L8):", text: "a captive ~600-engine pool"}
+
+  # ------------------------------------------------------------------ V. Valuation
+  - type: divider
+    title: Valuation
+
+  - type: content
+    title: "What the Price Implies: Reverse DCF"
+    section: Valuation
+    notes: >-
+      Model: models/ftai/run_ftai.py. Inputs: price $167.03, 104.1M diluted shares, $3,496M notes, $337M
+      cash, ~$65M preferred; diluted EV $20,612M. 2027 total EBITDA = $2.3B segment plan less ~$150M
+      corporate = $2,150M. Steady-state unlevered cash conversion 76% (15% cash tax on EBITDA, ~$200M a
+      year of capex and SCI co-investment). The gold bar is the growth the Street's mean target ($316)
+      implies at a 10% WACC. Peer multiples come from aggregators with mixed bases (trailing and
+      forward); treat them as indicative.
+    columns:
+      - blocks:
+          - header: Perpetual Growth After 2027 Implied by Each Valuation (%)
+          - chart:
+              type: stacked
+              categories: [WACC 8.5%, WACC 9%, WACC 10% (base), WACC 11%, Street target]
+              series:
+                - {name: Implied by $167 price, values: [0.4, 0.9, 1.9, 2.9, 0]}
+                - {name: Implied by $316 mean target (10% WACC), values: [0, 0, 0, 0, 5.4]}
+              number_format: "0.0"
+              label_format: "0.0;-0.0;;"
+              value_axis: false
+              legend: true
+              source: Reverse DCF with 2027 total EBITDA at plan ($2.15B)
+          - callouts:
+              - {lead: "Price =", text: "2027 plan on time, then +1.9%/yr forever"}
+              - {lead: "If earnings fade 2%/yr,", text: "price needs $3.2B 2027 EBITDA"}
+      - blocks:
+          - header: Multiples at $167.03
+          - table:
+              columns: [Metric, Multiple]
+              col_widths: [3.4, 1.4]
+              size: 12.5
+              rows:
+                - [EV / TTM Adj. EBITDA, "17.3x"]
+                - [EV / 2026E EBITDA, "15.5x"]
+                - {cells: [EV / 2027 plan EBITDA, "9.6x"], style: highlight}
+                - [P/E on 2027 plan EPS (~$13.50), "12.3x"]
+                - [Street mean target / 2027 EBITDA, "16.8x"]
+                - {cells: [Peers, ""], style: italic}
+                - {cells: [StandardAero (EV/EBITDA), "~14.5x"], style: indent}
+                - {cells: [TransDigm (EV/EBITDA), "~18-21x"], style: indent}
+                - {cells: [HEICO (EV/EBITDA), "~34-40x"], style: indent}
+            height: 3.35
+          - bullets:
+              - "Peers own their IP or span many engines; FTAI rents CFM's IP on **one engine family**"
+
+  - type: content
+    title: Market-Implied Assumptions vs. Our Base
+    section: Valuation
+    notes: >-
+      Sensitivities are per share at 104M diluted shares: growth and WACC from the reverse DCF (averages
+      of the up and down moves: growth -$22/+$28, WACC -$21/+$28); EBITDA changes at 9.6x 2027 EBITDA.
+      Base rates: Mauboussin (2007) ROIC persistence (single source); Mauboussin & Callahan, Bayes and
+      Base Rates 2.0 (5/13/26): companies with $2-5B of revenue average 6.9%/yr 5-year growth
+      (SD 11.1%); Damodaran (Jan 2026) aerospace/defense WACC of 7.6%.
+    top:
+      - header: The Load-Bearing Variables Are Durability and Power Delivery
+      - table:
+          columns: [Variable, Implied by price, Consensus, Our base, Range, "Sensitivity ($/sh)"]
+          col_widths: [2.6, 1.7, 1.9, 1.5, 1.6, 2.3]
+          align: [l, r, r, r, r, r]
+          size: 13
+          rows:
+            - {cells: [Post-2027 growth (perpetual), "+1.9%", "+5.4% (Street)", "~-2%", "-4% to +3%", "+/-1pp = +/-$25"], style: highlight}
+            - [2027 AP EBITDA, Plan ($1.4B), "$1.4B", "$1.3B", "$1.15-1.5B", "+/-$100M = +/-$9"]
+            - [2027 AP EBITDA margin, "~30%", "29.8%", "27.5%", "25-31%", "1pp = $4"]
+            - {cells: [2027 Power EBITDA, "$450M+", "$450M", "$300M", "$0-750M", "+/-$150M = +/-$14"], style: highlight}
+            - [2027 Leasing / SCI EBITDA, "$450M", "$450M", "$450M", "$400-500M", "+/-1x = +/-$4"]
+            - [WACC, "10%", n/a, "10%", "9-11%", "+/-1pp = -/+$21-28"]
+        height: 2.45
+    columns:
+      - width: 1.35
+        blocks:
+          - header: "Value at Stake per One-Step Change ($/share)"
+          - chart:
+              type: barh
+              categories: [Leasing +/-1x, AP margin +/-1pp, AP EBITDA +/-$100M, Power +/-$150M, WACC +/-1pp, Post-2027 growth +/-1pp]
+              series: [{name: Value per share, values: [4, 4, 9, 14, 25, 25]}]
+              number_format: "$0"
+              value_axis: false
+      - blocks:
+          - header: Base Rates
+          - callouts:
+              - {lead: "Growth:", text: "plan needs 56%/yr AP growth; $2-5B firms average 6.9%"}
+              - {lead: "Durability:", text: "~41% of top-quintile ROIC firms stay there ~9 years"}
+            cols: 1
+
+  - type: content
+    title: "Scenarios: 24-Month Value vs. Intrinsic DCF"
+    section: Valuation
+    notes: >-
+      24-month scenarios: exit EV/EBITDA on 2029E EBITDA at Oct 2028, net debt and shares at exit, plus
+      ~$4 of dividends. With a 14x bull multiple the weighted value is $198 (+19%, ~9%/yr), still at or
+      below the hurdle. Intrinsic SOTP: AP uses plateau-then-run-off paths; Power uses a plateau and a
+      fade; Leasing/SCI is valued at an EBITDA multiple; corporate cost is capitalized. Base-case value is
+      $89-104 across 4-6 year plateaus and 13-25 year run-offs.
+    columns:
+      - blocks:
+          - header: 24-Month Scenarios ($/share)
+          - chart:
+              type: stacked
+              categories: [Bear (30%), Base (45%), Bull (25%), Weighted, Price today]
+              series:
+                - {name: Scenario value, values: [89, 172, 306, 0, 0]}
+                - {name: Probability-weighted, values: [0, 0, 0, 181, 0]}
+                - {name: Price today, values: [0, 0, 0, 0, 167]}
+              number_format: "$#,##0"
+              label_format: "$#,##0;($#,##0);;"
+              value_axis: false
+              legend: true
+              source: "Model, App. A: exit at Oct 2028 on 2029E EBITDA, incl. ~$4 of dividends"
+          - callouts:
+              - {lead: "+8% in 24 months", text: "(~4%/yr) vs. a ~10% hurdle"}
+              - {lead: "Skew:", text: "+83% bull vs. -46% bear"}
+              - {lead: "Weighted DCF (30/45/25):", text: "$98 a share"}
+              - {lead: "Even the bull DCF", text: "is only ~11% above price"}
+      - blocks:
+          - header: Intrinsic SOTP DCF at 10% WACC ($M)
+          - table:
+              columns: [Block, Bear, Base, Bull]
+              col_widths: [2.2, 1.1, 1.1, 1.1]
+              rows:
+                - [Aerospace Products, "5,488", "7,820", "14,017"]
+                - [FTAI Power, "242", "1,889", "4,295"]
+                - [Leasing / SCI, "2,400", "3,600", "5,000"]
+                - [Corporate cost, "(867)", "(867)", "(867)"]
+                - {cells: [Enterprise value, "7,263", "12,442", "22,446"], style: total}
+                - {cells: [Value per share, "$39", "$89", "$185"], style: highlight}
+            height: 2.25
+          - header: 24-Month Scenario Math
+          - table:
+              columns: [Scenario, 2029E EBITDA, Exit multiple, Value]
+              col_widths: [1.6, 1.4, 1.4, 1.1]
+              rows:
+                - [Bear (30%), "$1.55B", "7.5x", "$89"]
+                - [Base (45%), "$2.18B", "9.0x", "$172"]
+                - [Bull (25%), "$2.84B", "11.5x", "$306"]
+                - {cells: [Probability-weighted, "", "", "$181"], style: total}
+            height: 1.6
+
+  # ------------------------------------------------------------------ VI. Risks & recommendation
+  - type: divider
+    title: Risks, Catalysts & Recommendation
+
+  - type: risks
+    title: Key Risks to Owning FTAI
+    section: Risks
+    notes: >-
+      Risk levels are judgment calls weighted by probability and value at stake (see the thesis
+      scores). Each mitigation names the evidence that would ease the risk, so these double as
+      signposts.
+    rows:
+      - risk: "EO 14420: US policy blocks Jereh-packaged Power gensets"
+        level: High
+        mitigation: "US assembly of Mod-1 packages, or a DOE carve-out for behind-the-meter units, would neutralize it. Watch DOE rules due 12/24/26 and J&F disclosures."
+      - risk: AP margin keeps sliding toward 25%
+        level: High
+        mitigation: "The last two PMA parts and normalizing workscopes could restore ~30%+. This risk is falsified if AP margin is 30%+ in both Q3 and Q4'26."
+      - risk: CFM56 run-off speeds up as LEAP fixes land
+        level: Medium
+        mitigation: "Share gains (14% toward a 25% target), V2500 work and LEAP entry via SCI (2028-29) extend the runway. A GE 2028 retirement guide of 2.5% or less would ease it."
+      - risk: "Earnings quality: affiliate revenue and open litigation"
+        level: Medium
+        mitigation: "Clean KPMG control opinion and the 2025 Audit Committee review limit accounting risk. Disclosing third-party vs. SCI margins would help most."
+
+  - type: content
+    title: "Catalysts & Signposts: What to Watch"
+    section: Risks
+    notes: >-
+      Thresholds come from the evaluation's signposts and the theses' dated falsifiers. Q3'26 consensus
+      EPS is $1.54 (Earnings Whispers, single source). The second-half requirement: $1,050M guide less H1
+      AP EBITDA of $472.3M = ~$578M.
+    blocks:
+      - header: Dated Tests Over the Next 15 Months
+      - table:
+          columns: [Date, Event, Watch for, Tests]
+          col_widths: [1.25, 2.6, 6.0, 2.3]
+          align: [l, l, l, l]
+          size: 13
+          rows:
+            - ["10/28/26", "Q3'26 results", "AP EBITDA $270M+; AP margin 28%+; 300+ modules; H2 needs ~$578M", "S2, L1"]
+            - ["12/24/26", "DOE rules under EO 14420", "Treatment of turbines, behind-the-meter units, US assembly", "S4"]
+            - ["End-2026", "First Mod-1 delivery", "On-time shipment and commissioning", "S3, L2"]
+            - ["Jan 2027", "GE 2027 outlook", "CFM56 retirement and shop-visit guide", "L3, S9"]
+            - ["Feb 2027", "Q4'26 and 2027 guidance", "Segment EBITDA $2.3B+ reaffirmed; FY26 Adj. FCF $850M+", "L4, S6, S8"]
+            - ["3/31/27", "Mod-1 commissioning", "First unit commissioned on schedule", "S3"]
+            - ["6/30/27", "Power follow-on order", "No follow-on order falsifies L2; $1B+ for 2028+ delivery tests S1", "L2, S1"]
+            - ["Jan 2028", "GE 2028 outlook", "Retirements 3.5%+ (bear) vs. 2.5% or less (bull)", "L3 vs. S9"]
+        height: 3.1
+      - callouts:
+          - {lead: "Exit any long:", text: "2027 segment EBITDA guide below $2.0B"}
+          - {lead: "Turn long:", text: "below ~$120, or $1B+ new Power orders plus AP margin 30%+"}
+
+  - type: content
+    title: "Final Recommendation: Pass"
+    notes: >-
+      Pass: the price embeds plan delivery plus perpetual durability, and the expected 24-month return
+      (~4%/yr) is below a ~10% hurdle. Not a short: near-term catalysts skew positive, short interest is
+      10.4% and a $500M buyback is authorized. The sensitivity table shows base-case intrinsic value per
+      share by WACC and by how long AP holds its peak after 2028.
+    columns:
+      - blocks:
+          - header: Base-Case Value Sensitivity ($/share)
+          - text: {content: "Every cell sits below the $167 price", size: 20, bold: true, small_caps: true, align: c}
+          - table:
+              columns: ["WACC  \\  AP plateau after 2028", 2 yrs, 4 yrs, 6 yrs, 8 yrs]
+              col_widths: [2.4, 1, 1, 1, 1]
+              align: [l, c, c, c, c]
+              size: 13
+              rows:
+                - ["9%", "$85", "$92", "$99", "$105"]
+                - {cells: ["10% (base)", "$81", "$89", "$94", "$99"], style: highlight}
+                - ["11%", "$79", "$85", "$90", "$94"]
+            height: 1.4
+          - header: Key Metrics
+          - metrics: ["24-Mo. Value: $181", "DCF Value: $98"]
+          - header: Why Not Short
+          - bullets:
+              - "Catalysts lean positive near term; **10.4%** short interest and a **$500M** buyback add squeeze risk"
+      - blocks:
+          - header: Carry-Forward Theses & Diligence
+          - numbered:
+              - {title: "S4: EO 14420 risk to Power", text: "Where are J&F units built, and do DOE rules cover them?"}
+              - {title: "S2: AP margin of 27% or less", text: "Third-party vs. SCI margins; heavy vs. light workscopes?"}
+              - {title: "L3: retirements of 2% or less", text: "Do GE's 2027-28 assumptions stay at or below 2%?"}
+          - header: What Would Change Our Mind
+          - bullets:
+              - "**Buy** below ~$120, or on $1B+ of 2028+ Power orders plus AP margin 30%+"
+              - "**Short** if 2027 guidance lands below $2.1B with the stock above $200"
+
+  # ------------------------------------------------------------------ Appendix
+  - type: divider
+    title: Appendix
+
+  - type: content
+    title: Methodology & Sources
+    notes: >-
+      Full evidence trail: FTAI_Company_Evaluation.md (Appendix B lists every URL) and
+      FTAI_Bull_Bear_Theses.md (sources added since the evaluation). The environment's network policy
+      blocked SEC EDGAR and FTAI's investor-relations site, so filings were read through search
+      extracts and cross-checked where possible; single-source figures are flagged in those files.
+    columns:
+      - blocks:
+          - header: Methodology
+          - bullets:
+              - "Data as of the **10/2/26** close; filings through the Q2'26 10-Q"
+              - "Reverse DCF: **10%** WACC, **76%** cash conversion, **$20.6B** diluted EV"
+              - "SOTP: AP plateau then run-off; Power plateau then fade; Leasing at a multiple"
+              - "Theses scored 1-5 on Edge, Materiality, Testability, Evidence"
+              - "Figures from search extracts of filings (SEC site blocked); single-source items flagged"
+      - blocks:
+          - header: Key Sources
+          - bullets:
+              - "FTAI: Q2'26 release and 10-Q; FY25 10-K; Q4'25-Q2'26 calls; 2026 proxy"
+              - "Street: MarketBeat (9/23/26); firm notes; Earnings Whispers"
+              - "Industry: GE Aerospace calls; Aviation Week; Leeham; IATA (June 2026)"
+              - "Peers: StandardAero, Willis Lease, AerSale FY25 releases"
+              - "Policy: EO 14420 (Baker McKenzie, V&E); OFAC (2018); Section 232 (KPMG)"
+              - "Base rates: Mauboussin & Callahan (2026); Damodaran (2026)"
