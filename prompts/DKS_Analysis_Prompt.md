@@ -7,7 +7,7 @@ This file is a complete instruction set for Claude Code. It produces, for DICK'S
 2. Use branch `claude/adoring-shannon-pp0s1x`, or any branch that contains this file.
 3. Send: `Follow prompts/DKS_Analysis_Prompt.md.`
 
-The run is long. It commits after each stage, so progress survives a context reset.
+The run is long. It commits and pushes after each stage. On start, check `git log`: if a stage's commit already exists, resume at the first stage without one.
 
 **Reuse:** for another company, edit only the Company block. Everything below it is company-agnostic.
 
@@ -32,8 +32,8 @@ The run is long. It commits after each stage, so progress survives a context res
 1. **Fiscal calendar.** Fiscal years end on the Saturday nearest January 31 and are named for the calendar year in which they begin (fiscal 2025 ≈ Feb 2025–Jan 2026).
    - Label every period with its fiscal label.
    - Map fiscal labels to calendar dates once, in the Snapshot.
-2. **Foot Locker.** DKS agreed in May 2025 to acquire Foot Locker for ~$24 a share in cash (~$2.4B equity value). The deal reportedly closed in September 2025, and DKS runs Foot Locker as a standalone business.
-   - Confirm the terms, close date, financing, synergy targets and reportable segments.
+2. **Foot Locker.** DKS agreed in May 2025 to acquire Foot Locker for ~$24.00 a share (~$2.4B equity value), reportedly with an option to take DKS stock instead of cash. The deal reportedly closed in September 2025, and DKS runs Foot Locker as a standalone business.
+   - Confirm the terms, the stock-election results and any DKS shares issued, the close date, financing, synergy targets and reportable segments.
    - If there are two segments, apply the framework's multi-segment adaptation: analyze ~80% of value and include a sum-of-the-parts (SOTP) check.
    - Label pro forma versus reported figures. Never compute growth across the acquisition without saying so.
 3. **Control.** A dual-class structure gives Executive Chairman Ed Stack voting control. Quantify it from the latest proxy.
@@ -58,9 +58,9 @@ The run is long. It commits after each stage, so progress survives a context res
 ## Role
 
 You are the buy-side analyst described in `frameworks/company-evaluation-framework.md`, working in this repository's house format.
-- The two framework files are the rules.
+- The two framework files are the rules for content.
 - The FTAI package is the format standard.
-- This file decides anything the frameworks leave open.
+- On format, this file overrides the frameworks; see "Checker-enforced formats" below. It also decides anything the frameworks leave open.
 
 ## What "the same analysis" means
 
@@ -92,6 +92,19 @@ You are the buy-side analyst described in `frameworks/company-evaluation-framewo
 
 Both frameworks mention `company-evaluation-redteam.md`. Do not run it: it is not part of this package and is not in the repo.
 
+## Checker-enforced formats
+
+`tools/parity_check.py` fails anything else, so use these strings exactly:
+
+| Where | Use exactly |
+|---|---|
+| Evaluation, Section 8 table | `My base case` as the fifth column (the framework says "Your base case"; both pass, FTAI uses "My") |
+| Evaluation, Section 11 | A parenthetical suffix: `## 11. Contrarian Case (the long)` or `(the short)` |
+| Evaluation, Section 10 | `**T1 — <name>.**`, each with a falsifier dated `by <Mon D, YYYY>` |
+| Thesis lens names | One of: `Revenue unit: volume`, `Revenue unit: price or mix`, `Profit engine`, `Moat trajectory`, `Capital allocation and balance sheet`, `Industry structure`, `Macro, policy, or regulation`, `Optionality`, `Market structure`, `Expectations gap`, `Event or governance`. Add ` — Consensus` for a consensus thesis. |
+| Periods and falsifier dates | Fiscal periods as `Q3 FY26` or `FY2026`; dates as `by Nov 30, 2026` |
+| Deck thesis tables | Plain IDs (`S4`, not bold) and integer scores (`16`, not `16/20`) |
+
 ## Preflight
 
 Do not start research until every step passes.
@@ -105,8 +118,11 @@ Do not start research until every step passes.
 3. **Tooling.**
    - Python packages: `pip install python-pptx pyyaml scipy openpyxl lxml pillow`.
    - Render QA: `apt-get install -y libreoffice-impress fonts-ebgaramond fonts-crosextra-carlito poppler-utils`. Add a fontconfig alias mapping Garamond to EB Garamond and Calibri to Carlito. The alias is for QA renders only; the deck itself keeps Garamond.
-   - Office validator: `apt-get install -y dotnet-sdk-8.0`. If it is unavailable, skip it and say so in the final report.
-4. **Tool check.** `python3 tools/parity_check.py FTAI` must print PASS. If it does not, stop and report: the tools or the reference have changed.
+   - Office validator: `apt-get install -y dotnet-sdk-8.0`, then `dotnet build pitch-deck-kit/tools/oxv -c Release`. The build downloads the Open XML SDK from api.nuget.org. If either step fails, Gate 4 cannot run: say so in the final report.
+   - Run `apt-get update` before the first `apt-get install`.
+4. **Tool check.** Every check must pass on the reference; if one does not, stop and report, because the tools or the reference have changed:
+   - `python3 tools/parity_check.py FTAI` prints PASS;
+   - Gates 3–5 below pass on `FTAI_Pitch_Deck.pptx`.
 5. **Source access.** Test SEC EDGAR (DKS filings) and DKS's investor-relations site. If they are blocked:
    - continue on search extracts;
    - say so in each document's Sourcing line;
@@ -122,22 +138,27 @@ Do not start research until every step passes.
 **2. Model.** Write `models/dks/dks_model.py` (engine) and `models/dks/run_dks.py` (runner), mirroring `models/ftai/`.
 - Each input is a named constant with its source in a comment.
 - Discount mid-period from the valuation date.
-- The runner prints these numbered sections:
+- **Anchor years.** FTAI anchored on a published multi-year plan; DKS guides one year at a time. Use this anchor:
+  - the explicit years are the current fiscal year at the guidance midpoint, then next fiscal year at consensus, with Foot Locker synergies at the company's target;
+  - after that, perpetual growth;
+  - state the anchor in Appendix A.
+- The runner prints these sections, mirroring `run_ftai.py`:
 
 | Section | Content |
 |---|---|
-| [1] | Multiples and EV build |
-| [1b] | Whole-company price-implied perpetual growth across a 4-point WACC grid, plus what the Street's mean target implies |
+| (unnumbered header) | Multiples and EV build |
+| [1] | Whole-company price-implied perpetual growth across a 4-point WACC grid |
+| [1b] | Anchor-year EBITDA the price implies at fixed perpetual growth of −2%, 0% and +2% |
 | [2] | Intrinsic scenarios: SOTP if there are two segments, otherwise a whole-company DCF |
 | [2b] | Sensitivity grid |
 | [3] | 24-month bear/base/bull values with probabilities: exit multiple × forward metric, net debt and shares at exit, plus dividends |
-| [4] | Mean-target cross-check |
+| [4] | What the Street's mean target implies |
 | [5] | One-at-a-time sensitivities, for the tornado chart |
 | [6] | Unit economics |
 
 - **WACC.** Build it by CAPM, naming each input: risk-free rate, equity risk premium (ERP; use Damodaran's current implied ERP), beta and its source, cost of debt, and weights. Compare the result with Damodaran's industry WACC for the closest industry.
 - **Assertions in code.**
-  - Round trip: plugging each solved growth rate back in reproduces the price within $0.50.
+  - Independent check: for each solved growth rate, value the firm again with the terminal value summed year by year (no Gordon formula, same `t_of()`), and assert the result is within $0.50 a share of the price. Plugging g back into the same function proves nothing; the solver guarantees that.
   - The terminal value uses the same discount timing as the final explicit-year cash flow.
   - Every root solver checks that its bracket changes sign. If no root exists, re-frame the question (for example, solve for whole-company perpetual growth) and say so.
 - `python3 models/dks/run_dks.py` must run clean.
@@ -158,10 +179,13 @@ Do not start research until every step passes.
 - **Section 11:** the title names the opposing side, e.g., `## 11. Contrarian Case (the long)`.
 - **Section 12 table columns:** `Question | Where to look / who to ask | Answer that strengthens the view | Answer that kills it`.
 - **Section 14:** contains **Thesis**, **The Number**, **Kill Criterion** and **Edge**.
-- **Length:** Sections 0–14 total 2,000–3,000 words, counted as `tools/parity_check.py` counts them (evidence tags excluded). Track the count while drafting rather than trimming at the end.
+- **Length:** Sections 0–14 total 2,000–3,000 words, counted as `tools/parity_check.py` counts them (evidence tags excluded). Track the count while drafting rather than trimming at the end. FTAI used ~2,700, and DKS has more to explain, so put supporting detail in Appendix A, which is not counted: the EV bridge, the capex split, the comps decomposition, and inventory turns and shrink.
 - **Base rates:** name the reference class and its source. FTAI used Mauboussin & Callahan revenue-cohort base rates; use the cohort that fits DKS's revenue.
 
-**4. Finish.** Run the framework's self-check, then commit: `Add DKS company evaluation and valuation model`.
+**4. Finish.**
+- Run the framework's self-check.
+- Run `python3 tools/parity_check.py DKS --only eval` and clear every FAIL before moving on. The theses and deck copy these numbers.
+- Commit `Add DKS company evaluation and valuation model` and push.
 
 ## Stage 2: Thesis set
 
@@ -199,20 +223,20 @@ Write `DKS_Bull_Bear_Theses.md`, following the generator exactly and mirroring `
 ```
 
 **Rules:**
-- **Lenses:** use the generator's short forms as written in the FTAI file, with at least six per side.
+- **Lenses:** use the exact names in "Checker-enforced formats", with at least six per side.
 - **Consensus theses:** a thesis that agrees with consensus is labeled `Lens: <lens> — Consensus` and scores Edge 1.
 - **Length:** each block stays under ~110 words; the document runs 3,000–4,500 words. Both counts exclude evidence tags.
 - **Checks:** run the generator's calibration and symmetry checks.
 - **Consistency:** theses may sharpen the evaluation's numbers but must not contradict them. If new evidence changes an evaluation number, update the evaluation too.
 
-Commit: `Add DKS bull/bear thesis set`.
+Run `python3 tools/parity_check.py DKS --only eval,theses` and clear every FAIL. Then commit `Add DKS bull/bear thesis set` and push.
 
 ## Stage 3: Pitch deck
 
-**1. Spec.** Copy `pitch-deck-kit/examples/ftai.yaml` to `pitch-deck-kit/examples/dks.yaml` and replace the content slide by slide. Keep:
-- 30 slides, with the same type and section in each position;
-- the same block layout (columns, block types, chart types);
-- similar text density.
+**1. Spec.** Run `python3 tools/blank_spec.py DKS`. It writes `pitch-deck-kit/examples/dks.yaml` with the FTAI deck's exact layout and every text and number replaced by `TODO`, so no FTAI figure can survive. Do not copy `ftai.yaml` by hand.
+- Fill every `TODO` slide by slide, using `ftai.yaml` only as a guide to text density.
+- Keep the layout keys: 30 slides, the same type and section in each position, and the same block layout (columns, block types, chart types).
+- Change a size pin (`height`, `size`, `col_widths`) only when the render shows the DKS content needs it.
 
 Slide map (FTAI titles, with the DKS equivalent where it differs):
 
@@ -244,35 +268,35 @@ Slide map (FTAI titles, with the DKS equivalent where it differs):
 
 **4. Build.** `cd pitch-deck-kit && python3 build_deck.py examples/dks.yaml -o ../DKS_Pitch_Deck.pptx`
 - Do not edit `pitchdeck/` unless a QA gate requires it.
-- If you must edit it, rebuild the FTAI deck afterwards and confirm it still passes `check_pptx.py`.
+- If you must edit it, rebuild the FTAI deck to `pitch-deck-kit/out/` (never over the committed `FTAI_Pitch_Deck.pptx`) and confirm it still passes `check_pptx.py`.
+- Then run `python3 tools/parity_check.py DKS --only deck`.
 
 ## Stage 4: QA gates
 
-All gates must pass before delivery.
+Every gate that can run must pass before delivery. A gate that cannot run (for example, no dotnet) is named in the final report with the reason, never silently skipped.
 
 | # | Gate | Pass condition |
 |---|---|---|
-| 1 | `python3 models/dks/run_dks.py` | Runs clean, and the round-trip and bracket assertions hold |
+| 1 | `python3 models/dks/run_dks.py` | Runs clean, and the independent-summation and bracket assertions hold |
 | 2 | `python3 tools/parity_check.py DKS` | PASS. Each WARN is fixed or gets a one-line reason in the final report. |
 | 3 | `python3 pitch-deck-kit/tools/check_pptx.py DKS_Pitch_Deck.pptx --native-only` | PASS |
 | 4 | `dotnet run --project pitch-deck-kit/tools/oxv -c Release -- DKS_Pitch_Deck.pptx` | 0 errors for Office2007, Office2016 and Microsoft365 |
 | 5 | `python3 /mnt/skills/public/pptx/scripts/office/validate.py DKS_Pitch_Deck.pptx`, if that file exists | "All validations PASSED!" |
-| 6 | Render: LibreOffice to PDF, then one image per slide; view all 30 | No overflow, clipping, overlap or stray gaps, and the section tracker is right on every slide. Save the PDF as `DKS_Pitch_Deck.pdf`. |
+| 6 | Render: LibreOffice to PDF, then one image per slide in `pitch-deck-kit/out/` (gitignored); view all 30 | No overflow, clipping, overlap or stray gaps, and the section tracker is right on every slide. Save the PDF as `DKS_Pitch_Deck.pdf` in the repo root. |
 | 7 | Leakage grep (below) | No matches |
 | 8 | Fact pass | The 15 most load-bearing numbers are re-verified against a second source, with conflicts logged in Appendix B. Load-bearing means: price, shares, EV components, segment profit, guidance, consensus targets, short interest and implied growth. |
 
-Leakage grep, to catch FTAI text copied into the DKS files:
+Leakage grep, to catch FTAI text or code copied into the DKS files:
 ```
-grep -nE '\bFTAI\b|CFM56|Jereh|\bSCI\b|\bLEAP\b|[Aa]erospace' DKS_*.md pitch-deck-kit/examples/dks.yaml
+grep -nE '\bFTAI\b|CFM56|Jereh|\bSCI\b|\bLEAP\b|[Aa]erospace' DKS_*.md pitch-deck-kit/examples/dks.yaml models/dks/*.py
 ```
 
-- Fix and re-run until every gate passes.
-- A gate you cannot run (for example, no dotnet) is reported, never silently skipped.
+Fix and re-run until every gate passes.
 
 ## Stage 5: Deliver
 
 1. Commit `Add DKS pitch deck` (the YAML, .pptx and .pdf) and push to your designated branch.
-2. Send both deck files to the user.
+2. Give the user both deck files through the session's file-sharing tool if it has one; otherwise give their repo paths. Never email them or upload them to any other service.
 3. Post a final report of 250 words or fewer covering:
    - the verdict and The Number;
    - the deliverables;
@@ -288,7 +312,7 @@ Each of these happened once already. Do not repeat them.
 - **Misattributing a bear piece.** One was first credited to the wrong firm. Verify the author and date from the primary document.
 - **Plausible-looking numbers.** Never fill a gap with one. Tag the figure UNVERIFIED or leave it out.
 - **A reverse DCF with no answer.** The first FTAI framing, solving for plateau length, had no finite solution. Check solver brackets, and re-frame when there is no root.
-- **Discounting the terminal value one period too far.** The round-trip test catches this.
+- **Discounting the terminal value one period too far.** The independent-summation assertion catches this; a plug-back round trip does not.
 - **Drafts over the length limit.** Count words while writing.
 - **Numbers drifting between documents.** When a number changes, `grep` for it and change it everywhere.
 - **"PowerPoint can't read" the file.** Never hand-edit chart XML. Gates 3–5 exist because LibreOffice opened a deck that PowerPoint refused.
@@ -297,7 +321,7 @@ Each of these happened once already. Do not repeat them.
 
 The work is done when all of these hold:
 - all six deliverables exist at the paths in the Company block;
-- all eight gates pass;
-- three commits have been pushed;
-- the user has received the .pptx and the .pdf;
+- every gate that can run passes, and any gate that could not run is named with its reason;
+- each stage's commit has been pushed;
+- the user has the .pptx and the .pdf;
 - the final report is posted.

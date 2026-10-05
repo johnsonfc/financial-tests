@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Check that a company's deliverables match the reference set's structure.
 
-    python3 tools/parity_check.py DKS     # DKS_* files against the FTAI_* reference
-    python3 tools/parity_check.py FTAI    # the reference must pass its own check
+    python3 tools/parity_check.py DKS                # DKS_* files against the FTAI_* reference
+    python3 tools/parity_check.py DKS --only eval    # one stage: eval, theses or deck
+    python3 tools/parity_check.py FTAI               # the reference must pass its own check
 
 Checks three things:
 * Evaluation: framework sections in order, header block, required tables,
@@ -35,6 +36,7 @@ EVAL_SECTIONS = [
 ]
 SEC8_COLS = ["Variable", "Implied by price", "Consensus", "Base rate", "My base case", "Range",
              "Valuation sensitivity"]
+SEC8_ALT = [c.replace("My base case", "Your base case") for c in SEC8_COLS]   # the framework's wording
 SEC12_COLS = ["Question", "Where to look / who to ask", "Answer that strengthens the view",
               "Answer that kills it"]
 THESIS_TAIL = ["Debate map", "Dependency note", "Where the case stands", "Carry forward"]
@@ -50,8 +52,9 @@ MAP_COLS = ["Variable", "Bull view", "Bear view", "Consensus", "Implied by price
             "What resolves it, and when"]
 BLOCK = re.compile(r"^> \*\*([SL])(\d+) · (Bear|Bull) · Lens: (.+?)\*\*\s*$", re.M)
 SCORES = re.compile(r"\*\*Scores:\*\*\s*(\d)\s*·\s*(\d)\s*·\s*(\d)\s*·\s*(\d)\s*=\s*\*\*(\d+)\*\*")
-DATED = re.compile(r"\b20\d{2}\b|\b\d{1,2}/\d{1,2}/\d{2,4}\b|\b\d{1,2}/\d{4}\b|\bQ[1-4]\s?'\d{2}\b|\bFY\s?'?\d{2,4}\b")
 MONTHS = r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?"
+DATED = re.compile(r"\b20\d{2}\b|\b\d{1,2}/\d{1,2}/\d{2,4}\b|\b\d{1,2}/\d{4}\b|\bQ[1-4]\s?'?\d{2}\b"
+                   r"|\b[1-4]Q\s?'?\d{2}\b|\bFY\s?'?\d{2,4}\b|\b" + MONTHS + r"\s+'\d{2}\b")
 
 
 class Report:
@@ -82,6 +85,7 @@ def sections(md: str) -> list[tuple[str, str]]:
 
 def norm(title: str) -> str:
     title = re.sub(r"\s*\(.*?\)\s*$", "", title)        # "11. Contrarian Case (the long)"
+    title = re.sub(r"^(\d+\. [^—]+?)\s+—.*$", r"\1", title)  # "11. Contrarian Case — the long"
     return re.sub(r"^(Appendix [A-Z]).*", r"\1", title).strip()
 
 
@@ -121,7 +125,7 @@ def check_eval(path: Path, R: Report) -> str | None:
     if not 2000 <= n <= 3000:
         R.fail(f"{path.name}: Sections 0-14 run {n} words (tags excluded); the framework allows 2,000-3,000")
     for name, cols in (("8. Market-Implied Assumptions", SEC8_COLS), ("12. Diligence Agenda", SEC12_COLS)):
-        if not any(h == cols for h, _ in tables(get.get(name, ""))):
+        if not any(h == cols or (cols is SEC8_COLS and h == SEC8_ALT) for h, _ in tables(get.get(name, ""))):
             R.fail(f"{path.name}: Section {name} has no table with columns {cols}")
     if not tables(get.get("1. Snapshot", "")):
         R.fail(f"{path.name}: Section 1 has no snapshot table")
@@ -132,7 +136,7 @@ def check_eval(path: Path, R: Report) -> str | None:
     n_theses = len(re.findall(r"^\*\*T\d+ — ", get.get("10. Theses", ""), re.M))
     if not 2 <= n_theses <= 4:
         R.fail(f"{path.name}: Section 10 has {n_theses} theses ('**T1 — ...**'); the framework wants 2-4")
-    if not re.search(r"Falsifier[^\n]*?(" + DATED.pattern + "|" + MONTHS + ")", get.get("10. Theses", "")):
+    if not re.search(r"Falsifier[^\n]*?(" + DATED.pattern + ")", get.get("10. Theses", "")):
         R.fail(f"{path.name}: no Section 10 thesis has a dated falsifier")
     tags = {t: len(re.findall(p, md)) for t, p in (("F", r"\[F:"), ("E", r"\[E:"), ("J", r"\[J\]"))}
     if min(tags.values()) == 0:
@@ -296,10 +300,11 @@ def check_deck(spec_path: Path, ref_path: Path, totals: dict, verdict: str | Non
             R.fail(f"slide {i} '{s.get('title')}': no speaker notes naming its sources")
         for t in all_tables(s):
             for row in t.get("rows", []):
-                cells = row["cells"] if isinstance(row, dict) else row
-                ids = [c for c in map(str, cells) if re.fullmatch(r"[SL]\d+", c)]
-                if len(ids) == 1 and re.fullmatch(r"\d+", str(cells[-1])) and ids[0] in totals \
-                        and int(cells[-1]) != totals[ids[0]]:
+                cells = [re.sub(r"\*\*|__", "", str(c)).strip()
+                         for c in (row["cells"] if isinstance(row, dict) else row)]
+                ids = [c for c in cells if re.fullmatch(r"[SL]\d+", c)]
+                score = re.fullmatch(r"(\d+)(?:\s*/\s*20)?", cells[-1]) if cells else None
+                if len(ids) == 1 and score and ids[0] in totals and int(score.group(1)) != totals[ids[0]]:
                     R.fail(f"slide {i}: {ids[0]} scored {cells[-1]}; the thesis document says {totals[ids[0]]}")
     cover = slides[0] if slides else {}
     for key in ("ticker", "kpis", "byline", "date"):
@@ -317,18 +322,31 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("ticker")
     ap.add_argument("--ref", default="FTAI", help="reference ticker (default FTAI)")
+    ap.add_argument("--only", default="eval,theses,deck",
+                    help="comma list of stages to check: eval, theses, deck (default all)")
     args = ap.parse_args()
-    t, ref = args.ticker.upper(), args.ref.upper()
+    t, ref, only = args.ticker.upper(), args.ref.upper(), set(args.only.split(","))
     R = Report()
-    print(f"{t} against {ref}")
-    verdict = check_eval(ROOT / f"{t}_Company_Evaluation.md", R)
-    totals = check_theses(ROOT / f"{t}_Bull_Bear_Theses.md", R)
-    check_deck(ROOT / "pitch-deck-kit/examples" / f"{t.lower()}.yaml",
-               ROOT / "pitch-deck-kit/examples" / f"{ref.lower()}.yaml", totals, verdict, R)
-    if t != ref:  # copy-paste leakage from the reference set
-        for p in (ROOT / f"{t}_Company_Evaluation.md", ROOT / f"{t}_Bull_Bear_Theses.md",
-                  ROOT / "pitch-deck-kit/examples" / f"{t.lower()}.yaml"):
-            if p.exists() and re.search(rf"\b{re.escape(ref)}\b", p.read_text()):
+    print(f"{t} against {ref} ({', '.join(sorted(only))})")
+    files = {"eval": ROOT / f"{t}_Company_Evaluation.md", "theses": ROOT / f"{t}_Bull_Bear_Theses.md",
+             "deck": ROOT / "pitch-deck-kit/examples" / f"{t.lower()}.yaml"}
+    verdict = check_eval(files["eval"], R) if "eval" in only else None
+    # the deck check needs thesis scores and the verdict even when only the deck is asked for
+    totals = check_theses(files["theses"], R if "theses" in only else Report()) \
+        if ("theses" in only or "deck" in only) else {}
+    if "deck" in only:
+        if verdict is None:
+            verdict = check_eval(files["eval"], Report())
+        check_deck(files["deck"], ROOT / "pitch-deck-kit/examples" / f"{ref.lower()}.yaml", totals, verdict, R)
+    if t != ref:  # unfilled placeholders and copy-paste leakage from the reference set
+        targets = [files[k] for k in ("eval", "theses", "deck") if k in only]
+        if "eval" in only:
+            targets += sorted((ROOT / "models" / t.lower()).glob("*.py"))
+        for p in targets:
+            text = p.read_text() if p.exists() else ""
+            if "TODO" in text:
+                R.fail(f"{p.name}: {text.count('TODO')} unfilled TODO placeholder(s)")
+            if re.search(rf"\b{re.escape(ref)}\b", text):
                 R.fail(f"{p.name}: mentions the reference company {ref}; check for copied content")
     for w in R.warns:
         print("  WARN", w)

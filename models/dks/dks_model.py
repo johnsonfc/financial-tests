@@ -83,6 +83,24 @@ def firm_value(cases: list[Case], wacc: float, g: float, ronic: float) -> float:
     return sum(case_value(c, wacc, g, ronic) for c in cases)
 
 
+def firm_value_by_summation(cases: list[Case], wacc: float, g: float, ronic: float, years: int = 3000) -> float:
+    """The same value with the terminal value summed year by year (no Gordon formula).
+
+    Solving g and plugging it back into firm_value() returns the target by
+    construction, so it cannot catch a timing error; this independent sum can.
+    """
+    total = 0.0
+    for c in cases:
+        p = path(c)
+        last = max(p)
+        for fy, row in p.items():
+            total += row["fcf"] * (c.stub_share if fy == 2026 else 1.0) / (1 + wacc) ** t_of(fy)
+        cf = p[last]["nopat"] * (1 - g / ronic)
+        for k in range(1, years + 1):
+            total += cf * (1 + g) ** k / (1 + wacc) ** (t_of(last) + k)
+    return total
+
+
 def solve(f, lo: float, hi: float, what: str) -> float:
     """brentq with an explicit bracket check, so a framing with no answer fails loudly."""
     flo, fhi = f(lo), f(hi)
