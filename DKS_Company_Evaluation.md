@@ -14,7 +14,7 @@ Defaults applied: MY_POSITION undecided · MY_THESIS none (blind run) · HORIZON
 ## 0. Verdict
 
 **Pass.** The variable that matters most is the DICK'S Business operating margin once one-off tariff refunds are removed.
-- Q2's 12.6% included a $59M IEEPA refund. Without it the segment earned ~11.1%, against 13.0% a year earlier [E: ($485.2M − $59M) ÷ $3.85B; F: Q2 FY26 release and 10-Q, 8/25/26†].
+- Q2's 12.6% included a $59M IEEPA refund. Without it the segment earned ~11.1%, against 13.0% a year earlier [E: ($485.2M − $59M) ÷ $3.85B; F: Q2 FY26 8-K and 10-Q, 8/25/26; Pulse2].
 - If Foot Locker never earns a dollar, $136 implies a DICK'S margin of 10.2% from FY27. My base case is 10.8%, with Foot Locker reaching a 2.5% margin by FY30. That is worth ~$163, close to the Street's $166 mean target [E: App. A].
 
 My 24-month probability-weighted value is ~$172, or +27% with dividends (≈12.5%/yr):
@@ -40,7 +40,7 @@ That beats a ~10% cost of equity by only ~2.5pp a year, and moving five points o
 | Operating margin (non-GAAP) | FY25 8.8% (DICK'S 11.1%; Foot Locker −1.7%); FY26 guide ~6.9% [F: FY25 release; E] |
 | FCF, SBC | FY25 FCF $400M (OCF $1,537M − gross capex $1,137M)†; SBC $124M, 0.7% of sales† [F: 10-K] |
 | Diluted shares | ~97M (FY22) → ~83M (FY24) → ~90M (FY26, after 9.6M shares issued for Foot Locker) [E: net income ÷ diluted EPS; guide] |
-| Segment mix, FY26 guide | Sales: DICK'S $14.6B (66%), Foot Locker $7.45B (34%). Operating income: DICK'S $1.64B, Foot Locker −$0.06B, other −$0.07B, total $1.51B [F: Q2 guide†; E] |
+| Segment mix, FY26 guide | Sales: DICK'S $14.6B (66%), Foot Locker $7.45B (34%). Operating income: DICK'S $1.64B, Foot Locker −$0.06B, other −$0.07B, total $1.51B [F: Q2 FY26 8-K segment guides; E] |
 
 All of the profit, and more, comes from two-thirds of revenue.
 
@@ -71,7 +71,7 @@ Revenue = stores × sales per store + online. Comps = transactions × ticket.
 
 ## 5. Profit Engine
 
-- **Where the profit is.** All economic profit comes from the DICK'S Business: $1.64B of FY26 operating income on 66% of sales. Foot Locker and a ~$70M reconciling cost subtract [F: Q2 guide†; E].
+- **Where the profit is.** All economic profit comes from the DICK'S Business: $1.64B of FY26 operating income on 66% of sales. Foot Locker and ~$70M of unallocated cost outside segment profit subtract [F: Q2 FY26 8-K; E].
 - **Gross margin.** The gap is structural: 36.3% at DICK'S versus 24.4% at Foot Locker in FY25† [F: 10-K].
 - **Incremental margin is now negative in the core.** Q2 DICK'S sales rose 5.6%, but underlying operating margin fell ~190bp to ~11.1% once the refund is removed [E: Section 0]. Management expects promotions "to continue through the balance of the year" [F: Stack, Q2 call].
 - **Reinvestment.**
@@ -236,7 +236,7 @@ Ranked by value of information:
 | Notes | $2,900M | 4.00% 2029 $400M; 3.15% 2032 $750M; 4.10% 2052 $750M; 6.20% 2036 $400M; 6.90% 2056 $600M |
 | Cash; finance leases | $1,914M; $34M | $914M at 8/1/26 plus the $1.0B of September note proceeds (assumed held) |
 | EV | $13,267M | Ex-leases. Operating leases were $3.0B before Foot Locker |
-| FY26 anchor (guide midpoints) | DICK'S $14.6B sales, $1.64B EBIT; Foot Locker $7.45B, −$60M; other −$70M | Q2 release and segment guides†. "Other" reconciles them to the $1.46–1.56B consolidated guide |
+| FY26 anchor (guide midpoints) | DICK'S $14.6B sales, $1.64B EBIT; Foot Locker $7.45B, −$60M; other −$70M | Q2 FY26 8-K segment-profit guides. "Other" is the unallocated cost that reconciles them to the $1.46–1.56B consolidated guide |
 | FY27 anchor | EBIT $1,660M; EBITDA $2,299M; EPS ~$13.19 | My estimate: DICK'S +3.5% sales at 11.2%; Foot Locker flat sales at +0.5%. The post-cut consensus was not retrievable; Zacks' pre-cut $15.31 is stale |
 | WACC | 9% (grid 8–11%) | Cost of equity 10.2% (5.24% + 1.2 × 4.14%); after-tax debt ~4.9% (6.2–6.9% new-issue yields); D/V ~19% |
 | RONIC; tax | 14% (base); 26% | FY23–24 ROIC; normalized (the FY26 guide's ~29% carries untaxed Foot Locker losses) |
@@ -283,6 +283,7 @@ At a 9% WACC, a Foot Locker steady state of 0%, 1.5%, 2.5% or 4.0% gives $147, $
 - **DKS filings and releases:**
   - [Q2 FY26 release, 8/25/26](https://www.prnewswire.com/news-releases/dicks-sporting-goods-inc-reports-second-quarter-results-302859323.html)
   - [Q2 FY26 earnings exhibit](https://www.sec.gov/Archives/edgar/data/1089063/000108906326000033/dks-2026801xex991earningsr.htm)
+  - [Pulse2 on Q2 segment profit](https://pulse2.com/dicks-sporting-goods-business-generates-485-2-million-profit-while-foot-locker-saw-31-9-million-segment-loss/)
   - [Q2 FY26 10-Q](https://www.sec.gov/Archives/edgar/data/1089063/000108906326000036/dks-20260801.htm)
   - [Q1 FY26 release, 5/27/26](https://www.prnewswire.com/news-releases/dicks-sporting-goods-inc-reports-first-quarter-results-302782458.html)
   - [FY25 earnings exhibit, 3/12/26](https://www.sec.gov/Archives/edgar/data/1089063/000108906326000005/dks-20260131xex991earnings.htm)

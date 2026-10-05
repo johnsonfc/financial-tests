@@ -1,0 +1,840 @@
+# DKS deck spec, started from the ftai.yaml layout by tools/blank_spec.py, then filled.
+#   cd pitch-deck-kit && python3 build_deck.py examples/dks.yaml -o ../DKS_Pitch_Deck.pptx
+#
+# DICK'S Sporting Goods (NYSE: DKS): bull/bear debate and company evaluation.
+# Data as of the Oct 2, 2026 close ($136.08). Figures come from DKS_Company_Evaluation.md
+# (sources in its Appendix B), DKS_Bull_Bear_Theses.md and models/dks/run_dks.py.
+# Speaker notes name the source for each slide.
+# Inline markup:  **bold**   __bold + underline__
+
+title: "DICK'S Sporting Goods - Bull/Bear Debate and Evaluation"
+author: Equity Research
+
+brand:
+  font: Garamond                 # use "EB Garamond" if the deck will be opened in Google Slides
+  target_name: "DICK'S Sporting Goods"
+  sponsor_name: Equity Research
+
+sections: [Debate, Company, Industry, Growth Legs, Valuation, Risks]
+
+slides:
+  - type: cover
+    ticker: "NYSE: DKS"
+    kpis: ["Price: $136.08 (Oct 2, 2026)", "Verdict: Pass", "24-Month Value: $172 (+27%)"]
+    byline: Bull-Bear Debate and Company Evaluation
+    date: Data as of the October 2, 2026 close
+    notes: >-
+      Verdict: pass. If Foot Locker earns nothing, the $136 price implies a 10.2% DICK'S Business
+      margin from FY27; the base case (10.8%, Foot Locker at 2.5% by FY30) is worth ~$163. The
+      24-month probability-weighted value is ~$172 (+27% with dividends, ~12.5%/yr), only ~2.5pp a year
+      above a ~10% cost of equity. Sources: DKS_Company_Evaluation.md and DKS_Bull_Bear_Theses.md.
+
+  - type: agenda                 # items default to the divider titles below
+
+  # ------------------------------------------------------------------ I. Debate
+  - type: divider
+    title: "The Debate: Bear vs. Bull"
+
+  - type: content
+    title: Consensus Baseline & Scorecard
+    section: Debate
+    notes: >-
+      Consensus: stockanalysis (26 analysts, post-Q2, single source) for the mean target; post-Q2 target
+      changes from Stocktwits, MarketBeat and TIKR; short interest from Benzinga (single source).
+      Price-implied figures come from the reverse DCF (9% WACC, RONIC 14%, $13.3B EV excluding leases).
+      Scores: each thesis is scored 1-5 on Edge, Materiality, Testability and Evidence; the chart shows
+      each side's average per dimension. The bear side averages 12.2/20 and the bull side 11.4/20,
+      inside the symmetry band.
+    columns:
+      - width: 1.12
+        blocks:
+          - header: Consensus Baseline
+          - bullets:
+              - "__Business:__ the largest US sporting goods retailer (**66%** of FY26 sales) plus Foot Locker (**34%**), bought in Sept 2025"
+              - "__Narrative:__ a share-gaining leader whose Foot Locker bet broke in 2026"
+              - "__Street:__ mean target **$166** (26 analysts, Buy); post-Q2 targets **$99** to **$205**"
+              - "__Positioning:__ short interest **13.7%**; stock **-31%** on Aug 25; insiders buying"
+              - "__Price implies:__ Foot Locker at zero and a **10.2%** DICK'S margin (11.2% guided)"
+              - "__Live debate:__ a one-season clearance, or a margin reset as Nike floods wholesale again?"
+      - blocks:
+          - header: Average Thesis Score by Dimension (1-5)
+          - chart:
+              type: bar
+              categories: [Edge, Materiality, Testability, Evidence]
+              series:
+                - {name: "Bear (12.2 / 20)", values: [2.7, 2.2, 4.2, 3.1]}
+                - {name: "Bull (11.4 / 20)", values: [2.3, 2.1, 4.3, 2.7]}
+              number_format: "0.0"
+              value_axis: false
+              legend: true
+          - callouts:
+              - {lead: "Edge to the bear:", text: "its best claim is in the Q2 numbers"}
+              - {lead: "Deciding variable:", text: "the DICK'S margin without refunds"}
+
+  - type: content
+    title: "Bear Case: 10 Theses, Ranked"
+    section: Debate
+    notes: >-
+      Argued as a short-seller who has done the work. Score = Edge + Materiality + Testability +
+      Evidence (each 1-5). Ties are broken by Evidence, then Materiality, then Edge. Consensus to ours
+      shows the Street, guide or price view of each thesis's single variable against ours. Full blocks
+      with evidence tags, catalysts and dated falsifiers are in DKS_Bull_Bear_Theses.md.
+    blocks:
+      - header: "Argued as a short-seller would  |  Scored on Edge, Materiality, Testability, Evidence (max 20)"
+      - table:
+          columns: ["#", ID, Lens, Thesis, "Consensus → Ours", Score]
+          col_widths: [0.45, 0.55, 1.75, 6.35, 2.75, 0.75]
+          align: [c, c, l, l, l, c]
+          size: 13
+          rows:
+            - ["1", S1, Profit engine, "DICK'S margin settles near 10.3% once the tariff refund rolls off", "11.0-11.4% → 10.3% or less", "16"]
+            - ["2", S8, Expectations gap, "FY27 EPS lands near $12.5; estimates still have to come down", "$15.31 (stale) → $12.5", "14"]
+            - ["3", S3, Capital allocation, "Dividends and buybacks exceed FCF; net debt roughly doubles", "Self-funding → $0.3-0.5B gap", "13"]
+            - ["4", S2, Industry structure, "Foot Locker earns 0% or less through FY28 in a discounted channel", "~2% → 0% or less", "13"]
+            - ["5", S5, Macro / policy, "Section 301 tariffs cost 50-80bp of FY27 gross margin", "Neutral → -50 to -80bp", "12"]
+            - ["6", S6, "Revenue: volume", "DICK'S comps slow to +1% or less as transactions turn negative", "+2.5-4.0% → +1% or less", "12"]
+            - ["7", S10, Capital allocation, "Group ROIC stays near 10% on ~$1.4B a year of capex", "~14% → 10% or less", "11"]
+            - ["8", S9, "Revenue: price / mix", "Ticket growth halves as DKS matches brand promotions", "~+5% → +2% or less", "11"]
+            - ["9", S4, Moat trajectory, "Comp premium over Academy shrinks as Nike reopens wholesale", "4pp+ → 2pp or less", "11"]
+            - ["10", S7, Governance, "Foot Locker charges exceed the $500-750M plan", "$500-750M → $850M+", "9"]
+        height: 3.8
+      - callouts:
+          - {lead: "Strongest:", text: "S1: a $59M refund hides a ~190bp core margin slide"}
+          - {lead: "Already priced:", text: "the price implies a 10.2% DICK'S margin"}
+
+  - type: content
+    title: "Bull Case: 10 Theses, Ranked"
+    section: Debate
+    notes: >-
+      Argued as a long PM deciding how much to own. L1 is labeled Consensus (Edge 1) because the Street's
+      $166 mean target already sits near the base-case value; it ranks sixth. Full blocks are in
+      DKS_Bull_Bear_Theses.md.
+    blocks:
+      - header: "Argued as a long PM would  |  Same scoring; L1 shares the Street's view, so it is labeled Consensus"
+      - table:
+          columns: ["#", ID, Lens, Thesis, "Consensus → Ours", Score]
+          col_widths: [0.45, 0.55, 1.75, 6.35, 2.75, 0.75]
+          align: [c, c, l, l, l, c]
+          size: 13
+          rows:
+            - ["1", L2, Profit engine, "Foot Locker reaches a 3%+ margin by FY28 on synergies and remodels", "-1.2% (price) → 3%+", "14"]
+            - ["2", L3, "Revenue: volume", "DICK'S comps run +4% or more as weaker rivals cede share", "+2.5-4.0% → +4%+", "13"]
+            - ["3", L4, Moat trajectory, "DICK'S holds 11%+ without refunds: the scale premium survives", "10.2% (price) → 11%+", "13"]
+            - ["4", L9, Industry structure, "Nike North America wholesale grows 8%+, feeding both banners", "~+4% → +8%+", "12"]
+            - ["5", L8, Market structure, "Short interest falls below 8% of float as estimates trough", "13.7% → below 8%", "12"]
+            - ["6", L1, Expectations gap, "Consensus view: the Street's $166 is right; base value ~$163", "-0.3% g (price) → +2.0%", "11"]
+            - ["7", L10, "Revenue: price / mix", "Ticket holds +4% as House of Sport and premium mix offset promotions", "~+3% → +4%+", "11"]
+            - ["8", L7, Macro / policy, "IEEPA refunds reach $150M+ and fund the Foot Locker reset", "$59M → $150M+", "10"]
+            - ["9", L6, Optionality, "Retail media and GameChanger add 50bp+ to the DICK'S margin", "Not modeled → +0.5pp", "9"]
+            - ["10", L5, Capital allocation, "Buybacks at ~12x earnings cut shares to 86M or fewer by FY28", "~90M → 86M or fewer", "9"]
+        height: 3.8
+      - callouts:
+          - {lead: "Strongest:", text: "L2, because synergies alone add 1.3-1.7pp"}
+          - {lead: "Hard data:", text: "comps +6.0% and +4.9% while Academy was negative (L3)"}
+
+  - type: content
+    title: Top Theses, Catalysts & Falsifiers
+    section: Debate
+    notes: >-
+      Top three per side by score; these carry forward as the diligence questions in the thesis file.
+      Value-if-right uses the evaluation's sensitivities (DICK'S margin $17/sh per point; Foot Locker
+      ~$7/sh per point) and 90.0M diluted shares. Dependency note: S1, S5, S8 and S9 are largely one
+      bet on promotional intensity; L2, L3 and L9 lean on Nike's wholesale push.
+    blocks:
+      - header: Three Strongest per Side, Each With a Dated Test
+      - table:
+          columns: [ID, Thesis, "Catalyst & timing", "Falsifier (dated)", "Value if right"]
+          col_widths: [0.55, 3.45, 2.65, 4.35, 1.45]
+          align: [c, l, l, l, r]
+          rows:
+            - {cells: ["", "Bear", "", "", ""], style: header}
+            - [S1, "DICK'S margin near 10.3% in FY27", "Q3 FY26 (late Nov 2026); FY27 guide", "FY27 guide of 11.0%+ without refunds by 3/31/27", "-$12/sh"]
+            - [S8, "FY27 EPS near $12.5", "FY27 guide (~Mar 2027)", "FY27 EPS guide midpoint of $14+ by 3/31/27", "-$18/sh"]
+            - [S3, "Capital returns exceed FCF", "FY27 capex and buyback guide", "FY27 FCF of $700M+ by 3/31/28", "-$5/sh"]
+            - {cells: ["", "Bull", "", "", ""], style: header}
+            - [L2, "Foot Locker margin 3%+ by FY28", "Q4 FY26 (~Mar 2027)", "FY27 Foot Locker guide below $100M by 3/31/27", "+$29/sh"]
+            - [L3, "DICK'S comps +4%+ in FY27", "Q3 and Q4 FY26 results", "Q4 FY26 DICK'S comp below +2% by 3/31/27", "+$5/sh"]
+            - [L4, "DICK'S margin 11%+ without refunds", "FY27 guide (~Mar 2027)", "FY27 guide below 10.5% ex-refunds by 3/31/27", "+$14/sh"]
+        height: 2.9
+      - header: Dependency Check
+      - bullets:
+          - "S1, S5, S8 and S9 are largely **one bet on promotions**; S8's EPS gap is mostly S1 plus S2"
+          - "L2, L3 and L9 share one upstream driver: **Nike's wholesale push** into both banners"
+
+  - type: content
+    title: "Debate Map: Where the Two Cases Collide"
+    section: Debate
+    notes: >-
+      Each variable appears in at least one bull and one bear thesis. 'Price implies' comes from the
+      reverse DCF: a 10.2% DICK'S margin if Foot Locker earns 0%, or a -1.2% Foot Locker margin if
+      DICK'S follows the base case; perpetual growth after FY27 is -0.3% at a 9% WACC. The Foot Locker
+      consensus (~2%) is an estimate of what the $166 mean target needs.
+    blocks:
+      - header: Five Variables Decide the Debate
+      - table:
+          columns: [Variable, Bull view, Bear view, Consensus, Price implies, "Resolves (when)"]
+          col_widths: [2.15, 2.15, 2.3, 1.85, 1.55, 2.7]
+          align: [l, l, l, l, l, l]
+          size: 12.5
+          rows:
+            - ["DICK'S margin ex-refunds", "11%+ in FY27 (L4)", "10.3% or less (S1)", "11.0-11.4% (guide)", "10.2% (FL at 0%)", "FY27 guide (~Mar 2027)"]
+            - ["Foot Locker margin, FY28", "3%+ (L2)", "0% or less (S2)", "~2% (Street)", "-1.2%", "Q4 FY26 and FY27 guide"]
+            - ["DICK'S comps, FY27", "+4%+ (L3)", "+1% or less (S6)", "+2.5-4.0%", "~0% long-run", "Q4 FY26 (~Mar 2027)"]
+            - ["DICK'S average ticket", "+4%+ (L10)", "+2% or less (S9)", "~+5% (Q1)", "n/a", "Q4 FY26 comp detail"]
+            - ["Capital returns vs. FCF", "86M shares or fewer (L5)", "$0.3-0.5B gap (S3)", "Self-funding", "n/a", "FY27 guide (~Mar 2027)"]
+        height: 2.0
+      - header: Where the Case Stands
+      - bullets:
+          - "The bear side is modestly stronger (**12.2 vs. 11.4** of 20) because its best claim is in the Q2 numbers"
+          - "The decider is the **DICK'S margin without refunds**: 10.2% implied vs. 11.0-11.4% guided"
+          - "Flip to bull: an FY27 guide with the DICK'S margin at **11%+** ex-refunds and a profitable Foot Locker"
+      - callouts:
+          - {lead: "Next test:", text: "Q3 FY26 results (late Nov 2026)"}
+          - {lead: "Decisive test:", text: "Q4 FY26 and the FY27 guide (~Mar 2027)"}
+
+  # ------------------------------------------------------------------ II. Company
+  - type: divider
+    title: Company Overview
+
+  - type: content
+    title: Company Overview
+    section: Company
+    notes: >-
+      Segment guides: Q2 FY26 8-K (8/25/26), confirmed by Just Style coverage of the business split. Market share: Telsey via Benzinga (2024, single source). House of Sport count:
+      Q2 coverage (single source); target: company statements. Deal terms: Q3 FY25 10-Q. Leadership:
+      Chain Store Age (Sept 2025). Fiscal calendar: 10-K.
+    columns:
+      - blocks:
+          - header: Background
+          - bullets:
+              - "DICK'S Sporting Goods (NYSE: DKS); CEO **Lauren Hobart**; Exec. Chairman **Ed Stack** runs Foot Locker"
+              - "Largest US sporting goods retailer: ~**9%** share; FY25 sales **$17.2B**"
+              - "**House of Sport**: 41 open (Aug 2026); 75-100 targeted"
+              - "Bought **Foot Locker** (Sept 2025) for **$2.5B**, mostly in stock (9.6M shares)"
+              - "Fiscal years end in late January; FY26 = Feb 2026 to Jan 2027"
+      - blocks:
+          - header: FY26 Sales Guide by Business ($M)
+          - chart:
+              type: doughnut
+              categories: ["DICK'S Business", Foot Locker Business]
+              series: [{name: FY26 sales guide, values: [14600, 7450]}]
+              number_format: "#,##0"
+              legend: true
+              source: Q2 FY26 release and segment guides (midpoints)
+            height: 3.7
+          - bullets:
+              - "Operating income guide: DICK'S **$1.64B**; Foot Locker **-$60M**"
+      - blocks:
+          - header: Business Lines
+          - bullets:
+              - "__DICK'S Business:__ DICK'S, House of Sport, Golf Galaxy, Field House; Q2 comps **+4.9%**"
+              - "__Foot Locker Business:__ Foot Locker, Kids Foot Locker, Champs, WSS, atmos; Q2 comps **-3.6%**"
+              - "__Digital:__ GameChanger (youth sports app) and DICK'S Media Network (retail media)"
+              - "__FY26 guide:__ non-GAAP EPS **$11-12**, cut from $13.50-14.50"
+
+  - type: content
+    title: Financial Snapshot
+    section: Company
+    notes: >-
+      Market data: close of 10/2/26 (single source; consistent with the 10/1 close); 52-week low from
+      MarketBeat-network and Google Finance snippets. Balance sheet: Q2 FY26 10-Q (8/1/26) plus the
+      $1.0B of notes settled ~9/25/26; EV excludes operating leases. TTM revenue = FY25 $17.22B less
+      H1 FY25 $6.82B plus H1 FY26 $10.75B. FY24 DICK'S operating income = 11.14% of $13.44B (estimate);
+      FY25 by business from the FY25 release (single source); FY26 at guidance midpoints. Diluted shares
+      = net income / diluted EPS.
+    columns:
+      - width: 1.0
+        blocks:
+          - header: Key Metrics (10/2/26)
+          - table:
+              col_widths: [2.4, 2.1]
+              size: 13
+              rows:
+                - [Share price; 52-week low, "$136.08; ~$120 (9/21/26)"]
+                - [Market cap / EV (ex-leases), "$12.2B / $13.3B"]
+                - [Net debt / FY26E EBITDA, "$1.0B / 0.5x"]
+                - [TTM revenue, "~$21.2B (incl. Foot Locker)"]
+                - ["FY26 guide: sales", "$21.9-22.2B"]
+                - ["FY26 guide: operating income", "$1.46-1.56B"]
+                - [FY25 FCF, "$400M (capex $1.14B)"]
+                - [SBC, "0.7% of FY25 sales"]
+                - [Diluted shares, "~97M (FY22) to ~90M (FY26)"]
+                - [Dividend / yield, "$1.25/qtr; 3.7%"]
+                - {cells: [EV / FY26E EBITDA, "6.2x"], style: highlight}
+                - {cells: [P/E on FY26 EPS guide ($11.50), "11.8x"], style: highlight}
+            height: 4.15
+          - callouts:
+              - {lead: "FY26 EPS guide", text: "cut 18% on Aug 25, 2026"}
+              - {lead: "Capex 2.2x D&A:", text: "~$1.4B in FY26"}
+      - width: 1.15
+        blocks:
+          - header: Non-GAAP Operating Income by Business ($M)
+          - chart:
+              type: bar
+              categories: [FY24, FY25, FY26 Guide]
+              series:
+                - {name: "DICK'S Business", values: [1497, 1570, 1640]}
+                - {name: Foot Locker Business, values: [0, -52, -60]}
+              number_format: "#,##0"
+              label_format: "#,##0;-#,##0;;"
+              value_axis: false
+              legend: true
+              source: DKS releases; FY24 is DKS alone (11.14% of $13.44B); FY26 at guidance midpoints
+
+  - type: content
+    title: "Revenue Engine: Comps Up, Margin Down"
+    section: Company
+    notes: >-
+      Comps: FY23 (+2.4%, single source), FY24 (+5.2%), FY25 (+4.5%), Q1 FY26 (+6.0%) and Q2 FY26 (+4.9%)
+      from DKS releases; Q1 ticket +5.5% and transactions +0.5% (single source). Academy: Q2 FY26 release
+      (9/9/26). Q2 margin: DICK'S Business segment profit $485.2M on $3.85B (8-K; Pulse2), up from $475M; the $59M
+      IEEPA refund is from the Q2 10-Q, and its booking in the DICK'S segment is an assumption. Q2 FY25:
+      13.02% non-GAAP operating margin (DKS before Foot Locker).
+    columns:
+      - blocks:
+          - header: "DICK'S Business Comparable Sales (%)"
+          - chart:
+              type: bar
+              categories: [FY23, FY24, FY25, "Q1 FY26", "Q2 FY26"]
+              series: [{name: Comparable sales, values: [2.4, 5.2, 4.5, 6.0, 4.9]}]
+              number_format: "0.0"
+              value_axis: false
+              source: DKS releases (FY23 single source)
+          - callouts:
+              - {lead: "Q1 comp +6.0%:", text: "ticket +5.5%, transactions +0.5%"}
+              - {lead: "Academy Q2:", text: "transactions -5.3%, comps -0.4%"}
+      - blocks:
+          - header: "DICK'S Business Q2 Operating Margin (%)"
+          - chart:
+              type: line
+              categories: ["Q2 FY25", "Q2 FY26", "Q2 FY26 ex-refund"]
+              series: [{name: Operating margin, values: [13.0, 12.6, 11.1]}]
+              number_format: "0.0"
+              source: Q2 FY26 release and 10-Q; refund booking in the segment assumed
+          - callouts:
+              - {lead: "~190bp slide", text: "once the $59M refund is removed"}
+              - {lead: "FY26 guide 11.0-11.4%", text: "includes the refund"}
+
+  - type: content
+    title: "Customer & Product: Why Families Buy"
+    section: Company
+    notes: >-
+      Participation and cost: Aspen Institute Project Play (2025). Nike purchases: Fortune (5/19/25, single
+      source). Nike Direct: Nike Q1 FY27 release (10/1/26). Academy: FY25 release. Promotion spillover:
+      Ed Stack, Q2 FY26 call (8/25/26). The comparison table is a qualitative judgment from the
+      evaluation's Sections 2-3.
+    columns:
+      - blocks:
+          - header: The Job
+          - bullets:
+              - "One trip for equipment, footwear and apparel across **every sport**"
+              - "House of Sport: turf, climbing walls and cages make the store a **destination**"
+              - Launch access to premium footwear (Nike, On, HOKA)
+          - header: What Customers Use Instead
+          - bullets:
+              - "Brand websites: Nike Direct fell **8%** amid promotions"
+              - "Amazon, Walmart, Target; Academy (value, **$6.1B**)"
+              - "Sneaker chains: JD's Finish Line and Hibbett"
+      - width: 1.25
+        blocks:
+          - header: "DICK'S vs. the Alternatives"
+          - table:
+              columns: ["", "DICK'S", Brand site]
+              col_widths: [1.9, 1.9, 1.8]
+              align: [l, l, l]
+              size: 13
+              rows:
+                - [Assortment, "Every brand", "One brand"]
+                - [Service, "Fitting, team gear", "Online returns"]
+                - [Price, "Price-matched", "First to discount"]
+                - [Youth teams, "GameChanger", "None"]
+            height: 1.75
+          - callouts:
+              - {lead: "58% of kids", text: "play organized sport (2024)"}
+              - {lead: "+46% per child:", text: "cost since 2019"}
+          - header: Value Chain Position
+          - bullets:
+              - "Between **Nike** (allocation, launches) and **households**; brands' own promotions spilled into the market in Q2"
+      - blocks:
+          - header: Who Pays & Decides
+          - bullets:
+              - "Families and athletes pay; parents decide for **youth sport**"
+              - Brands decide what reaches the shelf
+              - "DKS + Foot Locker buy ~**$5B** from Nike (~10% of Nike)"
+              - "Foot Locker shopper: younger, sneaker-led, mall-based"
+          - header: Switching Costs
+          - bullets:
+              - "~Zero: loyalty is assortment-driven"
+              - "GameChanger ties families to DKS **between purchases**"
+
+  - type: content
+    title: Capital Allocation & Governance
+    section: Company
+    notes: >-
+      Dividend: declared with Q2 FY26 results. H1 FY26 buybacks and dividends: Q2 10-Q (dividends single
+      source). Notes: FWP/424B2 (9/23/26). Capex: Q2 10-Q (~$1.4B net, single source); D&A estimate from
+      the model. FY26E FCF is unlevered from models/dks/run_dks.py. Foot Locker consideration: Q3 FY25
+      10-Q; charges: CNBC (11/25/25) and the FY25 release. Insider trades: Form 4 summaries
+      (InsiderTrades, Quiver, Simply Wall St; several single source). Class B count: Q2 10-Q cover.
+    columns:
+      - blocks:
+          - header: Capital Allocation
+          - bullets:
+              - "Dividend **$1.25**/qtr (~$450M/yr; 3.7% yield)"
+              - "H1 FY26: buybacks **$141M**; dividends **$225M**"
+              - "**$1.0B** of new notes (Sept 2026) at 6.2% (2036) and 6.9% (2056)"
+              - "Capex **~$1.4B** in FY26, 2.2x D&A"
+              - "Foot Locker: **$2.5B** (9.6M shares + cash); $500-750M of charges planned"
+          - chart:
+              type: bar
+              title: FY26 Cash Uses vs. Free Cash Flow ($M)
+              categories: [FY25 FCF, FY26E FCF, FY26 dividends, FY26 capex]
+              series: [{name: "$M", values: [400, 307, 450, 1400]}]
+              number_format: "#,##0"
+              value_axis: false
+              source: 10-K, 10-Q; FY26E FCF from the model (App. A)
+      - blocks:
+          - header: Governance & Accounting
+          - bullets:
+              - "Class B high-vote shares (**23.6M**) give the Stack family control"
+              - "Exec. Chairman Ed Stack runs Foot Locker directly"
+              - "Non-GAAP excludes **$390M** of FY25 charges yet keeps Q2's **$59M** refund"
+              - "Plaintiff-firm investigation notice after Aug 25; no suit confirmed"
+          - header: Open-Market Insider Trades
+          - table:
+              columns: [Date, Insider, Trade, Value]
+              col_widths: [1.0, 2.0, 2.4, 0.9]
+              align: [l, l, l, r]
+              rows:
+                - [Sep 2026, CFO N. Gupta, "Bought 7,707 shares", "~$1.0M"]
+                - [Sep 2026, Dir. L. Fitzgerald Jr., "Bought 1,860 shares", "$0.24M"]
+                - [Aug 2026, Dir. W. Colombo, "Bought 6,100 shares at ~$129", "$0.79M"]
+                - [Prior 12 mo., CFO N. Gupta, "Sold shares at ~$222", "~$2.9M"]
+            height: 1.6
+
+  # ------------------------------------------------------------------ III. Industry
+  - type: divider
+    title: Industry & Competition
+
+  - type: content
+    title: "Sporting Goods: Slow Growth, Deep Discounts"
+    section: Industry
+    notes: >-
+      Market size: SFIA 2026 report via SGB and SGI Europe. Share: Telsey via Benzinga (2024, single
+      source). Nike: Q1 FY27 release (10/1/26); North America wholesale growth from Beancount (single
+      source). Tariffs: CRS (IEEPA ruling, 2/20/26) and Holland & Knight (Section 301, 7/2026; Vietnam
+      rate single source). Rates: 10-year yield of 10/1/26 (single source); FOMC 9/16/26. Comps: Q2
+      releases; JD North America like-for-likes via AJ Bell (single source).
+    columns:
+      - width: 1.1
+        blocks:
+          - header: Market Dynamics
+          - bullets:
+              - "US sporting goods wholesale **$130B** in 2025 (+3.7%); +34.7% since 2020"
+              - "Athletic footwear wholesale **$24.1B** (+7.4%)"
+              - "DICK'S holds ~**9%** of US sporting goods sales (Telsey, 2024)"
+              - "Nike reopening wholesale: North America **~+9%**, Nike Direct down **8%**"
+          - header: Macro Overlay
+          - bullets:
+              - "IEEPA tariffs voided (2/20/26); Section 301 at **12.5%** on China and Vietnam since 7/24/26"
+              - "10-year **5.24%** (10/1/26); Fed at 3.75-4.00%"
+      - blocks:
+          - header: Comparable Sales, Latest Quarter (%)
+          - chart:
+              type: bar
+              categories: ["DICK'S", Academy, Foot Locker, JD North America]
+              series: [{name: Comparable sales, values: [4.9, -0.4, -3.6, -6.8]}]
+              number_format: "0.0"
+              value_axis: false
+              source: Q2 releases (Academy and DKS, FY26); JD via AJ Bell (single source)
+          - callouts:
+              - {lead: "Bull read (L3):", text: "DICK'S takes share from weaker rivals"}
+              - {lead: "Bear read (S6):", text: "the whole channel is slowing"}
+
+  - type: content
+    title: Competitive Landscape & Moat
+    section: Industry
+    notes: >-
+      Peers' latest fiscal year: Academy FY25 release (3/17/26); JD Sports FY25/26 North America (SGI
+      News, FashionUnited; margin single source); Nike FY26 (AlphaSense, single source); Hibbett FY24
+      8-K (acquired by JD in 2024); Foot Locker FY24 ($103M on $7.99B). DICK'S Business: FY25 non-GAAP
+      11.12% on ~$14.1B (single source). ROIC: GuruFocus (single source). The moat verdict uses Helmer's
+      7 Powers.
+    columns:
+      - width: 1.2
+        blocks:
+          - header: Who Else Sells Athletic Gear
+          - table:
+              columns: [Company, Model, Revenue, Op. margin, Threat]
+              col_widths: [1.6, 1.85, 0.85, 1.05, 1.85]
+              align: [l, l, r, r, l]
+              rows:
+                - [Academy Sports, Value sporting goods, "$6.05B", "8.5%", "Price, Sun Belt"]
+                - [JD North America, Sneaker chains, "£4.78B", "7.4%", "Finish Line, Hibbett"]
+                - [Nike (all channels), Brand + direct, "$46.4B", "8.3%", "Promotions, allocation"]
+                - [Amazon / Walmart, Mass and online, n/a, n/a, "Price, convenience"]
+                - {cells: ["DICK'S Business", Category leader, "~$14.1B", "11.1%", "-"], style: highlight}
+            height: 1.95
+          - header: "Operating Margin, Latest Fiscal Year (%)"
+          - chart:
+              type: bar
+              categories: ["DICK'S Business", Academy, Hibbett (FY24), JD North America, Foot Locker (FY24)]
+              series: [{name: Operating margin, values: [11.1, 8.5, 7.9, 7.4, 1.3]}]
+              number_format: "0.0"
+              value_axis: false
+              source: Company releases (FY25 unless noted; JD single source)
+      - blocks:
+          - header: "Helmer's Powers: Scale Only"
+          - table:
+              columns: [Power, Evidence, Trend]
+              col_widths: [1.6, 2.9, 0.9]
+              align: [l, l, l]
+              rows:
+                - [Scale economies, "11.1% margin vs. peers' 7-8.5%", Stable]
+                - [Cornered resource, "Launch allocation, at Nike's discretion", Thinning]
+                - [Network economies, "GameChanger teams; no figures", Unproven]
+                - [Switching costs, "~Zero; assortment-driven", Weak]
+                - [Other powers, "Brand, process, counter-positioning: none", "-"]
+            height: 1.95
+          - header: Evidence Tests
+          - bullets:
+              - "Excess ROIC: **14.4%** vs. ~9% WACC (FY23-24); ~10% after the deal"
+              - "Price held until Q2: ticket **+5.5%** in Q1, then promotions"
+              - "Comps stayed positive through 2023-26 while Academy's turned negative"
+
+  # ------------------------------------------------------------------ IV. Growth legs
+  - type: divider
+    title: "Growth Legs: Foot Locker & House of Sport"
+
+  - type: content
+    title: "Foot Locker: Turnaround or Value Trap?"
+    section: Growth Legs
+    notes: >-
+      Segment results: Q3 FY25 (SGI Europe), Q4 FY25 (Bruce Winder, single source), Q1 FY26 (SGI Europe,
+      single source) and Q2 FY26 (release and SGB, single source); Q3 FY25 covers only 9/8-11/1/25.
+      Gross margins: FY25 10-K (single source). Synergies: Q4 FY25 call (3/12/26). Fast Break: Retail
+      Dive (single source). Leadership: Chain Store Age and AAP/PR Newswire. Guide history: Q2 FY26
+      release and coverage.
+    columns:
+      - width: 1.1
+        blocks:
+          - header: The Opportunity
+          - bullets:
+              - "**$7.45B** of FY26 sales; 24% gross margin vs. 36% at DICK'S"
+              - "Synergies **$100-125M** (procurement, direct sourcing) = 1.3-1.7pp of sales"
+              - "**Fast Break** remodels: ~250 stores by back-to-school 2026; double-digit pilot comps"
+              - "New leaders: Ann Freeman (ex-Nike, North America); Matthew Barnes (International)"
+          - header: The Risk (S2)
+          - bullets:
+              - "FY26 guide swung from **+$110-150M** to **-$40-80M**; Q2 comps fell 3.6%"
+              - "Charges of $500-750M planned; $390M booked in FY25"
+      - blocks:
+          - header: Foot Locker Operating Income by Quarter ($M)
+          - chart:
+              type: bar
+              categories: ["Q3 FY25", "Q4 FY25", "Q1 FY26", "Q2 FY26"]
+              series: [{name: Operating income, values: [-46.3, -5.9, 17.5, -31.9]}]
+              number_format: "#,##0.0"
+              value_axis: false
+              source: DKS releases via SGI Europe and SGB (several single source)
+          - metrics: ["Sales: $7.45B", "Remodels: ~250"]
+
+  - type: content
+    title: "House of Sport, GameChanger & Media"
+    section: Growth Legs
+    notes: >-
+      Openings: FY25 10-K and Q2 FY26 10-Q (~14 House of Sport, ~20 Field House, ~15 Golf Galaxy
+      Performance Centers; another source gives ~22 Field House). House of Sport count at 8/1/26: Q2
+      coverage (single source); long-term target: company statements. Gross-margin note: Q2 FY26 call
+      (single source). Capex and ROIC: evaluation Section 5.
+    columns:
+      - width: 1.1
+        blocks:
+          - header: How It Works
+          - bullets:
+              - "House of Sport: **41** open (Aug 2026); 75-100 targeted"
+              - "FY25: **16** House of Sport and **15** Field House openings"
+              - "~**75%** of FY26 DICK'S openings are relocations or remodels"
+              - "GameChanger and DICK'S Media Network lifted Q2 gross margin (no figures)"
+          - header: The Catch
+          - bullets:
+              - "Capex **~$1.4B** (2.2x D&A) while ROIC falls to ~10%"
+              - "No disclosed sales per store or payback for House of Sport"
+      - blocks:
+          - header: FY26 Store Openings Plan (count)
+          - chart:
+              type: doughnut
+              categories: [House of Sport, Field House, Golf Galaxy Perf. Centers]
+              series: [{name: FY26 openings, values: [14, 20, 15]}]
+              number_format: "#,##0"
+              legend: true
+              source: FY25 10-K and Q2 FY26 10-Q
+          - callouts:
+              - {lead: "Bull (L6):", text: "high-margin lines no model breaks out"}
+              - {lead: "Bear (S10):", text: "capex earns about its cost"}
+
+  # ------------------------------------------------------------------ V. Valuation
+  - type: divider
+    title: Valuation
+
+  - type: content
+    title: "What the Price Implies: Reverse DCF"
+    section: Valuation
+    notes: >-
+      Model: models/dks/run_dks.py. Inputs: price $136.08, 90.0M diluted shares, $2,900M notes, $34M
+      finance leases, $1,914M cash (8/1/26 plus September note proceeds); EV $13,267M excluding
+      operating leases. FY27 anchor: EBIT $1,660M (DICK'S +3.5% at 11.2%, Foot Locker at +0.5%, other
+      -$70M); RONIC 14%. The gold bar is the growth the Street's mean target ($166) implies at a 9%
+      WACC. Academy's P/E is trailing (aggregator, single source). The Jan 2025 high multiple uses FY24
+      EPS of $14.05.
+    columns:
+      - blocks:
+          - header: Perpetual Growth After FY27 Implied by Each Valuation (%)
+          - chart:
+              type: stacked
+              categories: [WACC 8%, WACC 9% (base), WACC 10%, WACC 11%, Street target]
+              series:
+                - {name: Implied by $136 price, values: [-2.6, -0.3, 2.2, 4.9, 0]}
+                - {name: Implied by $166 mean target (9% WACC), values: [0, 0, 0, 0, 2.9]}
+              number_format: "0.0"
+              label_format: "0.0;-0.0;;"
+              value_axis: false
+              legend: true
+              source: Reverse DCF from an FY27 EBIT anchor of $1.66B
+          - callouts:
+              - {lead: "Price =", text: "the FY27 anchor, then ~0%/yr forever at 9%"}
+              - {lead: "Equivalently:", text: "Foot Locker at zero, DICK'S margin 10.2%"}
+      - blocks:
+          - header: Multiples at $136.08
+          - table:
+              columns: [Metric, Multiple]
+              col_widths: [3.4, 1.4]
+              size: 12.5
+              rows:
+                - [EV / FY26E EBITDA, "6.2x"]
+                - [EV / FY26E EBIT, "8.8x"]
+                - {cells: [P/E on FY26 EPS guide ($11.50), "11.8x"], style: highlight}
+                - [P/E on FY27 anchor (~$13.19), "10.3x"]
+                - [Street mean target / FY26 EPS, "14.4x"]
+                - {cells: [Context, ""], style: italic}
+                - {cells: [Academy (trailing P/E), "~8.1x"], style: indent}
+                - {cells: [DKS at its Jan 2025 high (P/E), "~17.8x"], style: indent}
+                - {cells: [Dividend yield, "3.7%"], style: indent}
+            height: 3.35
+          - bullets:
+              - "The stock de-rated from **~18x to ~12x** earnings; the price treats Foot Locker as a liability"
+
+  - type: content
+    title: Market-Implied Assumptions vs. Our Base
+    section: Valuation
+    notes: >-
+      Sensitivities are per share at 90.0M diluted shares, around the $163 base intrinsic value (9% WACC):
+      WACC -$23/+$30; terminal growth -$9/+$11; DICK'S margin +/-$17 per point; Foot Locker +/-$14 per two
+      points; DICK'S sales growth -$8/+$5; capex +/-$6. The chart shows the average of the up and down
+      moves. 'Implied by price' for each margin holds the other business at its stated level. Base rates:
+      peer margins from company releases; industry growth from SFIA (2026).
+    top:
+      - header: The Load-Bearing Variables Are the Two Margins
+      - table:
+          columns: [Variable, Implied by price, Consensus, Our base, Range, "Sensitivity ($/sh)"]
+          col_widths: [2.6, 1.7, 1.9, 1.5, 1.6, 2.3]
+          align: [l, r, r, r, r, r]
+          size: 13
+          rows:
+            - {cells: ["DICK'S margin (FY27+)", "10.2% (FL 0%)", "11.0-11.4%", "10.8%", "9.0-11.8%", "+/-1pp = +/-$17"], style: highlight}
+            - {cells: [Foot Locker margin (FY28+), "-1.2%", "~2%", "2.0-2.5%", "-0.5% to 4.5%", "+/-2pp = +/-$14"], style: highlight}
+            - [Perpetual growth after FY27, "-0.3%", "+2.9% (Street)", "+2.0%", "0.5-2.5%", "-$9 / +$11 per 1pp"]
+            - ["DICK'S sales growth", n/a, "+2.5-4.0% comps", "+3.5%", "1.5-4.5%", "-$8 / +$5"]
+            - ["DICK'S capex (% of sales)", n/a, "~$1.4B in FY26", "6.5% to 4.5%", "+/-1pp", "+/-$6"]
+            - [WACC, "9%", n/a, "9%", "8-11%", "-$23 / +$30 per 1pp"]
+        height: 2.45
+    columns:
+      - width: 1.35
+        blocks:
+          - header: "Value at Stake per One-Step Change ($/share)"
+          - chart:
+              type: barh
+              categories: [Capex +/-1pp, Sales growth, Terminal growth +/-1pp, Foot Locker margin +/-2pp, "DICK'S margin +/-1pp", WACC +/-1pp]
+              series: [{name: Value per share, values: [6, 7, 10, 14, 17, 27]}]
+              number_format: "$0"
+              value_axis: false
+      - blocks:
+          - header: Base Rates
+          - callouts:
+              - {lead: "Margin:", text: "peers earn 7.4-8.5%; DICK'S 11.1% is the outlier"}
+              - {lead: "Growth:", text: "industry +3.7% in 2025; ~6%/yr since 2020"}
+            cols: 1
+
+  - type: content
+    title: "Scenarios: 24-Month Value vs. Intrinsic DCF"
+    section: Valuation
+    notes: >-
+      24-month scenarios: exit EV/EBITDA on FY29E EBITDA at ~Oct 2028; net debt at exit = today's less 24
+      months of after-interest FCF, plus $900M of dividends and buybacks (0 / $150M / $300M a year);
+      plus $10 of dividends a share. Intrinsic SOTP at a 9% WACC: DICK'S and Foot Locker DCFs with
+      value-driver terminal values (bear g 0.5% / RONIC 10%; base 2% / 14%; bull 2.5% / 16%); unallocated
+      cost (-$70M a year) capitalized. Moving 5 points of probability from bull to bear brings the
+      weighted 24-month value to ~$164 (~9.7%/yr), at the hurdle.
+    columns:
+      - blocks:
+          - header: 24-Month Scenarios ($/share)
+          - chart:
+              type: stacked
+              categories: [Bear (30%), Base (45%), Bull (25%), Weighted, Price today]
+              series:
+                - {name: Scenario value, values: [95, 170, 270, 0, 0]}
+                - {name: Probability-weighted, values: [0, 0, 0, 172, 0]}
+                - {name: Price today, values: [0, 0, 0, 0, 136]}
+              number_format: "$#,##0"
+              label_format: "$#,##0;($#,##0);;"
+              value_axis: false
+              legend: true
+              source: "Model, App. A: exit at ~Oct 2028 on FY29E EBITDA, incl. $10 of dividends"
+          - callouts:
+              - {lead: "+27% in 24 months", text: "(~12.5%/yr) vs. a ~10% hurdle"}
+              - {lead: "Skew:", text: "+98% bull vs. -30% bear"}
+              - {lead: "Weighted DCF (30/45/25):", text: "$156 a share (+15%)"}
+              - {lead: "Fragile:", text: "5 points of odds from bull to bear erase the excess"}
+      - blocks:
+          - header: Intrinsic SOTP DCF at 9% WACC ($M)
+          - table:
+              columns: [Block, Bear, Base, Bull]
+              col_widths: [2.2, 1.1, 1.1, 1.1]
+              rows:
+                - ["DICK'S Business", "10,778", "15,069", "17,920"]
+                - [Foot Locker Business, "(233)", "1,308", "2,962"]
+                - [Unallocated cost, "(614)", "(661)", "(691)"]
+                - {cells: [Enterprise value, "9,931", "15,716", "20,190"], style: total}
+                - [Less net debt, "(1,020)", "(1,020)", "(1,020)"]
+                - {cells: [Value per share, "$99", "$163", "$213"], style: highlight}
+            height: 2.25
+          - header: 24-Month Scenario Math
+          - table:
+              columns: [Scenario, FY29E EBITDA, Exit multiple, Value]
+              col_widths: [1.6, 1.4, 1.4, 1.1]
+              rows:
+                - [Bear (30%), "$1.93B", "4.5x", "$95"]
+                - [Base (45%), "$2.51B", "6.0x", "$170"]
+                - [Bull (25%), "$2.93B", "8.0x", "$270"]
+                - {cells: [Probability-weighted, "", "", "$172"], style: total}
+            height: 1.6
+
+  # ------------------------------------------------------------------ VI. Risks & recommendation
+  - type: divider
+    title: Risks, Catalysts & Recommendation
+
+  - type: risks
+    title: Key Risks to Owning DKS
+    section: Risks
+    notes: >-
+      Risk levels are judgment calls weighted by probability and value at stake (see the thesis
+      scores). Each mitigation names the evidence that would ease the risk, so these double as
+      signposts.
+    rows:
+      - risk: "Promotions pull the DICK'S margin toward peers' 7-8.5%"
+        level: High
+        mitigation: "Retail media, GameChanger and premium mix could hold ~11%. This risk is falsified by an FY27 guide at 11%+ without tariff refunds (~Mar 2027)."
+      - risk: Foot Locker stays loss-making as the sneaker channel discounts
+        level: High
+        mitigation: "$100-125M of synergies and ~250 Fast Break remodels could lift it to 2-3%. Watch the Q4 FY26 segment result and the FY27 Foot Locker guide."
+      - risk: "Capital returns outrun FCF; leverage rises on 6-7% debt"
+        level: Medium
+        mitigation: "Capex should peak near $1.4B in FY26, and BBB / Baa2 ratings leave room. FY27 FCF of $700M+ would ease it."
+      - risk: Tariffs return through Section 301 after one-time refunds
+        level: Medium
+        mitigation: "Direct sourcing and vendor cost-sharing offset part of it. Disclosure of FY27 tariff costs in the guide would size it."
+
+  - type: content
+    title: "Catalysts & Signposts: What to Watch"
+    section: Risks
+    notes: >-
+      Thresholds come from the evaluation's signposts and the theses' dated falsifiers. The Q3 FY26 date
+      is not yet announced (the Q2 date was set 21 days ahead); Q3 FY25 was reported on 11/25/25. The
+      FY27 guide comes with Q4 FY26 results (~mid-March 2027; FY25 was reported 3/12/26).
+    blocks:
+      - header: Dated Tests Over the Next 18 Months
+      - table:
+          columns: [Date, Event, Watch for, Tests]
+          col_widths: [1.25, 2.6, 6.0, 2.3]
+          align: [l, l, l, l]
+          size: 13
+          rows:
+            - ["Late Nov 2026", "Q3 FY26 results", "DICK'S comp +2.5%+; DICK'S margin vs. last year without refunds", "S1, L3, L4"]
+            - ["Holiday 2026", "Promotional season", "Brand-site and channel discounting; Nike inventory", "S9, L10"]
+            - ["Dec 2026", "Nike Q2 FY27", "North America wholesale +8%+", "L9, S4"]
+            - ["~Mar 2027", "Q4 FY26 and FY27 guide", "DICK'S margin 11%+ ex-refunds; Foot Locker profit; EPS $14+", "S1, S8, L2, L4"]
+            - ["~Mar 2027", "FY27 capex and buybacks", "Net capex $1.3B or less; FCF covers the dividend", "S3, L5"]
+            - ["Quarterly", "Tariff refunds and Section 301", "Cumulative refunds $150M+; gross-margin impact", "L7, S5"]
+            - ["Jun 2027", "Short interest", "Below 8% (bull) vs. 12%+ (bear)", "L8"]
+            - ["~Mar 2028", "FY27 10-K", "ROIC 12%+; FCF $700M+; charges $750M or less", "S10, S3, S7"]
+        height: 3.1
+      - callouts:
+          - {lead: "Exit any long:", text: "an FY27 DICK'S margin guide below 10% ex-refunds"}
+          - {lead: "Turn long:", text: "below ~$123, or an 11%+ margin guide plus a profitable Foot Locker"}
+
+  - type: content
+    title: "Final Recommendation: Pass"
+    notes: >-
+      Pass: base-case value (~$163) is near the Street's $166, but the expected 24-month return (~12.5%/yr
+      with dividends) beats a ~10% hurdle by only ~2.5pp, and a 5-point shift of probability from bull to
+      bear erases it. Not a short: the price already embeds most of the bear case. The table shows
+      base-case intrinsic value per share by WACC and by Foot Locker's steady-state margin.
+    columns:
+      - blocks:
+          - header: Base-Case Value Sensitivity ($/share)
+          - text: {content: "Above $136 at 9%; mixed at 10%", size: 20, bold: true, small_caps: true, align: c}
+          - table:
+              columns: ["WACC  \\  Foot Locker margin", "0%", "1.5%", "2.5%", "4.0%"]
+              col_widths: [2.4, 1, 1, 1, 1]
+              align: [l, c, c, c, c]
+              size: 13
+              rows:
+                - ["8%", "$174", "$186", "$194", "$206"]
+                - {cells: ["9% (base)", "$147", "$157", "$164", "$174"], style: highlight}
+                - ["10%", "$126", "$135", "$141", "$149"]
+            height: 1.4
+          - header: Key Metrics
+          - metrics: ["24-Mo. Value: $172", "DCF Value: $156"]
+          - header: Why Not Long
+          - bullets:
+              - "Expected **~12.5%/yr** beats a ~10% hurdle by only **~2.5pp**; a shift of 5 points in the odds erases it"
+      - blocks:
+          - header: Carry-Forward Theses & Diligence
+          - numbered:
+              - {title: "S1: DICK'S margin near 10.3%", text: "Which segment booked the $59M tariff refund?"}
+              - {title: "L2: Foot Locker margin 3%+", text: "Fast Break year-two comps and synergy timing?"}
+              - {title: "S3: returns exceed FCF", text: "What did the $1.0B of September notes fund?"}
+          - header: What Would Change Our Mind
+          - bullets:
+              - "**Buy** below ~$123, or on an FY27 guide with the DICK'S margin 11%+ ex-refunds and a profitable Foot Locker"
+              - "**Short** if the FY27 guide puts the DICK'S margin below 10% with the stock above $150"
+
+  # ------------------------------------------------------------------ Appendix
+  - type: divider
+    title: Appendix
+
+  - type: content
+    title: Methodology & Sources
+    notes: >-
+      Full evidence trail: DKS_Company_Evaluation.md (Appendix B lists every URL) and
+      DKS_Bull_Bear_Theses.md. The environment's network policy blocked SEC EDGAR and DKS's
+      investor-relations site, and the session's search budget ran out, so filings were read through
+      search extracts and cross-checked where possible; single-source figures are flagged in those files.
+    columns:
+      - blocks:
+          - header: Methodology
+          - bullets:
+              - "Data as of the **10/2/26** close; filings through Q2 FY26"
+              - "Reverse DCF: **9%** WACC, RONIC 14%, **$13.3B** EV excluding leases"
+              - "SOTP: DICK'S and Foot Locker DCFs; unallocated cost capitalized"
+              - "Theses scored 1-5 on Edge, Materiality, Testability, Evidence"
+              - "Figures from search extracts of filings (SEC site blocked); single-source items flagged"
+      - blocks:
+          - header: Key Sources
+          - bullets:
+              - "DKS: Q2 FY26 release and 10-Q; FY25 10-K; Q4 FY25-Q2 FY26 calls; Sept 2026 notes"
+              - "Street: stockanalysis (26 analysts); firm notes via Stocktwits and MarketBeat; Zacks"
+              - "Industry: SFIA (2026); Aspen Project Play; Telsey via Benzinga"
+              - "Peers: Academy, JD Sports, Nike and Hibbett releases"
+              - "Policy: CRS (IEEPA ruling); Holland & Knight (Section 301)"
+              - "Rates and returns: 10-year yield (10/1/26); Damodaran ERP; GuruFocus ROIC"

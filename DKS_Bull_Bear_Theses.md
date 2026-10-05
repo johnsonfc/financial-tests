@@ -12,7 +12,7 @@
 
 ## Consensus baseline
 
-- **What it is.** The largest US sporting goods retailer. The DICK'S Business is guided to $14.6B of FY26 sales, 66% of the total. In September 2025 it bought Foot Locker, guided to $7.45B (34%) [F: Q2 FY26 guide†].
+- **What it is.** The largest US sporting goods retailer. The DICK'S Business is guided to $14.6B of FY26 sales, 66% of the total. In September 2025 it bought Foot Locker, guided to $7.45B (34%) [F: Q2 FY26 8-K].
 - **Narrative.** A share-gaining category leader whose Foot Locker bet broke in 2026. On Aug 25 non-GAAP EPS guidance fell to $11–12 from $13.50–14.50, and the stock fell 31% that day [F: Q2 release; SGB].
 - **Sell-side.**
   - Mean target $166 across 26 analysts, with a Buy consensus [F: stockanalysis†].
@@ -176,7 +176,7 @@
 > **Claim:** DICK'S holds ≥11.0% in FY27 without refunds: the scale premium over peers survives one promotional season.
 > - **Variable:** DICK'S Business operating margin, FY27. Price-implied 10.2% (if Foot Locker earns 0%) [E: App. A] → mine ≥11.0%.
 > - **Why the market is wrong:** Behavioral. One promotional quarter is extrapolated.
-> - **Evidence:** 11.1% in FY25, 3pp above Academy's 8.5% [F: releases]. Retail media and GameChanger added to Q2 gross margin† [F: Q2 call]. Management held the DICK'S operating-income guide at $1.60–1.68B while cutting Foot Locker [F: Q2 guide†].
+> - **Evidence:** 11.1% in FY25, 3pp above Academy's 8.5% [F: releases]. Retail media and GameChanger added to Q2 gross margin† [F: Q2 call]. Management held the DICK'S segment-profit guide at $1.60–1.68B while cutting Foot Locker [F: Q2 FY26 8-K].
 > - **Catalyst & timing:** FY27 guide (~Mar 2027).
 > - **Value if right:** +$14/sh [E: 0.8pp × $17].
 > - **Falsifier:** an FY27 guide below 10.5% without refunds, by Mar 31, 2027.
